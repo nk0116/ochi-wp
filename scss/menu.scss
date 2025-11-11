@@ -1,0 +1,138 @@
+$serif:"Noto Serif JP", serif;
+$co:"Cormorant SC", serif;
+
+$main-color:#072334;
+$sub-color:#000;
+
+
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー値
+  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
+//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
+
+);
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+.menu {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url(../img/menu/bg_menu.png) center bottom no-repeat;
+  background-size: 100% 100%;
+  @include mq('sp') {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.menu__tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  width: 100%;
+
+  @include mq('sp') {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .4rem 1rem;
+  }
+}
+
+.menu__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.9rem;
+  background: #DDDDDD;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s ease, color .2s ease;
+  font-family: $serif;
+  width: 100%;
+
+  @include mq('sp') {
+      font-size: 1.6rem;
+      height: 5.9rem;
+  }
+}
+
+.menu__tab:not(.is-active):hover {
+  background: #F2F5F8;
+}
+
+.menu__tab.is-active {
+  background-color: #009FE6;
+  color: #FFF;
+}
+
+.menu__panels {
+  position: relative;
+}
+
+.menu__panel[hidden] { display: none; }
+.menu__panel.is-active { display: block; }
+
+.menu-list__item {
+  width: 100%;
+  padding: 4rem;
+  @include mq('sp') {
+    padding: 2rem 0;
+  }
+}
+
+.menu-list__title {
+  width: 100%;
+  text-align: center;
+  border: .1rem solid #009FE6;
+  background: #fff;
+  font-size: 1.6rem;
+  letter-spacing: .16em;
+  line-height: 150%;
+  padding: 1.3rem;
+  color: #6F6F6F;
+}
+
+.menu-list__content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+  margin-top: 1.6rem;
+  @include mq('sp') {
+    grid-template-columns: repeat(1,1fr);
+  }
+  li {
+    border-bottom: .1rem solid #AFAFAF;
+    a {
+      display: flex;
+      align-items: center;
+      padding: 1rem 3.4rem 1rem 1.7rem;
+      height: 100%;
+      width: 100%;
+      background: url(../img/menu/icon_arrow.svg) right 1.5rem center no-repeat;
+      background-size: .7rem auto;
+      font-size: 1.6rem;
+      line-height: 170%;
+      color: #333333;
+      letter-spacing: .16em;
+      -webkit-transition: opacity 0.4s ease-in-out;
+      transition: opacity 0.4s ease-in-out;
+      @include mq('pc') {
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+  }
+}

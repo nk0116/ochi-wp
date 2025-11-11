@@ -1,0 +1,500 @@
+.case-list {
+  padding: 8rem 0;
+}
+@media (max-width: 767px) {
+  .case-list {
+    padding: 4rem 0;
+  }
+}
+.case-list .inner {
+  max-width: 112rem;
+}
+
+.case-list__search {
+  margin-bottom: 4rem;
+}
+@media (max-width: 767px) {
+  .case-list__search {
+    margin-bottom: 2.4rem;
+  }
+}
+.case-list__search .case-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 767px) {
+  .case-list__search .case-search {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+.case-list__search .case-search button {
+  cursor: pointer;
+}
+.case-list__search .case-search__item button[type=button] {
+  width: 18.4rem;
+  height: 5.1rem;
+  border: 0.1rem solid #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 120%;
+  font-weight: bold;
+  font-family: "Shippori Mincho";
+  color: #333;
+  background: #fff;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .case-list__search .case-search__item button[type=button]:hover {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 767px) {
+  .case-list__search .case-search__submit {
+    margin-top: 1.6rem;
+  }
+}
+
+.case-list__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.4rem 4rem;
+}
+@media (max-width: 767px) {
+  .case-list__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5.4rem;
+  }
+}
+
+.case-list__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: #333;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .case-list__card:hover {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 767px) {
+  .case-list__card {
+    max-width: 24rem;
+    margin: 0 auto;
+  }
+}
+.case-list__card--item {
+  font-family: "Shippori Mincho";
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+.case-list__card--item::before {
+  font-size: 1.2rem;
+  display: block;
+  content: attr(data-title);
+}
+
+.case-list__before,
+.case-list__after {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.case-list__before img,
+.case-list__after img {
+  width: 100%;
+  aspect-ratio: 11/6;
+  object-fit: cover;
+  border: 0.1rem solid #666666;
+}
+.case-list__before::before,
+.case-list__after::before {
+  position: absolute;
+  bottom: 0;
+  width: 5rem;
+  height: 0.1rem;
+  background: #666666;
+  content: "";
+  z-index: 2;
+}
+.case-list__before::after,
+.case-list__after::after {
+  width: 100%;
+  border-bottom: 0.1rem solid #CCCCCC;
+  display: block;
+  padding-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  line-height: 114%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.case-list__before::before {
+  left: 0;
+}
+.case-list__before::after {
+  content: "Before";
+}
+
+.case-list__after::before {
+  right: 0;
+}
+.case-list__after::after {
+  content: "After";
+  text-align: right;
+}
+
+.wp-pagenavi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.6rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+@media (max-width: 767px) {
+  .wp-pagenavi {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+}
+.wp-pagenavi .pages, .wp-pagenavi .last, .wp-pagenavi .first {
+  display: none;
+}
+.wp-pagenavi a.page, .wp-pagenavi span.current, .wp-pagenavi span.extend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
+}
+.wp-pagenavi a.page, .wp-pagenavi span.extend {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+  display: block;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  font-size: 0;
+}
+.wp-pagenavi .previouspostslink {
+  background-image: url(../img/notice/icon_arrow.svg);
+  transform: scaleX(-1);
+  margin-left: 1.2rem;
+}
+.wp-pagenavi .nextpostslink {
+  background-image: url(../img/notice/icon_arrow.svg);
+  margin-right: 1.2rem;
+}
+
+.doctor-profile {
+  padding: 8rem 0;
+}
+@media (max-width: 767px) {
+  .doctor-profile {
+    padding: 4rem 0;
+  }
+}
+.doctor-profile__inner {
+  max-width: 112rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.doctor-profile__area {
+  width: 100%;
+  background: #F5F3F3;
+  border-radius: 2rem;
+  padding: 2.3rem 4rem;
+}
+@media (max-width: 767px) {
+  .doctor-profile__area {
+    padding: 3.3rem 2rem;
+  }
+}
+.doctor-profile__title {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  margin-bottom: 1.6rem;
+  padding: 2rem;
+}
+.doctor-profile__title h2 {
+  border-bottom: 0.1rem solid #7C7461;
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 700;
+  font-family: "Shippori Mincho";
+  color: #7C7461;
+}
+.doctor-profile__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .doctor-profile__content {
+    display: block;
+  }
+}
+.doctor-profile__left {
+  width: 36.2rem;
+  padding: 0 2rem;
+}
+@media (max-width: 767px) {
+  .doctor-profile__left {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+.doctor-profile__left__clinic {
+  font-size: 1.4rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #444;
+}
+.doctor-profile__left__post {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #444;
+}
+.doctor-profile__left__name {
+  margin-top: 0.8rem;
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #333;
+}
+.doctor-profile__left__roman {
+  margin-top: 0.8rem;
+  color: #CCC;
+  font-family: "Cormorant SC";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  padding-left: 15.9rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .doctor-profile__left__roman {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% + 2rem);
+  }
+}
+.doctor-profile__left__roman::before {
+  position: absolute;
+  content: "";
+  width: 14rem;
+  height: 0.1rem;
+  top: 50%;
+  left: 0;
+  background: #AFAFAF;
+}
+@media (max-width: 767px) {
+  .doctor-profile__left__roman::before {
+    position: relative;
+    top: 0;
+    width: 8rem;
+  }
+}
+.doctor-profile__left__sns {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 1.6rem;
+}
+.doctor-profile__left__sns a {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .doctor-profile__left__sns a:hover {
+    opacity: 0.6;
+  }
+}
+.doctor-profile__left__sns--instagram {
+  width: 2rem;
+  height: 2rem;
+}
+.doctor-profile__left__sns--x {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.doctor-profile__left__sns--youtube {
+  width: 2.8rem;
+  height: 2rem;
+}
+.doctor-profile__left__sns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.doctor-profile__left__img {
+  width: calc(100% + 4rem);
+  margin: 0 -2rem;
+  margin-top: 2rem;
+}
+.doctor-profile__left__img img {
+  width: 100%;
+}
+.doctor-profile__right {
+  width: calc(100% - 36.2rem);
+  max-width: 57.5rem;
+  padding-left: 4rem;
+}
+@media (max-width: 767px) {
+  .doctor-profile__right {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin-top: 1.6rem;
+  }
+}
+.doctor-profile__right__career--title {
+  font-family: "Shippori Mincho";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 400;
+  color: #9FA2B7;
+}
+.doctor-profile__right__career ul li {
+  font-size: 1.6rem;
+  line-height: 200%;
+  color: #333;
+  font-weight: 400;
+}
+.doctor-profile__right__info {
+  margin-top: 1.6rem;
+}
+.doctor-profile__right__info--title {
+  font-family: "Shippori Mincho";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 400;
+  color: #9FA2B7;
+}
+.doctor-profile__right__info ul li {
+  font-size: 1.6rem;
+  line-height: 200%;
+  color: #333;
+  font-weight: 400;
+}
+
+.case-detail {
+  padding: 8rem 0;
+}
+@media (max-width: 767px) {
+  .case-detail {
+    padding: 4rem 0 2.4rem;
+  }
+}
+.case-detail__inner {
+  width: 100%;
+  max-width: 94.8rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+@media (max-width: 767px) {
+  .case-detail__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}
+.case-detail__inner--left {
+  width: 24rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.case-detail__inner--right {
+  width: calc(100% - 27.2rem);
+}
+@media (max-width: 767px) {
+  .case-detail__inner--right {
+    width: 100%;
+  }
+}
+
+.case-item {
+  border-bottom: 0.1rem solid #666666;
+  padding: 0.5rem 0;
+}
+.case-item + .case-item {
+  margin-top: 1.6rem;
+}
+.case-item__title {
+  color: #666666;
+  font-family: "Shippori Mincho";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.case-item__content {
+  color: #333;
+  font-family: "Shippori Mincho";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 200%;
+}
+
+.related-links {
+  padding: 4rem 0;
+}
+.related-links__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+@media (max-width: 767px) {
+  .related-links__content {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
+.related-links__content .btn {
+  font-family: "Cormorant SC", serif;
+}/*# sourceMappingURL=case.css.map */

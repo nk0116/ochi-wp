@@ -1,0 +1,186 @@
+.point-card__inner {
+  max-width: 104rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+@media (max-width: 767px) {
+  .point-card__inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.point-card__title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Noto Serif JP";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 100%;
+  padding-block: 2.4rem;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
+}
+
+.point-card__content {
+  max-width: 76rem;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+@media (max-width: 767px) {
+  .point-card__content {
+    margin-top: 2.4rem;
+  }
+}
+.point-card__content .pt20 {
+  padding-top: 2rem;
+}
+.point-card__content .mt39 {
+  margin-top: 3.9rem;
+}
+.point-card__content .mt40 {
+  margin-top: 4rem;
+}
+
+.point-card__lead {
+  text-align: center;
+  color: #009FE6;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 170%;
+  padding-block: 1rem;
+  position: relative;
+}
+.point-card__lead::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background: #CCC;
+}
+
+.point-card__text {
+  color: #333;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.point-card__container {
+  max-width: 86rem;
+  margin-inline: auto;
+  margin-top: 6rem;
+}
+@media (max-width: 767px) {
+  .point-card__container {
+    margin-top: 4.5rem;
+  }
+}
+.point-card__container .mt10 {
+  margin-top: 1rem;
+}
+.point-card__container .mt30 {
+  margin-top: 3rem;
+}
+
+.point-card__container__inner {
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #FAFAFA;
+}
+
+.point-card__container__block + .point-card__container__block {
+  margin-top: 3rem;
+}
+
+.point-card__container__lead {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.point-card__container__lead--bold {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 0.32rem;
+}
+
+.point-card__container__check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 767px) {
+  .point-card__container__check {
+    align-items: flex-start;
+  }
+}
+.point-card__container__check img {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+@media (max-width: 767px) {
+  .point-card__container__check img {
+    margin-top: 0.7rem;
+  }
+}
+
+.point-card__container__text {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.point-card__container__text--min {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.point-card__container__introduce--title {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.point-card__container__text--bold {
+  color: var(--, #333);
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.point-card__btn {
+  margin-top: 4rem;
+  margin-inline: auto;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+@media (max-width: 767px) {
+  .point-card__btn {
+    margin-top: 2.4rem;
+  }
+}/*# sourceMappingURL=point-card.css.map */

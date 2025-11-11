@@ -1,0 +1,457 @@
+
+$serif:"Noto Serif JP", serif;
+$co:"Cormorant SC", serif;
+
+$main-color:#072334;
+$sub-color:#000;
+
+
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー値
+  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
+//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
+
+);
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+.fv-low {
+  @include mq(sp) {
+    padding-top: 76px;
+  }
+}
+
+.fv-low__inner {
+  position: relative;
+  overflow-y: hidden;
+  max-height: 38.9rem;
+}
+
+.fv-low__titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fv-low__titles--text {
+  text-align: center;
+  margin-top: 5rem;
+  color: #666;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.access-low {
+  margin-top: 8rem;
+  @include mq(sp) {
+    margin-top: 4rem;
+  }
+}
+
+.access-low__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  @include mq(sp) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.access-low__img {
+  margin-top: 4rem;
+  @include mq(sp) {
+    margin-top: 0rem;
+    height: 450px;
+  }
+  img {
+    object-fit: contain;
+    @include mq(sp) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.access-low__content {
+  max-width: 56rem;
+  width: 100%;
+  @include mq(sp) {
+    margin-top: -4rem;
+  }
+}
+
+.access-low__name {
+  text-align: center;
+  color: #FFF;
+  font-family: $serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: 0.048rem;
+
+  background: #009FE6;
+  padding: 1rem 2rem;
+  @include mq(sp) {
+    width: calc(100% - 2.7rem);
+    margin-inline: auto;
+  }
+}
+
+.access-low__sns {
+  margin-top: 5rem;
+  @include mq(sp) {
+    margin-top: 2.3rem;
+    margin-left: 1.6rem;
+  }
+}
+
+.access-low__list {
+  margin-top: 1rem;
+  @include mq(sp) {
+    padding-inline: 1.5rem;
+  }
+}
+.access-low__row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10rem 1fr;
+  gap: 3rem;
+  padding: 2.3rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+
+  @include mq(sp) {
+    grid-template-columns: 9rem 1fr;
+    padding: 2.37rem 0;
+    gap: 0;
+  }
+
+  &:nth-of-type(n+2) {
+      border-top: 1px solid #ddd;
+  }
+
+  &:nth-of-type(1) {
+      padding-top: 0;
+  }
+}
+.access-low__list--shibuya {
+  .access-low__row {
+    &:not(:nth-of-type(1)):not(:nth-of-type(2)) {
+      @include mq(sp) {
+        padding: 2.35rem 0;
+      }
+    }
+  }
+}
+.access-low__row dt {
+  color: #6F6F6F;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.88rem; /* 180% */
+  letter-spacing: 0.16rem;
+}
+
+.access-low__row dd, .access-low__row p {
+  color: #6F6F6F;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.88rem; /* 180% */
+  letter-spacing: 0.16rem;
+}
+
+
+.access-low__row--little {
+  padding-bottom: 1.16rem;
+  dd p {
+    @include mq(sp) {
+      white-space: nowrap;
+    }
+  }
+}
+.access-low__row--little2 {
+  padding-top: 1rem;
+  padding-bottom: 1.18rem;
+  dd {
+    p:nth-of-type(2) {
+      @include mq(sp) {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 2.88rem;
+        letter-spacing: 0.16rem;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.access-low__row--border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+.access-low__maps {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 9rem;
+  padding-inline: 2rem;
+  max-width: calc(1440px - 346px + (2rem * 2));
+  margin-inline: auto;
+  @include mq(sp) {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+}
+.access-low__maps-shibuya {
+  margin-top: 11rem;
+  @include mq(sp) {
+    margin-top: 4rem;
+  }
+}
+
+.access-low__map {
+  width: 66.4rem;
+  max-height: 100%;
+  @include mq(sp) {
+    width: 100%;
+    height: 24.3rem;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.access-low__map__right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 0.9rem;
+  @include mq(sp) {
+    margin-top: -3rem;
+    gap: 0;
+  }
+}
+.access-low__map__right--shibuya {
+  @include mq(sp) {
+    margin-top: -4rem;
+  }
+  .access-low__map--img {
+    @include mq(sp) {
+      padding-inline: 0.5rem;
+    }
+  }
+}
+.access-low__map--img {
+  img {
+    object-fit: contain;
+  }
+}
+
+
+.route-low {
+  margin-top: 8.5rem;
+  @include mq(sp) {
+    margin-top: 4rem;
+  }
+}
+.route-low-shibuya {
+  margin-top: 8rem;
+  @include mq(sp) {
+    margin-top: 5rem;
+  }
+}
+
+.route-low__inner {
+  max-width: calc(1080px + 2rem * 2);
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-bottom: 8rem;
+  margin-top: 7.5rem;
+  @include mq(sp) {
+    margin-bottom: 4rem;
+  }
+}
+.route-title {
+  letter-spacing: 0.48rem;
+  @include mq(sp) {
+    letter-spacing: normal;
+  }
+}
+
+// ----------------- 下層共通パーツ-----------------
+.low-titles {
+  max-width: calc(100.2rem + 2rem * 2);
+  margin-inline: auto;
+  padding-inline: 2rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #009FE6 0%, #74D4FF 41.35%, #11ADF3 98.08%);
+    bottom: 0;
+    left: 2rem;
+  }
+}
+
+.low-title {
+  font-family: "Cormorant SC";
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 100%; /* 64px */
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include mq(sp) {
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 48px */
+  }
+}
+.all-small {
+  font-variant: all-small-caps;
+  @include mq(sp) {
+    font-variant: normal;
+  }
+}
+
+.low-title__text {
+  color: #333;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin-top: -0.5rem;
+}
+// ---------------------------------------------------------------------
+.route-low__content {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  @include mq(sp) {
+    flex-direction: column;
+    gap: 5.5rem;
+  }
+}
+.route-low__content--shibuya {
+  @include mq(sp) {
+    gap: 4rem;
+  }
+}
+.route-low__card {
+  width: calc((1080px + 2rem * 2) / 5);
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+.route-low__card--img {
+  img {
+    aspect-ratio: 203.20/152.40;
+    object-fit: contain;
+  }
+}
+
+.route-low__card--text {
+  margin-top: 2rem;
+  p:nth-of-type(1) {
+    color: #009FE6;
+    font-family: $co;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p:nth-of-type(2) {
+    margin-top: 2rem;
+    color: #444;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
+
+
+.gallery-low {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  @include mq(sp) {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+}
+.gallery-low__inner {
+  padding-top: 4rem;
+  @include mq(sp) {
+    padding-top: 3.5rem;
+  }
+}
+.gallery-low-swiper {
+  @include mq(sp) {
+    padding-bottom: 3rem;
+  }
+}
+.gallery-low-swiper {
+  .swiper-slide {
+    width: 464px;
+    // height: 320px;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.gallery-low-pagination {
+  margin-top: 3.2rem;
+  text-align: center;
+  @include mq(sp) {
+    margin-top: 5.2rem;
+  }
+}
+.gallery-low-swiper__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  z-index: 3;
+  width: 100%;
+  max-width: calc(100% - (12.2rem * 2) - (2rem * 2));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  button {
+    background: transparent;
+  }
+  @include mq(sp) {
+    max-width: 100%;
+    top: auto;
+    bottom: 1rem;
+    transform: translate(-50% ,0);
+  }
+}
+.gallery-low-prev,
+.gallery-low-next {
+  width: 5.8rem;
+  height: 5.8rem;
+  @include mq(sp) {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}

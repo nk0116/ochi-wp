@@ -1,0 +1,931 @@
+.about-cynthia__fv-low__titles--text {
+  white-space: nowrap;
+}
+
+.about-cynthia__inner {
+  max-width: 112rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia__inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.about-cynthia__title {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-bottom: 2.4rem;
+  position: relative;
+}
+.about-cynthia__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 0.2rem;
+  background: #0AA4E8;
+}
+
+.about-cynthia__title--en {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  font-variant: all-small-caps;
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-cynthia__title--ja {
+  color: #333;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 160%;
+  margin-top: -0.5rem;
+}
+
+.about-cynthia__bg {
+  background-image: url(../img/about-cynthia/guideline-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.about-cynthia__container {
+  max-width: 99.8rem;
+  margin-inline: auto;
+  padding-top: 4rem;
+}
+
+.about-cynthia__card {
+  background: #FFF;
+  box-shadow: 0 4px 10px 0 rgba(0, 159, 230, 0.2);
+  padding-inline: 5.6rem;
+  padding-block: 4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia__card {
+    padding-inline: 2rem;
+  }
+}
+
+.about-cynthia__card + .about-cynthia__card {
+  margin-top: 4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia__card + .about-cynthia__card {
+    margin-top: 2.4rem;
+  }
+}
+
+.about-cynthia__card--headline {
+  color: #009FE6;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.about-cynthia__card--headline-etc {
+  color: #666;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+}
+.about-cynthia__card--headline-etc span {
+  color: #009FE6;
+}
+
+.about-cynthia__card--text {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.about-cynthia__card--text-min {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.about-cynthia__card .mt16 {
+  margin-top: 1.6rem;
+}
+.about-cynthia__card .mt24 {
+  margin-top: 2.4rem;
+}
+.about-cynthia__card .mt30 {
+  margin-top: 3rem;
+}
+
+.about-cynthia-about__container {
+  margin-top: 6.4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-about__container {
+    margin-top: 3.4rem;
+  }
+}
+.about-cynthia-about__container .mt30 {
+  margin-top: 3rem;
+}
+.about-cynthia-about__container .pc-hidden {
+  display: none;
+}
+@media (max-width: 767px) {
+  .about-cynthia-about__container .pc-hidden {
+    display: block;
+  }
+}
+
+.about-cynthia-about__headline-3 {
+  color: #333;
+  font-family: "Shippori Mincho";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  padding-left: 17.8rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .about-cynthia-about__headline-3 {
+    padding-left: 12.8rem;
+  }
+}
+.about-cynthia-about__headline-3::after {
+  position: absolute;
+  content: "";
+  top: 53%;
+  left: 0;
+  width: 16.8rem;
+  height: 0.2rem;
+  background: #0AA4E8;
+}
+@media (max-width: 767px) {
+  .about-cynthia-about__headline-3::after {
+    width: 11.8rem;
+  }
+}
+
+.about-cynthia-about__headline-3--etc {
+  color: #333;
+  font-family: "Shippori Mincho";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  padding-left: 17.8rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .about-cynthia-about__headline-3--etc {
+    padding-left: 12.8rem;
+    font-size: 1.8rem;
+  }
+}
+.about-cynthia-about__headline-3--etc::after {
+  position: absolute;
+  content: "";
+  top: 53%;
+  left: 0;
+  width: 16.8rem;
+  height: 0.2rem;
+  background: #0AA4E8;
+}
+@media (max-width: 767px) {
+  .about-cynthia-about__headline-3--etc::after {
+    width: 11.8rem;
+  }
+}
+
+.about-cynthia-about__text {
+  color: #333;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 200%;
+  margin-top: 1.6rem;
+}
+
+.about-cynthia-about__text--lead {
+  color: #333;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 1.6rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.about-cynthia-about__text--lead::after {
+  position: absolute;
+  content: "";
+  top: 53%;
+  transform: translateY(-50%);
+  left: -0.1rem;
+  width: 0.2rem;
+  height: 2.1rem;
+  background: #0AA4E8;
+}
+
+.about-cynthia-system {
+  background-image: url(../img/about-cynthia/system-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.about-cynthia-system__container {
+  margin-top: 4.8rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-system__container {
+    margin-top: 0.8rem;
+  }
+}
+.about-cynthia-system__container .mt30 {
+  margin-top: 3rem;
+}
+
+.about-cynthia-system__text {
+  color: #555;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 200%;
+  margin-top: 1.6rem;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
+.about-cynthia-system__concept {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  text-align: center;
+  margin-top: 1.6rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-system__concept {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-cynthia-system__concept--left,
+.about-cynthia-system__concept--right {
+  color: #555;
+  text-align: center;
+  font-family: "Shippori Mincho";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 200%;
+  border-radius: 1rem;
+  border: 1px solid #009FE6;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .about-cynthia-system__concept--left,
+  .about-cynthia-system__concept--right {
+    font-size: 1.6rem;
+    line-height: 200%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-cynthia-method__inner .about-cynthia__title {
+    margin-inline: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__inner .about-cynthia-method__container__inner {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__inner .about-cynthia-method__img img {
+    height: auto;
+  }
+}
+
+.about-cynthia-method__container {
+  padding-top: 8rem;
+}
+.about-cynthia-method__container .mt13 {
+  margin-top: 1.3rem;
+}
+.about-cynthia-method__container .mt20 {
+  margin-top: 2rem;
+}
+.about-cynthia-method__container .mt24 {
+  margin-top: 2.4rem;
+}
+.about-cynthia-method__container .mt30 {
+  margin-top: 3rem;
+}
+
+.about-cynthia-method__img {
+  margin-top: 2rem;
+}
+
+.about-cynthia-method__content--title {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content--title {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+}
+
+.about-cynthia-method__content--text {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.about-cynthia-method__content__texts {
+  background: var(--fff, #FFF);
+  box-shadow: 0 4px 10px 0 rgba(91, 163, 115, 0.2);
+  padding-block: 4rem;
+  padding-inline: 4.7rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content__texts {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-cynthia-method .about-cynthia-method__inner {
+    padding-inline: 0rem;
+  }
+}
+
+.about-cynthia-method__content1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+  padding-top: 4rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content1 {
+    flex-direction: column;
+    padding-top: 2.4rem;
+  }
+}
+.about-cynthia-method__content1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 75rem;
+  height: 47.4rem;
+  background: #F6FCFF;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content1::before {
+    left: auto;
+    right: -1rem;
+    transform: translateX(0);
+    width: 35rem;
+    height: 22.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content1 .about-cynthia-method__content__img {
+    margin-left: 2rem;
+  }
+}
+.about-cynthia-method__content1 .about-cynthia-method__content__img img {
+  width: 57rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-cynthia-method__content1 .about-cynthia-method__content__img img {
+    width: 43rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content1 .about-cynthia-method__content__img img {
+    width: 100%;
+  }
+}
+.about-cynthia-method__content1 .about-cynthia-method__content__texts {
+  max-width: 59.2rem;
+  margin-left: -6.5rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content1 .about-cynthia-method__content__texts {
+    margin-top: -4.86rem;
+    margin-left: 0.8rem;
+    margin-right: 3.3rem;
+  }
+}
+
+.about-cynthia-method__content2 {
+  margin-top: 8rem;
+  padding-top: 4rem;
+  position: relative;
+  height: 80.6rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content2 {
+    flex-direction: column;
+    padding-top: 2.4rem;
+    height: auto;
+  }
+}
+.about-cynthia-method__content2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 75rem;
+  height: 47.4rem;
+  background: #F6FCFF;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content2::before {
+    left: 0;
+    width: 35rem;
+    height: 22.1rem;
+  }
+}
+.about-cynthia-method__content2 .about-cynthia-method__content__img {
+  position: absolute;
+  right: 6rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content2 .about-cynthia-method__content__img {
+    position: static;
+    right: -2.5rem;
+    margin-left: 2rem;
+  }
+}
+.about-cynthia-method__content2 .about-cynthia-method__content__img img {
+  width: 57rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-cynthia-method__content2 .about-cynthia-method__content__img img {
+    width: 43rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content2 .about-cynthia-method__content__img img {
+    width: 95%;
+  }
+}
+.about-cynthia-method__content2 .about-cynthia-method__content__texts {
+  max-width: 47rem;
+  position: absolute;
+  left: 2rem;
+  padding-inline: 5.6rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content2 .about-cynthia-method__content__texts {
+    position: relative;
+    left: 1rem;
+    margin-top: -4.86rem;
+    margin-right: 2rem;
+    padding-inline: 2rem;
+  }
+}
+
+.about-cynthia-method__content3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+  padding-top: 4rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content3 {
+    flex-direction: column;
+    padding-top: 2.4rem;
+  }
+}
+.about-cynthia-method__content3::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 75rem;
+  height: 47.4rem;
+  background: #F6FCFF;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content3::before {
+    left: auto;
+    right: -1rem;
+    transform: translateX(0);
+    width: 35rem;
+    height: 22.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content3 .about-cynthia-method__content__img {
+    margin-right: 2rem;
+  }
+}
+.about-cynthia-method__content3 .about-cynthia-method__content__img img {
+  width: 57rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-cynthia-method__content3 .about-cynthia-method__content__img img {
+    width: 43rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content3 .about-cynthia-method__content__img img {
+    width: 100%;
+  }
+}
+.about-cynthia-method__content3 .about-cynthia-method__content__texts {
+  max-width: 47rem;
+  margin-left: -8.5rem;
+  padding-inline: 5.6rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-cynthia-method__content3 .about-cynthia-method__content__texts {
+    margin-left: -4.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content3 .about-cynthia-method__content__texts {
+    margin-top: -8rem;
+    margin-left: 0.4rem;
+    margin-right: 1.3rem;
+    padding-inline: 2rem;
+  }
+}
+
+.about-cynthia-method__content4 {
+  max-width: 92.4rem;
+  margin-top: 8rem;
+  padding-top: 4rem;
+  position: relative;
+  height: 64.4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content4 {
+    flex-direction: column;
+    padding-top: 2.4rem;
+    height: auto;
+  }
+}
+.about-cynthia-method__content4::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 75rem;
+  height: 47.4rem;
+  background: #F6FCFF;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content4::before {
+    left: 0.5rem;
+    width: 35rem;
+    height: 22.1rem;
+  }
+}
+.about-cynthia-method__content4 .about-cynthia-method__content__img {
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content4 .about-cynthia-method__content__img {
+    position: static;
+    margin-right: 4.86rem;
+    text-align: right;
+  }
+}
+.about-cynthia-method__content4 .about-cynthia-method__content__img img {
+  width: 39.2rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content4 .about-cynthia-method__content__img img {
+    width: 24rem;
+  }
+}
+.about-cynthia-method__content4 .about-cynthia-method__content__texts {
+  max-width: 53.1rem;
+  position: absolute;
+  left: 4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content4 .about-cynthia-method__content__texts {
+    position: relative;
+    left: 1rem;
+    margin-top: -5rem;
+    margin-right: 5rem;
+  }
+}
+.about-cynthia-method__content4 .about-cynthia-method__content__texts .about-cynthia-method__content--text span {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.about-cynthia-method__content--text-etc {
+  max-width: 96.4rem;
+  padding-inline: 2rem;
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.about-cynthia-method__content5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 5.2rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content5 {
+    flex-direction: column;
+    padding-top: 2.4rem;
+  }
+}
+.about-cynthia-method__content5::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 75rem;
+  height: 47.4rem;
+  background: #F6FCFF;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content5::before {
+    left: auto;
+    right: -1rem;
+    transform: translateX(0);
+    width: 35rem;
+    height: 22.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content5 .about-cynthia-method__content__img {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+.about-cynthia-method__content5 .about-cynthia-method__content__img img {
+  width: 50rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content5 .about-cynthia-method__content__img img {
+    width: 100%;
+  }
+}
+.about-cynthia-method__content5 .about-cynthia-method__content__texts {
+  max-width: 47rem;
+  margin-left: -1.5rem;
+  padding-inline: 5.6rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-cynthia-method__content5 .about-cynthia-method__content__texts {
+    margin-left: -4.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content5 .about-cynthia-method__content__texts {
+    margin-top: -8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-inline: 2rem;
+  }
+}
+
+.about-cynthia-method__content6 {
+  margin-top: 8rem;
+  padding-top: 4rem;
+  position: relative;
+  height: 57.8rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content6 {
+    flex-direction: column;
+    padding-top: 2.4rem;
+    height: auto;
+  }
+}
+.about-cynthia-method__content6::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 75rem;
+  height: 47.4rem;
+  background: #F6FCFF;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content6::before {
+    left: 0;
+    width: 35rem;
+    height: 22.1rem;
+  }
+}
+.about-cynthia-method__content6 .about-cynthia-method__content__img {
+  position: absolute;
+  right: 6rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content6 .about-cynthia-method__content__img {
+    position: static;
+    right: -2.5rem;
+    margin-left: 2rem;
+  }
+}
+.about-cynthia-method__content6 .about-cynthia-method__content__img img {
+  width: 57rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .about-cynthia-method__content6 .about-cynthia-method__content__img img {
+    width: 49rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content6 .about-cynthia-method__content__img img {
+    width: 95%;
+  }
+}
+.about-cynthia-method__content6 .about-cynthia-method__content__texts {
+  max-width: 47rem;
+  position: absolute;
+  left: 4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-method__content6 .about-cynthia-method__content__texts {
+    position: relative;
+    left: 0;
+    margin-top: -3.5rem;
+    margin-inline: 2rem;
+  }
+}
+
+.about-cynthia-method__btn {
+  margin-inline: auto;
+}
+
+.about-cynthia-guidelines__excerpt {
+  color: #009FE6;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+  padding-block: 4rem;
+}
+@media (max-width: 767px) {
+  .about-cynthia-guidelines__excerpt {
+    padding-block: 2.4rem;
+  }
+}
+
+.about-cynthia-guidelines__card__bottom__text {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.about-cynthia-guidelines__card__bottom__text a {
+  color: #444;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.about-cynthia-guidelines__card__bottom__list p, .about-cynthia-guidelines__card__bottom__list li {
+  color: #444;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.about-cynthia-guidelines__card__bottom__img {
+  margin-top: 2.4rem;
+}
+.about-cynthia-guidelines__card__bottom__img img {
+  width: 31.6rem;
+  height: 7.8rem;
+}
+
+.about-cynthia-cancel__text--lead {
+  color: #009FE6;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+  padding-block: 1.6rem;
+}
+
+.about-cynthia-cancel2__cost-list {
+  border: 1px solid #666;
+  padding-block: 1.6rem;
+  padding-inline: 1.6rem;
+  margin-block: 2.4rem;
+}
+.about-cynthia-cancel2__cost-list li {
+  color: #666;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+}
+.about-cynthia-cancel2__cost-list li + li {
+  margin-top: 1.6rem;
+}
+.about-cynthia-cancel2__cost-list span {
+  color: #009FE6;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.about-cynthia-coolingoff__info {
+  border: 1px solid #666;
+  padding: 1.6rem;
+}
+
+.about-cynthia__card--text--link a {
+  color: var(--444, #444);
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.about-cynthia-act__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.about-cynthia-act__list--item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+@media (max-width: 767px) {
+  .about-cynthia-method__content2 .about-cynthia-method__content--title,
+  .about-cynthia-method__content3 .about-cynthia-method__content--title,
+  .about-cynthia-method__content5 .about-cynthia-method__content--title,
+  .about-cynthia-method__content6 .about-cynthia-method__content--title {
+    text-align: center;
+  }
+}/*# sourceMappingURL=about-cynthia.css.map */

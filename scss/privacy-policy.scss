@@ -1,0 +1,84 @@
+
+$serif:"Noto Serif JP", serif;
+$co:"Cormorant SC", serif;
+
+$main-color:#072334;
+$sub-color:#000;
+
+
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー値
+  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
+//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
+
+);
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+.privacy-policy__title,
+.privacy-policy__fv-low__titles--text {
+  white-space: nowrap;
+}
+
+.privacy-policy__inner {
+  max-width: calc(108rem + 2rem * 2);
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-block: 8rem;
+  @include mq(sp) {
+    padding-block: 4rem;
+  }
+}
+
+.privacy-policy__text {
+  color: #333;
+  font-family: "Noto Serif JP";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 170%;
+  max-width: 100rem;
+}
+
+.privacy-policy__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3.97rem;
+  margin-top: 6.6rem;
+  @include mq(sp) {
+    gap: 2.34rem;
+    margin-top: 5rem;
+  }
+}
+.privacy-policy__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.privacy-policy__lead {
+  color: #666;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.2rem;
+
+  position: relative;
+  padding-left: 1.6rem;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7%;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: #666;
+  }
+}

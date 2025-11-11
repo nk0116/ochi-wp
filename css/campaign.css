@@ -1,0 +1,218 @@
+.campaigns {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+@media (max-width: 767px) {
+  .campaigns {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.campaigns__tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .campaigns__tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem 1rem;
+  }
+}
+
+.campaigns__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.9rem;
+  background: #DDDDDD;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: "Noto Serif JP", serif;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .campaigns__tab {
+    font-size: 1.6rem;
+    height: 5.9rem;
+  }
+}
+
+.campaigns__tab:not(.is-active):hover {
+  background: #F2F5F8;
+}
+
+.campaigns__tab.is-active {
+  background-color: #009FE6;
+  color: #FFF;
+}
+
+.campaigns__body {
+  border: 0.2rem solid #009FE6;
+  background: #F8F8F8;
+  padding: 1.8rem;
+}
+
+.campaigns__panels {
+  position: relative;
+}
+
+.campaigns__panel[hidden] {
+  display: none;
+}
+
+.campaigns__panel.is-active {
+  display: block;
+}
+
+.campaigns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.campaigns-list__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid #009FE6;
+}
+@media (max-width: 767px) {
+  .campaigns-list__item {
+    display: block;
+    padding: 2rem;
+  }
+}
+
+.campaigns-list__image {
+  width: 30rem;
+  aspect-ratio: 1/1;
+}
+.campaigns-list__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .campaigns-list__image {
+    width: 100%;
+  }
+}
+
+.campaigns-list__info {
+  width: calc(100% - 32rem);
+}
+@media (max-width: 767px) {
+  .campaigns-list__info {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+.campaigns-list__date {
+  font-size: 1.4rem;
+  line-height: 121.42857%;
+  color: #999999;
+  letter-spacing: 0.064em;
+  font-weight: 400;
+  font-family: "Cormorant SC", serif;
+}
+@media (max-width: 767px) {
+  .campaigns-list__date {
+    text-align: center;
+  }
+}
+
+.campaigns-list__category {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.campaigns-list__category li {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  background: #009FE6;
+}
+@media (max-width: 767px) {
+  .campaigns-list__category {
+    margin-top: 0.8rem;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.campaigns-list__title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #333;
+}
+@media (max-width: 767px) {
+  .campaigns-list__title {
+    margin-top: 0.8rem;
+  }
+}
+
+.campaigns-list__text {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #333;
+}
+
+.campaigns-list__treatment {
+  margin-top: 2rem;
+}
+.campaigns-list__treatment--title {
+  background: linear-gradient(90deg, #E9F1F7 0%, #F0F5F5 100%);
+  border-bottom: 0.1rem solid #009FE6;
+  font-size: 1.4rem;
+  line-height: 121.42857%;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  padding: 0.4rem;
+  width: 100%;
+}
+.campaigns-list__treatment--menu {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.15rem;
+}
+.campaigns-list__treatment--menu .btn {
+  width: 100%;
+  height: 3.6rem;
+  font-size: 1.6rem;
+  line-height: 120%;
+  font-family: "Noto Serif JP", serif;
+  padding-left: 1.7rem;
+}
+@media (max-width: 767px) {
+  .campaigns-list__treatment--menu {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=campaign.css.map */
