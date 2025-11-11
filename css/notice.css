@@ -47,7 +47,6 @@
   letter-spacing: 0.064rem;
   line-height: 1;
   height: 4rem;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -95,7 +94,6 @@
   border-radius: 0.4rem;
   padding: 0.1rem;
   overflow: hidden;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 .notice-list__category__list ul li a span {
@@ -283,4 +281,4 @@
 .wp-pagenavi .nextpostslink {
   background-image: url(../img/notice/icon_arrow.svg);
   margin-right: 1.2rem;
-}/*# sourceMappingURL=notice.css.map */
+}
