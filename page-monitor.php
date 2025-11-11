@@ -30,7 +30,7 @@
                 <div class="monitor__card--img">
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/monitor/icon01.png" alt="" width="101" height="101">
                 </div>
-                <p class="monitor__text">SNS・動画配信・TV・雑誌・WEBサイト・各種紙媒体等、当院の広告宣伝に使用および院内閲覧資料の全てに写真や映像の掲載が可能な方</p>
+                <p class="monitor__text">SNS・動画配信・TV・雑誌・WEBサイトなど全ての媒体及び院の広告や院内資料に写真・映像の掲載が可能な方</p>
               </div>
               <div class="monitor__card">
                 <div class="monitor__card--img">
