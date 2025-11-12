@@ -42,8 +42,8 @@
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid #0AA4E8;
-  background: linear-gradient(90deg, #E9F1F7 0%, #F0F5F5 100%);
+  border-bottom: 1px solid #0aa4e8;
+  background: linear-gradient(90deg, #e9f1f7 0%, #f0f5f5 100%);
 }
 
 .payment__item__text {
@@ -61,7 +61,7 @@
 }
 .payment__item__img img {
   width: 80rem;
-  height: 6.2rem;
+  height: auto;
 }
 @media (max-width: 767px) {
   .payment__item__img img {
@@ -78,7 +78,7 @@
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid #333;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 .payment__middle__inner .mt10 {
   margin-top: 1rem;
@@ -128,7 +128,7 @@
 }
 
 .payment__middle__text--red {
-  color: #E60012;
+  color: #e60012;
   font-family: "Noto Serif JP";
   font-size: 1.6rem;
   font-weight: 600;
@@ -170,7 +170,7 @@ summary::-webkit-details-marker {
   padding-block: 1.6rem;
   padding-inline: 2.4rem;
   border-radius: 1rem;
-  background: #F7F7F7;
+  background: #f7f7f7;
   cursor: pointer;
   gap: 2.4rem;
 }
@@ -183,7 +183,7 @@ summary::-webkit-details-marker {
 }
 
 .payment__bottom__summary__q {
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 600;
@@ -216,7 +216,7 @@ summary::-webkit-details-marker {
 }
 
 .payment__bottom__summary__a {
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 600;
@@ -224,7 +224,7 @@ summary::-webkit-details-marker {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
-  background: #009FE6;
+  background: #009fe6;
   flex-shrink: 0;
   padding-left: 1.2rem;
   padding-top: 0.9rem;

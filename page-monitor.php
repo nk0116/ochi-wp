@@ -1,6 +1,20 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?> -->
 
-<main>
+
+<?php
+/*
+Template Name: モニター募集
+*/
+?>
+<?php get_header(); ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/page.css?<?php echo date_i18n("YmdHis"); ?>" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/clinic/css/monitor.css?<?php echo date_i18n("YmdHis"); ?>" type="text/css" />
+<?php wp_head(); ?>
+</head>
+<body>
+<?php get_header(2); ?>
+
+<main class="page-monitor">
         <div class="fv-low">
           <div class="fv-low__inner">
             <picture>
