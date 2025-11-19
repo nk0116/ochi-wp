@@ -49,7 +49,7 @@
                   'orderby' => 'date',
                   'order' => 'DESC',
                 );
-                
+
                 // カテゴリで絞り込む場合（カテゴリアーカイブページまたはクエリパラメータの場合）
                 if (is_category()) {
                   $current_category = get_queried_object();

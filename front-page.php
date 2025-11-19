@@ -1064,8 +1064,10 @@
             <div class="notice__content">
               <?php
               $args = array(
-                'post_type'      => 'post',
+                'post_type'      => 'notice',
                 'posts_per_page' => 3,
+                'orderby'        => 'date',
+                'order'          => 'DESC',
               );
               $notice_query = new WP_Query($args);
 
@@ -1075,9 +1077,13 @@
               <div class="notice__item">
                 <div class="notice__image">
                   <?php if (has_post_thumbnail()): ?>
-                    <?php the_post_thumbnail('medium'); ?>
+                    <a href="<?php the_permalink(); ?>">
+                      <?php the_post_thumbnail('notice-thumb', array('alt' => get_the_title())); ?>
+                    </a>
                   <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/noimage.jpg" alt="no image">
+                    <a href="<?php the_permalink(); ?>">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/notice/notice01.jpg" alt="<?php echo esc_attr(get_the_title()); ?>">
+                    </a>
                   <?php endif; ?>
                 </div>
 
@@ -1085,14 +1091,18 @@
                   <div class="notice__meta">
                     <p class="notice__date"><?php echo get_the_date('Y/m/d'); ?></p>
                     <?php
-                    $cat = get_the_category();
-                    $cat_name = $cat ? $cat[0]->name : '';
-                    if ($cat_name && $cat_name !== 'Uncategorized' && $cat_name !== '未分類') :
+                    $categories = get_the_category();
+                    if ($categories && !is_wp_error($categories)) {
+                      $category = $categories[0];
+                      if ($category->name !== 'Uncategorized' && $category->name !== '未分類') :
                     ?>
                       <p class="notice__category">
-                        <?php echo $cat_name; ?>
+                        <?php echo esc_html($category->name); ?>
                       </p>
-                    <?php endif; ?>
+                    <?php
+                      endif;
+                    }
+                    ?>
                   </div>
 
                   <p class="notice__text">
@@ -1394,7 +1404,6 @@
                 </div>
               </div>
 
-         
             </div>
           </div>
         </section>

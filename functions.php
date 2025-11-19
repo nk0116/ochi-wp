@@ -343,7 +343,7 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
         ));
     }
     add_action('init', 'create_post_type_notice');
-    
+
     function add_notice_categories() {
         register_taxonomy_for_object_type('category', 'notice');
     }
