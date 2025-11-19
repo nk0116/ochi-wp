@@ -562,6 +562,7 @@ $breakpoints: (
 
 .doctor__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 3.45rem;
@@ -574,12 +575,13 @@ $breakpoints: (
 .doctor__title {
   @include mq("pc") {
     padding-bottom: 0;
-    text-align: left;
+    // text-align: left;
+    text-align: center;
   }
 
   &::after {
     @include mq("pc") {
-      display: none;
+      // display: none;
     }
   }
 }
@@ -613,9 +615,9 @@ $breakpoints: (
   }
 }
 
-.doctor__image {
-  max-width: 56rem;
-}
+// .doctor__image {
+//   max-width: 56rem;
+// }
 
 .sns {
   padding-top: 8rem;

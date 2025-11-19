@@ -87,8 +87,8 @@ function my_theme_enqueue_scripts() {
         );
     }
 
-    // カスタム投稿タイプ doctor のアーカイブ/シングルで staff.css を適用
-    if (is_post_type_archive('doctor') || (is_singular('doctor'))) {
+    // カスタム投稿タイプ doctor のアーカイブ/シングル、またはフロントページで staff.css を適用
+    if (is_post_type_archive('doctor') || (is_singular('doctor')) || is_front_page()) {
         wp_enqueue_style(
             'staff-css',
             get_template_directory_uri() . '/css/staff.css',

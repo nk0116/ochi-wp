@@ -738,15 +738,178 @@
                   シンシアでは、資格を持たないカウンセラーによるカウンセリングは行っておりません。<br />
                   カウンセリングからアフターフォローまで担当の医師が責任を持って対応しています。
                 </p>
-
-                <a href="https://cosmedical.jp/clinic/doctor/" class="btn doctor__btn">
-                  VIEW MORE
-                </a>
               </div>
-
-              <div class="doctor__image">
+              
+              <!-- <div class="doctor__image">
                 <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/doctor.jpg" alt="" />
+              </div> -->
+              <div class="doctor__list">
+                <div class="doctor-list__content">
+                  <!-- 又吉 秀樹 -->
+                  <div class="doctor-list__card">
+                    <div class="doctor-list__card__img">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/doctor-matayoshi.png" alt="又吉 秀樹" width="328" height="188">
+                    </div>
+                    <div class="doctor-list__card__info">
+                      <div class="doctor-list__card__info--place">
+                        <p>銀座院</p>
+                      </div>
+                      <p class="doctor-list__card__info--post">総院長　銀座院院長</p>
+                      <p class="doctor-list__card__info--name">又吉 秀樹</p>
+                      <div class="doctor-list__card__info--roman">Hideki Matayoshi</div>
+                      <div class="doctor-list__card__info--sns">
+                        <a href="https://www.instagram.com/dr.matayoshi/" target="_blank" class="doctor-list__card__info--link doctor-instagram">
+                          <p>Instagram</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="" width="26" height="26">
+                        </a>
+                        <a href="https://twitter.com/MatayoshiHideki" target="_blank" class="doctor-list__card__info--link doctor-x">
+                          <p>X</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="" width="18" height="18">
+                        </a>
+                        <a href="https://www.youtube.com/@CYNTHIA_Dr.Matayoshi" target="_blank" class="doctor-list__card__info--link doctor-youtube">
+                          <p>YouTube</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-youtube.png" alt="" width="28" height="20">
+                        </a>
+                        <a href="https://cosmedical.jp/drcynthia/" target="_blank" class="doctor-list__card__info--link doctor-blog">
+                          <p>ブログ</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 村住 昌彦 -->
+                  <div class="doctor-list__card">
+                    <div class="doctor-list__card__img">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/doctor-murazumi.png" alt="村住 昌彦" width="328" height="188">
+                    </div>
+                    <div class="doctor-list__card__info">
+                      <div class="doctor-list__card__info--place">
+                        <p>渋谷院</p>
+                      </div>
+                      <p class="doctor-list__card__info--post">渋谷院 院長</p>
+                      <p class="doctor-list__card__info--name">村住 昌彦</p>
+                      <div class="doctor-list__card__info--roman">Murazumi</div>
+                      <div class="doctor-list__card__info--sns">
+                        <a href="https://www.instagram.com/mz_cynthia.sby/" target="_blank" class="doctor-list__card__info--link doctor-instagram">
+                          <p>Instagram</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="" width="26" height="26">
+                        </a>
+                        <a href="https://ameblo.jp/cynthia-dr-murazumi/" target="_blank" class="doctor-list__card__info--link doctor-blog">
+                          <p>ブログ</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 野口 道男 -->
+                  <div class="doctor-list__card">
+                    <div class="doctor-list__card__img">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/doctor-noguchi.png" alt="野口 道男" width="328" height="188">
+                    </div>
+                    <div class="doctor-list__card__info">
+                      <div class="doctor-list__card__info--place">
+                        <p>銀座院</p>
+                        <p>渋谷院</p>
+                      </div>
+                      <p class="doctor-list__card__info--post">医師</p>
+                      <p class="doctor-list__card__info--name">野口 道男</p>
+                      <div class="doctor-list__card__info--roman">Noguchi</div>
+                      <div class="doctor-list__card__info--sns">
+                        <a href="https://www.instagram.com/noguchi_michio/" target="_blank" class="doctor-list__card__info--link doctor-instagram">
+                          <p>Instagram</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="" width="26" height="26">
+                        </a>
+                        <a href="https://ameblo.jp/cynthia-dr-noguchi" target="_blank" class="doctor-list__card__info--link doctor-blog">
+                          <p>ブログ</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 村松 正法 -->
+                  <div class="doctor-list__card">
+                    <div class="doctor-list__card__img">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/doctor-muramatsu.png" alt="村松 正法" width="328" height="188">
+                    </div>
+                    <div class="doctor-list__card__info">
+                      <div class="doctor-list__card__info--place">
+                        <p>銀座院</p>
+                        <p>渋谷院</p>
+                      </div>
+                      <p class="doctor-list__card__info--post">医師</p>
+                      <p class="doctor-list__card__info--name">村松 正法</p>
+                      <div class="doctor-list__card__info--roman">Muramatsu</div>
+                      <div class="doctor-list__card__info--sns">
+                        <a href="https://www.instagram.com/dr.masanori31/" target="_blank" class="doctor-list__card__info--link doctor-instagram">
+                          <p>Instagram</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="" width="26" height="26">
+                        </a>
+                        <a href="https://www.youtube.com/@CYNTHIA_Dr.Muramatsu" target="_blank" class="doctor-list__card__info--link doctor-youtube">
+                          <p>YouTube</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-youtube.png" alt="" width="28" height="20">
+                        </a>
+                        <a href="https://ameblo.jp/cynthia-dr-muramatu" target="_blank" class="doctor-list__card__info--link doctor-blog">
+                          <p>ブログ</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 梁 淑姫 -->
+                  <div class="doctor-list__card">
+                    <div class="doctor-list__card__img">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/doctor-ryo.png" alt="梁 淑姫" width="328" height="188">
+                    </div>
+                    <div class="doctor-list__card__info">
+                      <div class="doctor-list__card__info--place">
+                        <p>銀座院</p>
+                        <p>渋谷院</p>
+                      </div>
+                      <p class="doctor-list__card__info--post">医師</p>
+                      <p class="doctor-list__card__info--name">梁 淑姫</p>
+                      <div class="doctor-list__card__info--roman">Ryo</div>
+                      <div class="doctor-list__card__info--sns">
+                        <a href="https://www.instagram.com/cynthia_dr.ryo/" target="_blank" class="doctor-list__card__info--link doctor-instagram">
+                          <p>Instagram</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="" width="26" height="26">
+                        </a>
+                        <a href="https://ameblo.jp/cynthia-dr-ryo/" target="_blank" class="doctor-list__card__info--link doctor-blog">
+                          <p>ブログ</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 吉武 彰子 -->
+                  <div class="doctor-list__card">
+                    <div class="doctor-list__card__img">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/doctor-yoshitake.png" alt="吉武 彰子" width="328" height="188">
+                    </div>
+                    <div class="doctor-list__card__info">
+                      <div class="doctor-list__card__info--place">
+                        <p>銀座院</p>
+                        <p>渋谷院</p>
+                      </div>
+                      <p class="doctor-list__card__info--post">医師</p>
+                      <p class="doctor-list__card__info--name">吉武 彰子</p>
+                      <div class="doctor-list__card__info--roman">Yoshitake</div>
+                      <div class="doctor-list__card__info--sns">
+                        <a href="https://www.instagram.com/dr.shoko_y/" target="_blank" class="doctor-list__card__info--link doctor-instagram">
+                          <p>Instagram</p>
+                          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="" width="26" height="26">
+                        </a>
+                        <a href="https://ameblo.jp/cynthia-dr-yoshitake/" target="_blank" class="doctor-list__card__info--link doctor-blog">
+                          <p>ブログ</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <a href="https://cosmedical.jp/clinic/doctor/" class="btn doctor__btn">
+                VIEW MORE
+              </a>
             </div>
           </div>
         </section>
