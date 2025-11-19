@@ -1084,12 +1084,15 @@
                 <div class="notice__info">
                   <div class="notice__meta">
                     <p class="notice__date"><?php echo get_the_date('Y/m/d'); ?></p>
-                    <p class="notice__category">
-                      <?php
-                      $cat = get_the_category();
-                      echo $cat ? $cat[0]->name : '未分類';
-                      ?>
-                    </p>
+                    <?php
+                    $cat = get_the_category();
+                    $cat_name = $cat ? $cat[0]->name : '';
+                    if ($cat_name && $cat_name !== 'Uncategorized' && $cat_name !== '未分類') :
+                    ?>
+                      <p class="notice__category">
+                        <?php echo $cat_name; ?>
+                      </p>
+                    <?php endif; ?>
                   </div>
 
                   <p class="notice__text">

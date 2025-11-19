@@ -565,7 +565,7 @@ $breakpoints: (
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 3.45rem;
+  // gap: 3.45rem;
 
   @include mq("sp") {
     flex-direction: column;
@@ -587,8 +587,11 @@ $breakpoints: (
 }
 
 .doctor__text {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
   @include mq("sp") {
-    order: 2;
+    gap: 3rem;
   }
 }
 
@@ -601,7 +604,7 @@ $breakpoints: (
   letter-spacing: 0.064rem;
 
   @include mq("sp") {
-    margin-top: 7.5rem;
+    margin-top: 3rem;
   }
 }
 

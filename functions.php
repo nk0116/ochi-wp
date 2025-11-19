@@ -87,7 +87,7 @@ function my_theme_enqueue_scripts() {
         );
     }
 
-    // カスタム投稿タイプ doctor のアーカイブ/シングル、またはフロントページで staff.css を適用
+    // カスタム投稿タイプ doctor（医師紹介）のアーカイブ/シングル、またはフロントページで staff.css を適用
     if (is_post_type_archive('doctor') || (is_singular('doctor')) || is_front_page()) {
         wp_enqueue_style(
             'staff-css',
@@ -322,8 +322,6 @@ function my_theme_enqueue_scripts() {
         );
     }
 
-
-    
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
 ?>

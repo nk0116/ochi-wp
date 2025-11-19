@@ -555,7 +555,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 3.45rem;
 }
 @media (max-width: 767px) {
   .doctor__content {
@@ -569,9 +568,14 @@
     text-align: center;
   }
 }
+.doctor__text {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
 @media (max-width: 767px) {
   .doctor__text {
-    order: 2;
+    gap: 3rem;
   }
 }
 
@@ -585,7 +589,7 @@
 }
 @media (max-width: 767px) {
   .doctor__description {
-    margin-top: 7.5rem;
+    margin-top: 3rem;
   }
 }
 
