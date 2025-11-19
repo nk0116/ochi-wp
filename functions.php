@@ -87,6 +87,8 @@ function my_theme_enqueue_scripts() {
         );
     }
 
+
+
     // カスタム投稿タイプ doctor（医師紹介）のアーカイブ/シングル、またはフロントページで staff.css を適用
     if (is_post_type_archive('doctor') || (is_singular('doctor')) || is_front_page()) {
         wp_enqueue_style(
@@ -175,7 +177,7 @@ function my_theme_enqueue_scripts() {
     }
 
     // archive-notice（お知らせアーカイブページ）に notice.css を適用
-    if (is_post_type_archive('information') || (is_singular('information'))) {
+    if (is_post_type_archive('notice') || (is_singular('notice'))) {
         wp_enqueue_style(
             'notice-css',
             get_template_directory_uri() . '/css/notice.css',
@@ -324,4 +326,28 @@ function my_theme_enqueue_scripts() {
 
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+
+    // カスタム投稿タイプ notice（お知らせ）
+    function create_post_type_notice() {
+        register_post_type('notice', array(
+            'labels' => array(
+                'name'          => 'お知らせ',
+                'singular_name' => 'お知らせ',
+            ),
+            'public'       => true,
+            'has_archive'  => true,
+            'rewrite'      => array('slug' => 'notice'),
+            'menu_position'=> 5,
+            'menu_icon'    => 'dashicons-megaphone',
+            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
+        ));
+    }
+    add_action('init', 'create_post_type_notice');
+    
+    function add_notice_categories() {
+        register_taxonomy_for_object_type('category', 'notice');
+    }
+    add_action('init', 'add_notice_categories');
+    
+
 ?>

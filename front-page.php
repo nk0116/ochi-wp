@@ -1107,7 +1107,7 @@
               ?>
             </div>
 
-            <!-- <a href="<?php echo esc_url(home_url('/notice/')); ?>" class="btn notice__btn">VIEW MORE</a> -->
+            <a href="<?php echo esc_url(home_url('/notice/')); ?>" class="btn notice__btn">VIEW MORE</a>
           </div>
         </section>
 
