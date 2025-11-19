@@ -60,6 +60,11 @@ body {
 
 .wrap {
   overflow: hidden;
+  padding-top: 14rem;
+
+  @include mq("sp") {
+    padding-top: 6.6rem;
+  }
 }
 
 img {
@@ -168,14 +173,12 @@ img {
 }
 
 .header {
-  @include mq("sp") {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #fff;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .header__top {
@@ -1589,11 +1592,10 @@ img {
   }
 }
 
-
 .header__clinic-name {
   font-size: 14px;
 
-  span{
+  span {
     display: none;
   }
 }

@@ -835,7 +835,7 @@
 
         
 
-        <section class="notice">
+        <!-- <section class="notice">
           <div class="notice__inner">
             <h2 class="title">Notice</h2>
 
@@ -892,8 +892,58 @@
 
             <a href="<?php echo esc_url( home_url('notice/') ); ?>" class="btn notice__btn"> VIEW MORE </a>
           </div>
-        </section>
+        </section> -->
 
+        <section class="notice">
+          <div class="notice__inner">
+            <h2 class="title">Notice</h2>
+
+            <div class="notice__content">
+              <?php
+              $args = array(
+                'post_type'      => 'post',
+                'posts_per_page' => 3,
+              );
+              $notice_query = new WP_Query($args);
+
+              if ($notice_query->have_posts()):
+                while ($notice_query->have_posts()): $notice_query->the_post();
+              ?>
+              <a href="<?php echo esc_url(get_permalink()); ?>" class="notice__item">
+                <div class="notice__image">
+                  <?php if (has_post_thumbnail()): ?>
+                    <?php the_post_thumbnail('medium'); ?>
+                  <?php else: ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/noimage.jpg" alt="no image">
+                  <?php endif; ?>
+                </div>
+
+                <div class="notice__info">
+                  <div class="notice__meta">
+                    <p class="notice__date"><?php echo get_the_date('Y/m/d'); ?></p>
+                    <p class="notice__category">
+                      <?php
+                      $cat = get_the_category();
+                      echo $cat ? $cat[0]->name : '未分類';
+                      ?>
+                    </p>
+                  </div>
+
+                  <p class="notice__text">
+                    <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                  </p>
+                </div>
+              </a>
+              <?php
+                endwhile;
+              endif;
+              wp_reset_postdata();
+              ?>
+            </div>
+
+            <a href="<?php echo esc_url(home_url('/notice/')); ?>" class="btn notice__btn">VIEW MORE</a>
+          </div>
+        </section>
 
 
 
@@ -964,7 +1014,7 @@
             </a>
           </div>
         </section> -->
-        
+       
 
         <section class="access">
           <div class="inner">

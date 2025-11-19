@@ -1,4 +1,15 @@
 <?php
+
+// テーマの基本機能を有効化
+function my_theme_setup() {
+    // アイキャッチ画像（投稿サムネイル）を有効化
+    add_theme_support('post-thumbnails');
+
+    // 必要ならサイズ指定（任意）
+    add_image_size('notice-thumb', 400, 260, true);
+}
+
+add_action('after_setup_theme', 'my_theme_setup');
 // CSS・JSファイルを読み込む
 function my_theme_enqueue_scripts() {
     // Google Fonts
@@ -63,6 +74,7 @@ function my_theme_enqueue_scripts() {
         filemtime(get_template_directory() . '/js/main.js'),
         true
     );
+    
 
 
     // access-ginza 固定ページに access.css を適用
