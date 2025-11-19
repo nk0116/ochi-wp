@@ -909,7 +909,7 @@
               if ($notice_query->have_posts()):
                 while ($notice_query->have_posts()): $notice_query->the_post();
               ?>
-              <a href="<?php echo esc_url(get_permalink()); ?>" class="notice__item">
+              <div class="notice__item">
                 <div class="notice__image">
                   <?php if (has_post_thumbnail()): ?>
                     <?php the_post_thumbnail('medium'); ?>
@@ -933,7 +933,7 @@
                     <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
                   </p>
                 </div>
-              </a>
+              </div>
               <?php
                 endwhile;
               endif;
