@@ -833,7 +833,7 @@
           </div>
         </section>
 
-        <!--
+        
 
         <section class="notice">
           <div class="notice__inner">
@@ -897,7 +897,7 @@
 
 
 
-        <section class="column">
+        <!-- <section class="column">
           <div class="column__inner">
             <h2 class="title">Column</h2>
 
@@ -963,8 +963,8 @@
               VIEW MORE
             </a>
           </div>
-        </section>
-        -->
+        </section> -->
+        
 
         <section class="access">
           <div class="inner">
