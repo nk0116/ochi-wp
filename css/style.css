@@ -1745,7 +1745,7 @@
   color: #333;
   text-align: center;
   flex: 1;
-  padding: 0.8rem 1.6rem 0.8rem 4.6rem;
+  padding: 0.8rem 5.2rem 0.8rem 1.6rem;
 }
 @media (max-width: 767px) {
   .clinicsns__sns-text {
