@@ -67,29 +67,62 @@
                       </p>
                       <div class="campaigns-list__info">
                         <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
-                        <?php if (!empty($category_names)): ?>
+                        <?php
+                          // すべてのカテゴリを取得（通常のカテゴリー）
+                          $all_categories = get_the_terms(get_the_ID(), 'category');
+                          // カスタムタクソノミー 'pickup-menu__category' も取得
+                          $pickup_categories = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          $category_list = array();
+
+                          if ($all_categories && !is_wp_error($all_categories)) {
+                            foreach ($all_categories as $cat) {
+                              $category_list[$cat->term_id] = esc_html($cat->name);
+                            }
+                          }
+                          if ($pickup_categories && !is_wp_error($pickup_categories)) {
+                            foreach ($pickup_categories as $cat) {
+                              $category_list[$cat->term_id . '_pickup'] = esc_html($cat->name);
+                            }
+                          }
+                        ?>
+                        <?php if (!empty($category_list)): ?>
                         <ul class="campaigns-list__category">
-                            <?php foreach ($category_names as $c_name): ?>
+                            <?php foreach ($category_list as $c_name): ?>
                                 <li><?php echo $c_name; ?></li>
                             <?php endforeach; ?>
                         </ul>
                         <?php endif; ?>
                         <!-- <p class="campaigns-list__title"><?php echo esc_html($title); ?></p> -->
 
-                        <ul class="campaigns-list__treatment--menu">
-                        <?php
-                              $menu_link = get_field('リンク');
-                              if ( !empty($menu_link) ) :
-                            ?>
-                              <li><a href="<?php echo esc_url($menu_link); ?>" class="btn">詳細メニュー</a></li>
-                            <?php endif; ?>
-                          </ul>
                         <div class="campaigns-list__text">
 
                         </div>
+                       <?php
+                        // それぞれのグループフィールドを取得
+                        $links = array(
+                          get_field('リンク01'),
+                          get_field('リンク02'),
+                          get_field('リンク03'),
+                        );
+
+                        // 有効なリンク（全てのフィールドが空でないもの）を抽出
+                        $valid_links = array();
+                        foreach($links as $link) {
+                          if (!empty($link) && !empty($link['リンク']) && !empty($link['施術名'])) {
+                            $valid_links[] = $link;
+                          }
+                        }
+                        ?>
+                        <?php if (!empty($valid_links)) : ?>
                         <div class="campaigns-list__treatment">
-                          <!-- 施術詳細やカスタムフィールドがあればここに出力 -->
+                          <p class="campaigns-list__treatment--title">施術詳細</p>
+                          <ul class="campaigns-list__treatment--menu">
+                            <?php foreach ($valid_links as $link): ?>
+                              <li><a href="<?php echo esc_url($link['リンク']); ?>" class="btn"><?php echo esc_html($link['施術名']); ?></a></li>
+                            <?php endforeach; ?>
+                          </ul>
                         </div>
+                        <?php endif; ?>
                       </div>
                     </div>
                 <?php
@@ -162,23 +195,67 @@
                         <?php if ($image_url): ?>
                           <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
                         <?php else: ?>
-                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Campaign">
+                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="<?php echo esc_attr($title); ?>">
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
                         <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
+                        <?php
+                          // すべてのカテゴリを取得（通常のカテゴリー）
+                          $all_categories = get_the_terms(get_the_ID(), 'category');
+                          // カスタムタクソノミー 'pickup-menu__category' も取得
+                          $pickup_categories = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          $category_list = array();
+
+                          if ($all_categories && !is_wp_error($all_categories)) {
+                            foreach ($all_categories as $cat) {
+                              $category_list[$cat->term_id] = esc_html($cat->name);
+                            }
+                          }
+                          if ($pickup_categories && !is_wp_error($pickup_categories)) {
+                            foreach ($pickup_categories as $cat) {
+                              $category_list[$cat->term_id . '_pickup'] = esc_html($cat->name);
+                            }
+                          }
+                        ?>
+                        <?php if (!empty($category_list)): ?>
                         <ul class="campaigns-list__category">
-                          <li>モニター</li>
+                            <?php foreach ($category_list as $c_name): ?>
+                                <li><?php echo $c_name; ?></li>
+                            <?php endforeach; ?>
                         </ul>
-                        
-                        <ul class="campaigns-list__treatment--menu">
-                            <?php
-                              $menu_link = get_field('リンク');
-                              if ( !empty($menu_link) ) :
-                            ?>
-                              <li><a href="<?php echo esc_url($menu_link); ?>" class="btn">詳細メニュー</a></li>
-                            <?php endif; ?>
+                        <?php endif; ?>
+                        <!-- <p class="campaigns-list__title"><?php echo esc_html($title); ?></p> -->
+
+                        <div class="campaigns-list__text">
+
+                        </div>
+                       <?php
+                        // それぞれのグループフィールドを取得
+                        $links = array(
+                          get_field('リンク01'),
+                          get_field('リンク02'),
+                          get_field('リンク03'),
+                        );
+
+                        // 有効なリンク（全てのフィールドが空でないもの）を抽出
+                        $valid_links = array();
+                        foreach($links as $link) {
+                          if (!empty($link) && !empty($link['リンク']) && !empty($link['施術名'])) {
+                            $valid_links[] = $link;
+                          }
+                        }
+                        ?>
+                        <?php if (!empty($valid_links)) : ?>
+                        <div class="campaigns-list__treatment">
+                          <p class="campaigns-list__treatment--title">施術詳細</p>
+                          <ul class="campaigns-list__treatment--menu">
+                            <?php foreach ($valid_links as $link): ?>
+                              <li><a href="<?php echo esc_url($link['リンク']); ?>" class="btn"><?php echo esc_html($link['施術名']); ?></a></li>
+                            <?php endforeach; ?>
                           </ul>
+                        </div>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <?php
@@ -238,30 +315,72 @@
                           }
                         }
                     ?>
-                    <div class="campaigns-list__item">
+                  <div class="campaigns-list__item">
                       <p class="campaigns-list__image">
                         <?php if ($image_url): ?>
                           <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
                         <?php else: ?>
-                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Image">
+                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="<?php echo esc_attr($title); ?>">
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category">
-                          <?php if ($ginza_cat): ?>
-                            <li><?php echo esc_html($ginza_cat); ?></li>
-                          <?php endif; ?>
-                        </ul>
-                        <div class="campaigns-list__text">
-                        <ul class="campaigns-list__treatment--menu">
+                        <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
                         <?php
-                              $menu_link = get_field('リンク');
-                              if ( !empty($menu_link) ) :
-                            ?>
-                              <li><a href="<?php echo esc_url($menu_link); ?>" class="btn">詳細メニュー</a></li>
-                            <?php endif; ?>
+                          // すべてのカテゴリを取得（通常のカテゴリー）
+                          $all_categories = get_the_terms(get_the_ID(), 'category');
+                          // カスタムタクソノミー 'pickup-menu__category' も取得
+                          $pickup_categories = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          $category_list = array();
+
+                          if ($all_categories && !is_wp_error($all_categories)) {
+                            foreach ($all_categories as $cat) {
+                              $category_list[$cat->term_id] = esc_html($cat->name);
+                            }
+                          }
+                          if ($pickup_categories && !is_wp_error($pickup_categories)) {
+                            foreach ($pickup_categories as $cat) {
+                              $category_list[$cat->term_id . '_pickup'] = esc_html($cat->name);
+                            }
+                          }
+                        ?>
+                        <?php if (!empty($category_list)): ?>
+                        <ul class="campaigns-list__category">
+                            <?php foreach ($category_list as $c_name): ?>
+                                <li><?php echo $c_name; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <?php endif; ?>
+                        <!-- <p class="campaigns-list__title"><?php echo esc_html($title); ?></p> -->
+
+                        <div class="campaigns-list__text">
+
+                        </div>
+                       <?php
+                        // それぞれのグループフィールドを取得
+                        $links = array(
+                          get_field('リンク01'),
+                          get_field('リンク02'),
+                          get_field('リンク03'),
+                        );
+
+                        // 有効なリンク（全てのフィールドが空でないもの）を抽出
+                        $valid_links = array();
+                        foreach($links as $link) {
+                          if (!empty($link) && !empty($link['リンク']) && !empty($link['施術名'])) {
+                            $valid_links[] = $link;
+                          }
+                        }
+                        ?>
+                        <?php if (!empty($valid_links)) : ?>
+                        <div class="campaigns-list__treatment">
+                          <p class="campaigns-list__treatment--title">施術詳細</p>
+                          <ul class="campaigns-list__treatment--menu">
+                            <?php foreach ($valid_links as $link): ?>
+                              <li><a href="<?php echo esc_url($link['リンク']); ?>" class="btn"><?php echo esc_html($link['施術名']); ?></a></li>
+                            <?php endforeach; ?>
                           </ul>
                         </div>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <?php
@@ -323,31 +442,72 @@
                           }
                         }
                     ?>
-                    <div class="campaigns-list__item">
+                   <div class="campaigns-list__item">
                       <p class="campaigns-list__image">
                         <?php if ($image_url): ?>
                           <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
                         <?php else: ?>
-                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Image">
+                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="<?php echo esc_attr($title); ?>">
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
+                        <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
+                        <?php
+                          // すべてのカテゴリを取得（通常のカテゴリー）
+                          $all_categories = get_the_terms(get_the_ID(), 'category');
+                          // カスタムタクソノミー 'pickup-menu__category' も取得
+                          $pickup_categories = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          $category_list = array();
+
+                          if ($all_categories && !is_wp_error($all_categories)) {
+                            foreach ($all_categories as $cat) {
+                              $category_list[$cat->term_id] = esc_html($cat->name);
+                            }
+                          }
+                          if ($pickup_categories && !is_wp_error($pickup_categories)) {
+                            foreach ($pickup_categories as $cat) {
+                              $category_list[$cat->term_id . '_pickup'] = esc_html($cat->name);
+                            }
+                          }
+                        ?>
+                        <?php if (!empty($category_list)): ?>
                         <ul class="campaigns-list__category">
-                          <?php if ($shibuya_cat): ?>
-                            <li><?php echo esc_html($shibuya_cat); ?></li>
-                          <?php endif; ?>
+                            <?php foreach ($category_list as $c_name): ?>
+                                <li><?php echo $c_name; ?></li>
+                            <?php endforeach; ?>
                         </ul>
+                        <?php endif; ?>
+                        <!-- <p class="campaigns-list__title"><?php echo esc_html($title); ?></p> -->
 
                         <div class="campaigns-list__text">
-                        <ul class="campaigns-list__treatment--menu">
-                        <?php
-                              $menu_link = get_field('リンク');
-                              if ( !empty($menu_link) ) :
-                            ?>
-                              <li><a href="<?php echo esc_url($menu_link); ?>" class="btn">詳細メニュー</a></li>
-                            <?php endif; ?>
+
+                        </div>
+                       <?php
+                        // それぞれのグループフィールドを取得
+                        $links = array(
+                          get_field('リンク01'),
+                          get_field('リンク02'),
+                          get_field('リンク03'),
+                        );
+
+                        // 有効なリンク（全てのフィールドが空でないもの）を抽出
+                        $valid_links = array();
+                        foreach($links as $link) {
+                          if (!empty($link) && !empty($link['リンク']) && !empty($link['施術名'])) {
+                            $valid_links[] = $link;
+                          }
+                        }
+                        ?>
+                        <?php if (!empty($valid_links)) : ?>
+                        <div class="campaigns-list__treatment">
+                          <p class="campaigns-list__treatment--title">施術詳細</p>
+                          <ul class="campaigns-list__treatment--menu">
+                            <?php foreach ($valid_links as $link): ?>
+                              <li><a href="<?php echo esc_url($link['リンク']); ?>" class="btn"><?php echo esc_html($link['施術名']); ?></a></li>
+                            <?php endforeach; ?>
                           </ul>
                         </div>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <?php
@@ -415,30 +575,72 @@
                           }
                         }
                     ?>
-                    <div class="campaigns-list__item">
+                   <div class="campaigns-list__item">
                       <p class="campaigns-list__image">
                         <?php if ($image_url): ?>
                           <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>">
                         <?php else: ?>
-                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Image">
+                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="<?php echo esc_attr($title); ?>">
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category">
-                          <?php if ($show_category): ?>
-                            <li><?php echo esc_html($show_category); ?></li>
-                          <?php endif; ?>
-                        </ul>
-                        <div class="campaigns-list__text">
-                        <ul class="campaigns-list__treatment--menu">
+                        <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
                         <?php
-                              $menu_link = get_field('リンク');
-                              if ( !empty($menu_link) ) :
-                            ?>
-                              <li><a href="<?php echo esc_url($menu_link); ?>" class="btn">詳細メニュー</a></li>
-                            <?php endif; ?>
+                          // すべてのカテゴリを取得（通常のカテゴリー）
+                          $all_categories = get_the_terms(get_the_ID(), 'category');
+                          // カスタムタクソノミー 'pickup-menu__category' も取得
+                          $pickup_categories = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          $category_list = array();
+
+                          if ($all_categories && !is_wp_error($all_categories)) {
+                            foreach ($all_categories as $cat) {
+                              $category_list[$cat->term_id] = esc_html($cat->name);
+                            }
+                          }
+                          if ($pickup_categories && !is_wp_error($pickup_categories)) {
+                            foreach ($pickup_categories as $cat) {
+                              $category_list[$cat->term_id . '_pickup'] = esc_html($cat->name);
+                            }
+                          }
+                        ?>
+                        <?php if (!empty($category_list)): ?>
+                        <ul class="campaigns-list__category">
+                            <?php foreach ($category_list as $c_name): ?>
+                                <li><?php echo $c_name; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <?php endif; ?>
+                        <!-- <p class="campaigns-list__title"><?php echo esc_html($title); ?></p> -->
+
+                        <div class="campaigns-list__text">
+
+                        </div>
+                       <?php
+                        // それぞれのグループフィールドを取得
+                        $links = array(
+                          get_field('リンク01'),
+                          get_field('リンク02'),
+                          get_field('リンク03'),
+                        );
+
+                        // 有効なリンク（全てのフィールドが空でないもの）を抽出
+                        $valid_links = array();
+                        foreach($links as $link) {
+                          if (!empty($link) && !empty($link['リンク']) && !empty($link['施術名'])) {
+                            $valid_links[] = $link;
+                          }
+                        }
+                        ?>
+                        <?php if (!empty($valid_links)) : ?>
+                        <div class="campaigns-list__treatment">
+                          <p class="campaigns-list__treatment--title">施術詳細</p>
+                          <ul class="campaigns-list__treatment--menu">
+                            <?php foreach ($valid_links as $link): ?>
+                              <li><a href="<?php echo esc_url($link['リンク']); ?>" class="btn"><?php echo esc_html($link['施術名']); ?></a></li>
+                            <?php endforeach; ?>
                           </ul>
                         </div>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <?php

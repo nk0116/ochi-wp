@@ -114,7 +114,7 @@
               </div>
             </div>
 
-            <a href="<?php echo esc_url( home_url('point-card-detail') ); ?>" class="btn point-card__btn">詳細はこちら</a>
+            <a href="<?php echo esc_url( home_url('about') ); ?>" class="btn point-card__btn">詳細はこちら</a>
           </div>
         </section>
       </main>

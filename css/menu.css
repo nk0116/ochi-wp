@@ -116,10 +116,11 @@
   line-height: 170%;
   color: #333333;
   letter-spacing: 0.16em;
+  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
   .menu-list__content li a:hover {
     opacity: 0.6;
   }
-}
+}/*# sourceMappingURL=menu.css.map */

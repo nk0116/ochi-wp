@@ -565,6 +565,7 @@
   overflow: hidden;
   display: inline-block;
   background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
+  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -641,6 +642,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -817,6 +819,7 @@
   margin-top: 1.6rem;
 }
 .doctor-profile__left__sns a {
+  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -890,4 +893,4 @@
   line-height: 200%;
   color: #333;
   font-weight: 400;
-}
+}/*# sourceMappingURL=column.css.map */

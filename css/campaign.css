@@ -194,12 +194,13 @@
 }
 .campaigns-list__treatment--menu {
   margin-top: 2rem;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.15rem;
 }
 .campaigns-list__treatment--menu .btn {
   width: 100%;
+  padding-right: 6.4rem;
   height: 3.6rem;
   font-size: 1.6rem;
   line-height: 120%;
@@ -215,4 +216,4 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
+}/*# sourceMappingURL=campaign.css.map */

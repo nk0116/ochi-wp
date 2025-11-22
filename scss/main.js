@@ -30,9 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 2.1,
     spaceBetween: 0,
     centeredSlides: true,
-    speed: 2000,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false,
     },
 
@@ -41,6 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 1.268,
         spaceBetween: 20,
       },
+    },
+
+    pagination: {
+      el: ".fv__pagination",
+      clickable: true,
     },
   });
 })();
@@ -55,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 4.38,
       spaceBetween: 40,
       centeredSlides: true,
-	  speed: 2000,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -89,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 4.38,
       spaceBetween: 40,
       centeredSlides: true,
-	  speed: 2000,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,

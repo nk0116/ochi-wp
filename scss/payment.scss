@@ -1,26 +1,29 @@
-$serif: "Noto Serif JP", serif;
-$co: "Cormorant SC", serif;
 
-$main-color: #072334;
-$sub-color: #000;
+$serif:"Noto Serif JP", serif;
+$co:"Cormorant SC", serif;
+
+$main-color:#072334;
+$sub-color:#000;
+
 
 //マップ型変数breakpointsを定義
 $breakpoints: (
-  //キー値
-  "sp": "(max-width: 767px)",
-  //767px以下（スマホ）用の表示
-  //   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
-  "pc": "(min-width: 768px)" //768px以上（タブレット・PC）用の表示
+//キー値
+  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
+//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
+
 );
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
 @mixin mq($breakpoint: sp) {
-  //map-get(マップ型変数, キー)で値を取得
+//map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
     @content;
   }
 }
+
 
 .payment__fv-low__titles--text {
   white-space: nowrap;
@@ -60,8 +63,8 @@ $breakpoints: (
 
   padding-top: 1rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid #0aa4e8;
-  background: linear-gradient(90deg, #e9f1f7 0%, #f0f5f5 100%);
+  border-bottom: 1px solid #0AA4E8;
+  background: linear-gradient(90deg, #E9F1F7 0%, #F0F5F5 100%);
 }
 .payment__item__text {
   color: #333;
@@ -76,13 +79,15 @@ $breakpoints: (
   margin-inline: auto;
   img {
     width: 80rem;
-    height: auto;
+    height: 6.2rem;
     @include mq(sp) {
       width: 35rem;
       height: auto;
     }
   }
 }
+
+
 
 .payment__middle {
   margin-top: 2rem;
@@ -92,7 +97,7 @@ $breakpoints: (
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid #333;
-  background: #fafafa;
+  background: #FAFAFA;
 
   .mt10 {
     margin-top: 1rem;
@@ -102,7 +107,7 @@ $breakpoints: (
   }
   .mt30 {
     margin-top: 3rem;
-  }
+  } 
 }
 
 .payment__middle__text--check {
@@ -149,12 +154,16 @@ $breakpoints: (
 }
 
 .payment__middle__text--red {
-  color: #e60012;
+  color: #E60012;
   font-family: "Noto Serif JP";
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 150%;
 }
+
+
+
+
 
 .payment__bottom {
   margin-top: 4rem;
@@ -188,7 +197,7 @@ summary::-webkit-details-marker {
   padding-block: 1.6rem;
   padding-inline: 2.4rem;
   border-radius: 1rem;
-  background: #f7f7f7;
+  background: #F7F7F7;
   cursor: pointer;
   gap: 2.4rem;
 }
@@ -199,7 +208,7 @@ summary::-webkit-details-marker {
   gap: 2.4rem;
 }
 .payment__bottom__summary__q {
-  color: #fff;
+  color: #FFF;
   font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 600;
@@ -231,7 +240,7 @@ summary::-webkit-details-marker {
   padding-right: 2.4rem;
 }
 .payment__bottom__summary__a {
-  color: #fff;
+  color: #FFF;
   font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 600;
@@ -240,7 +249,7 @@ summary::-webkit-details-marker {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
-  background: #009fe6;
+  background: #009FE6;
   flex-shrink: 0;
   padding-left: 1.2rem;
   padding-top: 0.9rem;
@@ -263,6 +272,7 @@ summary::-webkit-details-marker {
   }
 }
 
+
 .payment__bottom__summary--icon {
   flex-shrink: 0;
   display: inline-block;
@@ -274,7 +284,7 @@ summary::-webkit-details-marker {
   background: currentColor;
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -283,7 +293,7 @@ summary::-webkit-details-marker {
     background: inherit;
     border-radius: inherit;
     transform: rotate(90deg);
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
 }
 .payment__bottom__summary.is-active {

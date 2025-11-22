@@ -106,12 +106,12 @@
         <div class="footer-links">
           <div class="footer-links__item">
             <a
-              href="https://cosmedical.jp/clinic/monitor/">モニター募集</a
+              href="https://cosmedical.jp/monitor/">モニター募集</a
             >
           </div>
           <div class="footer-links__item">
             <a
-              href="https://cosmedical.jp/clinic/point-card/"
+              href="https://cosmedical.jp/point-card/"
               >ポイントカード</a
             >
           </div>
