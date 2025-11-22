@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Ploblem tabs
 (function () {
-  var root = document.querySelector(".ploblem");
+  var root = document.querySelector(".ploblem__content-1");
   if (!root) return;
   var tabs = root.querySelectorAll(".ploblem__tab");
   var panels = root.querySelectorAll(".ploblem__panel");
@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 })();
+
 
 // Case Swiper (guard)
 (function () {

@@ -307,6 +307,15 @@ $breakpoints: (
       opacity: 1;
     }
   }
+
+  @include mq("sp") {
+    .recommend__text {
+      opacity: 0;
+    }
+    .recommend__text--hover {
+      opacity: 1;
+    }
+  }
 }
 
 .recommend__text {
@@ -314,7 +323,7 @@ $breakpoints: (
   width: 39rem;
   height: 4rem;
   color: #333;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -353,6 +362,9 @@ $breakpoints: (
   background: rgba(255, 255, 255, 0.8);
   padding: 2.5rem 0 2.5rem 0;
   transition: opacity 0.5s ease-in-out;
+  @include mq(sp) {
+    width: 90%;
+  }
   p:nth-of-type(1) {
     font-size: 1.8rem;
     font-weight: 700;
@@ -363,14 +375,29 @@ $breakpoints: (
       font-weight: 700;
       line-height: normal;
     }
+    @include mq("sp") {
+      font-size: 1.6rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
   }
   p:nth-of-type(2) {
     max-width: 280px;
     margin-inline: auto;
     font-size: 1.2rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.4rem;
     margin-top: 1.2rem;
+
+    @include mq("sp") {
+      font-size: 1.2rem;
+      max-width: 30rem;
+      margin: 0.8rem auto 0 auto;
+
+      text-align: center;
+      line-height: 1.4rem;
+    }
   }
 }
 
@@ -397,12 +424,23 @@ $breakpoints: (
   }
 }
 
+.ploblem__content-title {
+  margin-top: 9rem;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 0.04;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #009fe6;
+  color: #009fe6;
+}
+
 .ploblem__tabs {
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
   width: 100%;
-  margin-top: 9rem;
+  margin-top: 4rem;
 
   @include mq("sp") {
     display: grid;
@@ -426,6 +464,7 @@ $breakpoints: (
   transition: background 0.2s ease, color 0.2s ease;
   font-family: $serif;
   width: 100%;
+  gap: 0.8rem;
 
   @include mq("sp") {
     font-size: 1.6rem;
@@ -440,6 +479,29 @@ $breakpoints: (
 .ploblem__tab.is-active {
   background-color: #009fe6;
   color: #fff;
+}
+
+.ploblem__icon {
+  margin-left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  max-width: 40px;
+  flex: 1;
+}
+
+.ploblem__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ploblem__tab-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.12rem;
+  white-space: nowrap;
+  flex: 2;
 }
 
 .ploblem__body {
@@ -517,20 +579,159 @@ $breakpoints: (
   transform: rotate(-45deg);
 }
 
-.ploblem__icon {
-  margin-left: 1.7rem;
-  left: 1.6rem;
-  width: 5rem;
-  height: 5rem;
+.ploblem__label {
+  color: #444;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 170%; /* 2.72rem */
 }
 
-.ploblem__icon img {
+// Ploblem Section 2 (独立した2つ目のセクション)
+.ploblem__tabs-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 4rem;
+
+  @include mq("sp") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem 1rem;
+    margin-top: 9.4rem;
+  }
+}
+
+.ploblem__tab-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.9rem;
+  background: #dddddd;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: $serif;
+  width: 100%;
+  gap: 0.8rem;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    height: 5.9rem;
+  }
+}
+
+.ploblem__tab-2:not(.is-active):hover {
+  background: #f2f5f8;
+}
+
+.ploblem__tab-2.is-active {
+  background-color: #009fe6;
+  color: #fff;
+}
+
+.ploblem__icon-2 {
+  margin-left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  max-width: 40px;
+  flex: 1;
+}
+
+.ploblem__icon-2 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.ploblem__label {
+.ploblem__tab-title-2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.12rem;
+  white-space: nowrap;
+  flex: 2;
+}
+
+.ploblem__body-2 {
+  border-top: 0.2rem solid #009fe6;
+}
+
+.ploblem__panels-2 {
+  position: relative;
+}
+
+.ploblem__panel-2[hidden] {
+  display: none;
+}
+.ploblem__panel-2.is-active {
+  display: block;
+}
+
+.ploblem__list-2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 4rem;
+  border: 1px solid #009fe6;
+  border-top: none;
+
+  @include mq("sp") {
+    padding: 4.4rem 1.7rem;
+  }
+}
+
+.ploblem__list-2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 0.1rem;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@include mq("sp") {
+  .ploblem__list-2 {
+    grid-template-columns: 1fr;
+  }
+  .ploblem__list-2::before {
+    display: none;
+  }
+}
+
+.ploblem__item-2 {
+  position: relative;
+  display: flex;
+  gap: 1.53rem;
+  align-items: center;
+  max-width: 45rem;
+  height: 4.8rem;
+  color: #fff;
+  transition: background 0.2s ease;
+  border-bottom: 1px solid #afafaf;
+}
+
+.ploblem__item-2:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ploblem__item-2::after {
+  content: "";
+  position: absolute;
+  right: 1.6rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  transform: rotate(-45deg);
+}
+
+.ploblem__label-2 {
   color: #444;
   font-size: 1.6rem;
   font-weight: 400;
@@ -1385,4 +1586,250 @@ $breakpoints: (
   .treatments__grid {
     grid-template-columns: 1fr;
   }
+}
+
+// CLINIC SNS Section
+// ------------------------------------------------------------
+.clinicsns {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url(../img/top/sns-bg.jpg) no-repeat center center/cover;
+
+  @include mq("sp") {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.clinic-sns__title {
+  text-align: center;
+  margin-bottom: 0;
+
+  @include mq("sp") {
+    margin-bottom: 0;
+  }
+}
+
+.clinic-sns-title-small {
+  font-size: 5rem;
+  color: #009fe6;
+
+  @include mq("sp") {
+    font-size: 3.5rem;
+  }
+}
+
+.clinicsns__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  margin-top: 9rem;
+
+  @include mq("sp") {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+.clinicsns__item {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.6rem 0.8rem;
+}
+
+.clinicsns__header {
+  border: 1px solid #009fe6;
+  padding: 0.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.clinicsns__clinic-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #009fe6;
+  margin: 0;
+
+  @include mq("sp") {
+    font-size: 1.8rem;
+  }
+}
+
+.clinicsns__sns-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+
+  @include mq("sp") {
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+}
+
+.clinicsns__sns-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  // padding: 0.8rem 1.6rem;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+
+  @include mq("pc") {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.clinicsns__sns-link--instagram {
+  position: relative;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #f6c543 0%, #eb4c4e 50%, #6d1df4 100%) border-box;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+}
+
+.clinicsns__sns-link--x {
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+}
+
+.clinicsns__sns-link--facebook {
+  border: 2px solid #1877f2;
+  border-radius: 0.5rem;
+}
+
+.clinicsns__sns-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 2rem;
+
+  @include mq("sp") {
+    right: 1rem;
+  }
+
+  img {
+    width: 2.6rem;
+    height: 2.6rem;
+    object-fit: contain;
+
+    @include mq("sp") {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+
+.clinicsns__sns-text {
+  font-size: 1.6rem;
+  color: #333;
+  text-align: center;
+  flex: 1;
+  padding: 0.8rem 1.6rem 0.8rem 4.6rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem 0.8rem 3.2rem; // アイコンのスペースを調整（1rem + アイコン幅約2rem）
+  }
+}
+
+.clinicsns__blog {
+  margin-top: 2rem;
+}
+
+.clinicsns__blog-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #009fe6;
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.clinicsns__blog-icon {
+  font-size: 1.6rem;
+}
+
+.clinicsns__blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clinicsns__blog-item {
+  border-bottom: 1px solid #dadee2;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.clinicsns__blog-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  padding: 1.6rem 0;
+  text-decoration: none;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgba(0, 159, 230, 0.05);
+  }
+
+  @include mq("sp") {
+    gap: 1rem;
+    padding: 1.2rem 0;
+  }
+}
+
+.clinicsns__blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}
+
+.clinicsns__blog-date {
+  font-size: 1.3rem;
+  color: #999;
+  white-space: nowrap;
+  display: block;
+  height: 2.1rem;
+
+  @include mq("sp") {
+    font-size: 1.2rem;
+  }
+}
+
+.clinicsns__blog-text {
+  font-size: 1.6rem;
+  color: #333;
+  display: block;
+  line-height: 1.8;
+  letter-spacing: 0.04;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+  }
+}
+
+.clinicsns__blog-arrow {
+  margin: auto;
 }

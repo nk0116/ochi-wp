@@ -239,7 +239,7 @@
           </div>
         </section>
 
-        <section class="menu">
+        <!-- <section class="menu">
           <div class="inner">
             <h2 class="title">Pickup <br class="pc_n" />Menu</h2>
 
@@ -254,7 +254,7 @@
 
 
           </div>
-        </section>
+        </section> -->
 
         <section class="recommend">
           <div class="inner">
@@ -323,7 +323,7 @@
                   コンデンスリッチファット（CRF）豊胸
                 </p>
                 <div class="recommend__text--hover">
-                  <p>コンデンスリッチファット（CRF）豊胸</p>
+                  <p>コンデンスリッチファット<br class="pc_n" />（CRF）豊胸</p>
                   <p>
                     シリコンバッグなどの人工物を使用しないので安全<br />
                     で、見た目も触感も注入後の仕上がりが自然でバレ<br />
@@ -343,7 +343,7 @@
                   ベイザー®脂肪吸引×<br class="pc_n" />アキーセル脂肪吸引
                 </p>
                 <div class="recommend__text--hover">
-                  <p>ベイザー®脂肪吸引×アキーセル脂肪吸引</p>
+                  <p>ベイザー®脂肪吸引×<br class="pc_n" />アキーセル脂肪吸引</p>
                   <p>
                     超音波振動により、溶解した脂肪は、カニューレで<br />
                     優しく吸引除去することができるため、<br />
@@ -376,216 +376,262 @@
           </div>
         </section>
 
-        <!-- <section class="ploblem">
+        <section class="ploblem">
           <div class="inner">
             <h2 class="title">Problem <br class="pc_n" />Menu</h2>
 
-            <div
-              class="ploblem__tabs"
-              role="tablist"
-              aria-label="お悩みカテゴリ"
-            >
-              <button
-                class="ploblem__tab is-active"
-                role="tab"
-                aria-selected="true"
-                aria-controls="panel-face"
-                id="tab-face"
-                data-target="panel-face"
-              >
-                顔
-              </button>
-              <button
-                class="ploblem__tab"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel-contour"
-                id="tab-contour"
-                data-target="panel-contour"
-              >
-                輪郭
-              </button>
-              <button
-                class="ploblem__tab"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel-skin"
-                id="tab-skin"
-                data-target="panel-skin"
-              >
-                お肌
-              </button>
-              <button
-                class="ploblem__tab"
-                role="tab"
-                aria-selected="false"
-                aria-controls="panel-body"
-                id="tab-body"
-                data-target="panel-body"
-              >
-                身体
-              </button>
-            </div>
+            <div class="ploblem__contents">
+              <div class="ploblem__content">
+                <div class="ploblem__content-title">美容外科</div>
 
-            <div class="ploblem__body">
-              <div class="ploblem__panels">
-                <div
-                  class="ploblem__panel is-active"
-                  id="panel-face"
-                  role="tabpanel"
-                  aria-labelledby="tab-face"
-                >
-                  <div class="ploblem__list">
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
-                      <span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01.png" alt="目のアイコン"
-                      /></span>
-                      <span class="ploblem__label">二重の形・幅</span>
-                    </a>
-                    <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
-                      <span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02.png" alt="目のアイコン"
-                      /></span>
-                      <span class="ploblem__label">目の下のたるみ・クマ</span>
-                    </a>
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
-                      <span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon03.png" alt="唇のアイコン"
-                      /></span>
-                      <span class="ploblem__label">目の大きさ</span>
-                    </a>
+                <div class="ploblem__tabs" role="tablist" aria-label="お悩みカテゴリ" >
+                  <button class="ploblem__tab is-active" role="tab" aria-selected="true" aria-controls="panel-eye" id="tab-eye" data-target="panel-eye" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-eye.svg" alt="目のアイコン"/></span>
+                    <div class="ploblem__tab-title">目元・<br>ゴルゴ線</div>
+                  </button>
 
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
-                      <span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon04.png" alt="目のアイコン"
-                      /></span>
-                      <span class="ploblem__label">鼻の高さ・形</span>
-                    </a>
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
-                      <span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon05.png" alt="鼻のアイコン"
-                      /></span>
-                      <span class="ploblem__label">人中・唇の形</span>
-                    </a>
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
-                      <span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon06.png" alt="目のアイコン"
-                      /></span>
-                      <span class="ploblem__label">目の上のたるみ</span>
-                    </a>
-                  </div>
+                  <button class="ploblem__tab" role="tab" aria-selected="false" aria-controls="panel-body" id="tab-body" data-target="panel-body" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-body.svg" alt="体のアイコン"/></span>
+                    <div class="ploblem__tab-title">身体</div>
+                  </button>
+
+                  <button class="ploblem__tab" role="tab" aria-selected="false" aria-controls="panel-bust" id="tab-bust" data-target="panel-bust" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-bust.svg" alt="バストのアイコン"/></span>
+                    <div class="ploblem__tab-title">バスト</div>
+                  </button>
+
+                  <button class="ploblem__tab" role="tab" aria-selected="false" aria-controls="panel-nose" id="tab-nose" data-target="panel-nose" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-nose.svg" alt="鼻のアイコン"/></span>
+                    <div class="ploblem__tab-title">鼻</div>
+                  </button>
+
+                  <button class="ploblem__tab" role="tab" aria-selected="false" aria-controls="panel-mouth" id="tab-mouth" data-target="panel-mouth" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-mouth.svg" alt="口のアイコン"/></span>
+                    <div class="ploblem__tab-title">口</div>
+                  </button>
+
+                  <button class="ploblem__tab" role="tab" aria-selected="true" aria-controls="panel-face-line" id="tab-face-line" data-target="panel-face-line" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-face-line.svg" alt="輪郭のアイコン"/></span>
+                    <div class="ploblem__tab-title">輪郭</div>
+                  </button>
                 </div>
 
-                <div
-                  class="ploblem__panel"
-                  id="panel-contour"
-                  role="tabpanel"
-                  aria-labelledby="tab-contour"
-                  hidden
-                >
-                  <div class="ploblem__list">
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01-1.png" alt="" /></span
-                      ><span class="ploblem__label">頬のボリューム</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01-2.png" alt="" /></span
-                      ><span class="ploblem__label"
-                        >額のボリューム・ハリ</span
-                      ></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01-3.png" alt="" /></span
-                      ><span class="ploblem__label">アゴの大きさ・形</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01-4.png" alt="" /></span
-                      ><span class="ploblem__label">たるみ</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01-5.png" alt="" /></span
-                      ><span class="ploblem__label">小顔・顔痩せ</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon01-6.png" alt="" /></span
-                      ><span class="ploblem__label">Eライン</span></a
-                    >
-                  </div>
-                </div>
+                <div class="ploblem__body">
+                  <div class="ploblem__panels">
+                    <div class="ploblem__panel is-active" id="panel-eye" role="tabpanel" aria-labelledby="tab-eye" >
+                      <div class="ploblem__list">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">二重</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">目の下のくま（ヘルニア）</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">瞼のたるみ</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">眼瞼下垂</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">目頭切開</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">瞼の脂肪取り</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">ゴルゴ線剥離</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ploblem__panel" id="panel-body" role="tabpanel" aria-labelledby="tab-body" hidden >
+                      <div class="ploblem__list">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">脂肪吸引</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">ワキガ</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">婦人科形成</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ploblem__panel" id="panel-bust" role="tabpanel" aria-labelledby="tab-bust" hidden >
+                      <div class="ploblem__list">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">コンデンスリッチファット豊胸</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">陥没乳頭</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">乳頭縮小</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">他院バックインプラント除去</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ploblem__panel" id="panel-nose" role="tabpanel" aria-labelledby="tab-nose" hidden >
+                      <div class="ploblem__list">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">隆鼻術（プロテーゼ・ヒアルロン酸）</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">鼻尖形成</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">小鼻縮小</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ploblem__panel" id="panel-mouth" role="tabpanel" aria-labelledby="tab-mouth" hidden >
+                      <div class="ploblem__list">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">口唇縮小術</span>
+                        </a>
+                          <span class="ploblem__label"></span>
+                        </a>
+                      </div>
+                    </div>
 
-                <div
-                  class="ploblem__panel"
-                  id="panel-skin"
-                  role="tabpanel"
-                  aria-labelledby="tab-skin"
-                  hidden
-                >
-                  <div class="ploblem__list">
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02-1.png" alt="" /></span
-                      ><span class="ploblem__label"
-                        >シミ・肝斑・そばかす</span
-                      ></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02-2.png" alt="" /></span
-                      ><span class="ploblem__label">ニキビ・ニキビ跡</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02-3.png" alt="" /></span
-                      ><span class="ploblem__label">くすみ</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02-4.png" alt="" /></span
-                      ><span class="ploblem__label">乾燥肌</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02-5.png" alt="" /></span
-                      ><span class="ploblem__label">毛穴</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon02-6.png" alt="" /></span
-                      ><span class="ploblem__label">しわ・小じわ</span></a
-                    >
-                  </div>
-                </div>
-
-                <div
-                  class="ploblem__panel"
-                  id="panel-body"
-                  role="tabpanel"
-                  aria-labelledby="tab-body"
-                  hidden
-                >
-                  <div class="ploblem__list">
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon03-1.png" alt="" /></span
-                      ><span class="ploblem__label">肌の若返り</span></a
-                    >
-                    <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item"
-                      ><span class="ploblem__icon"
-                        ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon03-2.png" alt="" /></span
-                      ><span class="ploblem__label">疲労</span></a
-                    >
+                    <div class="ploblem__panel" id="panel-face-line" role="tabpanel" aria-labelledby="tab-face-line" hidden >
+                      <div class="ploblem__list">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">フェイスリフト<br class="pc_n" />（シグネチャー、トータルSMAS）</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">部分フェイスリフト<br class="pc_n" />（全額リフト・ミニリフト）</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">糸リフト</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                          <span class="ploblem__label">BNLS治療</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="ploblem__content-2">
+              <div class="ploblem__content-title">美容皮膚科</div>
+
+                <div class="ploblem__tabs" role="tablist" aria-label="お悩みカテゴリ" >
+                  <button class="ploblem__tab-2 is-active" role="tab" aria-selected="true" aria-controls="panel-skin" id="tab-skin" data-target="panel-skin" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-skin.svg" alt="お肌のアイコン"/></span>
+                    <div class="ploblem__tab-title">お肌</div>
+                  </button>
+
+                  <button class="ploblem__tab-2" role="tab" aria-selected="false" aria-controls="panel-laxity" id="tab-laxity" data-target="panel-laxity" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-laxity.svg" alt="たるみのアイコン"/></span>
+                    <div class="ploblem__tab-title">たるみ</div>
+                  </button>
+
+                  <button class="ploblem__tab-2" role="tab" aria-selected="false" aria-controls="panel-injection" id="tab-injection" data-target="panel-injection" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-injection.svg" alt="注入のアイコン"/></span>
+                    <div class="ploblem__tab-title">注入</div>
+                  </button>
+
+                  <button class="ploblem__tab-2" role="tab" aria-selected="false" aria-controls="panel-others" id="tab-others" data-target="panel-others" >
+                    <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-others.svg" alt="その他のアイコン"/></span>
+                    <div class="ploblem__tab-title">その他</div>
+                  </button>
+
+                </div>
+
+                <div class="ploblem__body-2">
+                  <div class="ploblem__panels-2">
+                    <div class="ploblem__panel-2 is-active" id="panel-skin" role="tabpanel" aria-labelledby="tab-skin" >
+                      <div class="ploblem__list-2">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">しみ・くすみ・そばかす</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">肝斑</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">にきび・にきび痕</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">毛穴</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">赤ら顔 (酒さ) ・毛細血管拡張</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">いぼ・ホクロ除去</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">毛孔性苔癬 (ダーマローラー)</span>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div class="ploblem__panel-2" id="panel-laxity" role="tabpanel" aria-labelledby="tab-laxity" hidden >
+                      <div class="ploblem__list-2">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">サーマクール</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">ウルセラ</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">医療HIFU</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">高周波</span>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div class="ploblem__panel-2" id="panel-injection" role="tabpanel" aria-labelledby="tab-injection" hidden >
+                      <div class="ploblem__list-2">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">ボトックス</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">ヒアルロン酸</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">肌育治療</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ploblem__panel-2" id="panel-others" role="tabpanel" aria-labelledby="tab-others" hidden >
+                      <div class="ploblem__list-2">
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">アートメイク</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">タトゥー除去</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">ED治療</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">毛髪再生治療</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">化粧品</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">内服</span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                          <span class="ploblem__label-2">点滴</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
-        </section> -->
+        </section>
 
         <!-- <section class="case">
           <div class="inner">
@@ -996,66 +1042,141 @@
           </div>
         </section>
 
-        
+        <section class="clinicsns">
+          <div class="inner">
+            <h2 class="title clinic-sns__title"><span class="clinic-sns-title-small">CLINIC</span> SNS</h2>
 
-        <!-- <section class="notice">
-          <div class="notice__inner">
-            <h2 class="title">Notice</h2>
-
-            <div class="notice__content">
-              <div class="notice__item">
-                <div class="notice__image">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/notice01.jpg" alt="" />
+            <div class="clinicsns__content">
+              <!-- 銀座院 -->
+              <div class="clinicsns__item">
+                <div class="clinicsns__header">
+                  <h3 class="clinicsns__clinic-name">銀座院</h3>
+                </div>
+                
+                <div class="clinicsns__sns-links">
+                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
+                    <span class="clinicsns__sns-text">Instagram</span>
+                    <span class="clinicsns__sns-icon">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="Instagram" width="26" height="26">
+                    </span>
+                  </a>
+                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
+                    <span class="clinicsns__sns-text">X</span>
+                    <span class="clinicsns__sns-icon">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="X" width="18" height="18">
+                    </span>
+                  </a>
+                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
+                    <span class="clinicsns__sns-text">Facebook</span>
+                    <span class="clinicsns__sns-icon">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-facebook.svg" alt="Facebook" width="26" height="26">
+                    </span>
+                  </a>
                 </div>
 
-                <div class="notice__info">
-                  <div class="notice__meta">
-                    <p class="notice__date">YYYY/MM/DD</p>
-                    <p class="notice__category">カテゴリ名</p>
-                  </div>
-
-                  <p class="notice__text">
-                    テキストが入りますテキストが入りますテキストが入ります
-                  </p>
+                <div class="clinicsns__blog">
+                  <a href="#" class="clinicsns__blog-title">
+                    <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
+                    銀座院 スタッフブログ
+                  </a>
+                  <ul class="clinicsns__blog-list">
+                    <li class="clinicsns__blog-item">
+                      <a href="#" class="clinicsns__blog-link">
+                        <div class="clinicsns__blog-content">
+                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
+                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                        </div>
+                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
+                      </a>
+                    </li>
+                    <li class="clinicsns__blog-item">
+                      <a href="#" class="clinicsns__blog-link">
+                        <div class="clinicsns__blog-content">
+                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
+                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                        </div>
+                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
+                      </a>
+                    </li>
+                    <li class="clinicsns__blog-item">
+                      <a href="#" class="clinicsns__blog-link">
+                        <div class="clinicsns__blog-content">
+                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
+                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                        </div>
+                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="notice__item">
-                <div class="notice__image">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/notice02.jpg" alt="" />
+
+              <!-- 渋谷院 -->
+              <div class="clinicsns__item">
+                <div class="clinicsns__header">
+                  <h3 class="clinicsns__clinic-name">渋谷院</h3>
+                </div>
+                
+                <div class="clinicsns__sns-links">
+                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
+                    <span class="clinicsns__sns-text">Instagram</span>
+                    <span class="clinicsns__sns-icon">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="Instagram" width="26" height="26">
+                    </span>
+                  </a>
+                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
+                    <span class="clinicsns__sns-text">X</span>
+                    <span class="clinicsns__sns-icon">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="X" width="18" height="18">
+                    </span>
+                  </a>
+                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
+                    <span class="clinicsns__sns-text">Facebook</span>
+                    <span class="clinicsns__sns-icon">
+                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-facebook.svg" alt="Facebook" width="26" height="26">
+                    </span>
+                  </a>
                 </div>
 
-                <div class="notice__info">
-                  <div class="notice__meta">
-                    <p class="notice__date">YYYY/MM/DD</p>
-                    <p class="notice__category">カテゴリ名</p>
-                  </div>
-
-                  <p class="notice__text">
-                    テキストが入りますテキストが入りますテキストが入ります
-                  </p>
-                </div>
-              </div>
-              <div class="notice__item">
-                <div class="notice__image">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/notice03.jpg" alt="" />
-                </div>
-
-                <div class="notice__info">
-                  <div class="notice__meta">
-                    <p class="notice__date">YYYY/MM/DD</p>
-                    <p class="notice__category">カテゴリ名</p>
-                  </div>
-
-                  <p class="notice__text">
-                    テキストが入りますテキストが入りますテキストが入ります
-                  </p>
+                <div class="clinicsns__blog">
+                  <a href="#" class="clinicsns__blog-title">
+                    <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
+                    渋谷院 スタッフブログ
+                  </a>
+                  <ul class="clinicsns__blog-list">
+                    <li class="clinicsns__blog-item">
+                      <a href="#" class="clinicsns__blog-link">
+                        <div class="clinicsns__blog-content">
+                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
+                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                        </div>
+                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
+                      </a>
+                    </li>
+                    <li class="clinicsns__blog-item">
+                      <a href="#" class="clinicsns__blog-link">
+                        <div class="clinicsns__blog-content">
+                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
+                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                        </div>
+                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
+                      </a>
+                    </li>
+                    <li class="clinicsns__blog-item">
+                      <a href="#" class="clinicsns__blog-link">
+                        <div class="clinicsns__blog-content">
+                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
+                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                        </div>
+                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-
-            <a href="<?php echo esc_url( home_url('notice/') ); ?>" class="btn notice__btn"> VIEW MORE </a>
           </div>
-        </section> -->
+        </section>
 
         <section class="notice">
           <div class="notice__inner">

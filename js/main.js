@@ -181,11 +181,71 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 
 // Ploblem tabs
+// (function () {
+//   var root = document.querySelector(".ploblem");
+//   if (!root) return;
+//   var tabs = root.querySelectorAll(".ploblem__tab");
+//   var panels = root.querySelectorAll(".ploblem__panel");
+
+//   function activate(targetId) {
+//     tabs.forEach(function (tab) {
+//       var isActive = tab.getAttribute("data-target") === targetId;
+//       tab.classList.toggle("is-active", isActive);
+//       tab.setAttribute("aria-selected", isActive ? "true" : "false");
+//     });
+//     panels.forEach(function (panel) {
+//       var show = panel.id === targetId;
+//       panel.classList.toggle("is-active", show);
+//       if (show) {
+//         panel.removeAttribute("hidden");
+//       } else {
+//         panel.setAttribute("hidden", "hidden");
+//       }
+//     });
+//   }
+
+//   tabs.forEach(function (tab) {
+//     tab.addEventListener("click", function () {
+//       activate(tab.getAttribute("data-target"));
+//     });
+//   });
+// })();
+
 (function () {
-  var root = document.querySelector(".ploblem");
+  var root = document.querySelector(".ploblem__content");
   if (!root) return;
   var tabs = root.querySelectorAll(".ploblem__tab");
   var panels = root.querySelectorAll(".ploblem__panel");
+
+  function activate(targetId) {
+    tabs.forEach(function (tab) {
+      var isActive = tab.getAttribute("data-target") === targetId;
+      tab.classList.toggle("is-active", isActive);
+      tab.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+    panels.forEach(function (panel) {
+      var show = panel.id === targetId;
+      panel.classList.toggle("is-active", show);
+      if (show) {
+        panel.removeAttribute("hidden");
+      } else {
+        panel.setAttribute("hidden", "hidden");
+      }
+    });
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      activate(tab.getAttribute("data-target"));
+    });
+  });
+})();
+
+(function () {
+  var root = document.querySelector(".ploblem__content-2");
+  if (!root) return;
+  var tabs = root.querySelectorAll(".ploblem__tab-2");
+  var panels = root.querySelectorAll(".ploblem__panel-2");
 
   function activate(targetId) {
     tabs.forEach(function (tab) {
