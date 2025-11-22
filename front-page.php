@@ -314,7 +314,7 @@
                     若返り度・クオリティ 共にNo.1！<br />シンシアオリジナルの本格リフトアップ治療です。
                   </p>
                 </div>
-              </a><a class="recommend__item" href="https://cosmedical.jp/clinic/menu/crf/">
+                </a><a class="recommend__item" href="https://cosmedical.jp/clinic/menu/crf/">
                 <img
                   src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/cards04.jpg"
                   alt="コンデンスリッチファット（CRF）豊胸のイメージ画像"

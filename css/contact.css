@@ -4,6 +4,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #333;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: inset 0 0 2rem 2rem #fff;
 }
@@ -349,7 +350,6 @@ textarea:-ms-input-placeholder {
   z-index: 2;
   content: "";
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .label-list label input[type=radio],
@@ -451,4 +451,4 @@ textarea:-ms-input-placeholder {
   line-height: 170%;
   font-weight: bold;
   margin-bottom: 2.4rem;
-}/*# sourceMappingURL=contact.css.map */
+}
