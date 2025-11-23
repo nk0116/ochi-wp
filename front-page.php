@@ -1079,33 +1079,41 @@
                     銀座院 スタッフブログ
                   </a>
                   <ul class="clinicsns__blog-list">
+                    <?php
+                    $ginza_args = array(
+                      'post_type' => 'ginza-blog',
+                      'posts_per_page' => 3,
+                      'orderby' => 'date',
+                      'order' => 'DESC',
+                    );
+                    $ginza_query = new WP_Query($ginza_args);
+                    if ($ginza_query->have_posts()) :
+                      while ($ginza_query->have_posts()) : $ginza_query->the_post();
+                    ?>
                     <li class="clinicsns__blog-item">
-                      <a href="#" class="clinicsns__blog-link">
+                      <a href="<?php the_permalink(); ?>" class="clinicsns__blog-link">
                         <div class="clinicsns__blog-content">
-                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
-                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                          <span class="clinicsns__blog-date"><?php echo get_the_date('Y/m/d'); ?></span>
+                          <span class="clinicsns__blog-text"><?php echo wp_trim_words(get_the_title(), 20); ?></span>
                         </div>
                         <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
                       </a>
                     </li>
+                    <?php
+                      endwhile;
+                      wp_reset_postdata();
+                    else :
+                    ?>
                     <li class="clinicsns__blog-item">
                       <a href="#" class="clinicsns__blog-link">
                         <div class="clinicsns__blog-content">
                           <span class="clinicsns__blog-date">YYYY/MM/DD</span>
-                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                          <span class="clinicsns__blog-text">記事がありません</span>
                         </div>
                         <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
                       </a>
                     </li>
-                    <li class="clinicsns__blog-item">
-                      <a href="#" class="clinicsns__blog-link">
-                        <div class="clinicsns__blog-content">
-                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
-                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
-                        </div>
-                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
-                      </a>
-                    </li>
+                    <?php endif; ?>
                   </ul>
                 </div>
               </div>
@@ -1143,33 +1151,41 @@
                     渋谷院 スタッフブログ
                   </a>
                   <ul class="clinicsns__blog-list">
+                    <?php
+                    $shibuya_args = array(
+                      'post_type' => 'shibuya-blog',
+                      'posts_per_page' => 3,
+                      'orderby' => 'date',
+                      'order' => 'DESC',
+                    );
+                    $shibuya_query = new WP_Query($shibuya_args);
+                    if ($shibuya_query->have_posts()) :
+                      while ($shibuya_query->have_posts()) : $shibuya_query->the_post();
+                    ?>
                     <li class="clinicsns__blog-item">
-                      <a href="#" class="clinicsns__blog-link">
+                      <a href="<?php the_permalink(); ?>" class="clinicsns__blog-link">
                         <div class="clinicsns__blog-content">
-                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
-                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                          <span class="clinicsns__blog-date"><?php echo get_the_date('Y/m/d'); ?></span>
+                          <span class="clinicsns__blog-text"><?php echo wp_trim_words(get_the_title(), 20); ?></span>
                         </div>
                         <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
                       </a>
                     </li>
+                    <?php
+                      endwhile;
+                      wp_reset_postdata();
+                    else :
+                    ?>
                     <li class="clinicsns__blog-item">
                       <a href="#" class="clinicsns__blog-link">
                         <div class="clinicsns__blog-content">
                           <span class="clinicsns__blog-date">YYYY/MM/DD</span>
-                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
+                          <span class="clinicsns__blog-text">記事がありません</span>
                         </div>
                         <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
                       </a>
                     </li>
-                    <li class="clinicsns__blog-item">
-                      <a href="#" class="clinicsns__blog-link">
-                        <div class="clinicsns__blog-content">
-                          <span class="clinicsns__blog-date">YYYY/MM/DD</span>
-                          <span class="clinicsns__blog-text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</span>
-                        </div>
-                        <span class="clinicsns__blog-arrow"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-arrow.svg" alt="矢印" width="4" height="8"></span>
-                      </a>
-                    </li>
+                    <?php endif; ?>
                   </ul>
                 </div>
               </div>
