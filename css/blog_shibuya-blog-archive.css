@@ -1,0 +1,271 @@
+.fv-low {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.fv-low__inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 38.9rem;
+}
+.fv-low__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/blog/shibuya-fv.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 1;
+}
+.fv-low__inner .fv-low__titles {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .fv-low__inner .fv-low__titles {
+    margin-top: 5rem;
+  }
+}
+
+.blog-list__inner {
+  max-width: 124rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .blog-list__inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: block;
+  }
+}
+
+.blog-list__body {
+  width: calc(100% - 31.2rem);
+}
+@media (max-width: 767px) {
+  .blog-list__body {
+    width: 100%;
+  }
+}
+
+.blog-list__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 4.8rem;
+}
+@media (max-width: 767px) {
+  .blog-list__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+}
+
+.blog-list__item {
+  display: block;
+}
+
+.blog-list__card {
+  display: block;
+  transition: opacity 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .blog-list__card:hover {
+    opacity: 0.6;
+  }
+}
+
+.blog-list__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.blog-list__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-list__meta {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-list__category {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.8;
+  font-family: "Noto Sans JP", sans-serif;
+  border: 1px solid #fff;
+  background: #009fe6;
+  padding: 0.1rem 1.1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.blog-list__date {
+  font-family: "Aboreto", system-ui;
+  font-size: 1.2rem;
+  letter-spacing: 0.064em;
+  line-height: 1.8;
+  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  display: inline-flex;
+  align-items: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-list__title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 180%;
+  margin-top: 1.2rem;
+}
+
+.blog-list__text {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0.4rem;
+}
+@media (max-width: 767px) {
+  .blog-list__text {
+    line-height: 200%;
+  }
+}
+
+.blog-list__side {
+  width: 22.4rem;
+}
+@media (max-width: 767px) {
+  .blog-list__side {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}
+.blog-list__side h2 {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: bold;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid #009fe6;
+  margin-bottom: 2.4rem;
+  color: #333;
+}
+
+.blog-list__popular {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.blog-list__popular .blog-list__item {
+  width: 100%;
+}
+.blog-list__popular .blog-list__image {
+  aspect-ratio: 28/17;
+}
+.blog-list__popular .blog-list__tag {
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.064em;
+  font-weight: 500;
+  line-height: 100%;
+  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+}
+.blog-list__popular .blog-list__title {
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 0.8rem;
+}
+.blog-list__popular .blog-list__text {
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.wp-pagenavi {
+  width: calc(100% + 31.2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.6rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+@media (max-width: 767px) {
+  .wp-pagenavi {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+}
+.wp-pagenavi .pages,
+.wp-pagenavi .last,
+.wp-pagenavi .first {
+  display: none;
+}
+.wp-pagenavi a.page,
+.wp-pagenavi span.current,
+.wp-pagenavi span.extend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+}
+.wp-pagenavi a.page,
+.wp-pagenavi span.extend {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  display: block;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  font-size: 0;
+}
+.wp-pagenavi .previouspostslink {
+  background-image: url(../img/notice/icon_arrow.svg);
+  transform: scaleX(-1);
+  margin-left: 1.2rem;
+}
+.wp-pagenavi .nextpostslink {
+  background-image: url(../img/notice/icon_arrow.svg);
+  margin-right: 1.2rem;
+}

@@ -9,8 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // id対象の要素がある場合のみスクロール
       if (target) {
         e.preventDefault();
-        // オフセット調整が必要な場合は適宜ここで変数にして調整
+        // ヘッダーの高さを取得してオフセットに設定
+        var header = document.querySelector("header");
         var offset = 0;
+        if (header) {
+          var headerHeight = header.offsetHeight;
+          offset = headerHeight;
+        }
         var rect = target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({
           top: rect,
@@ -55,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 4.38,
       spaceBetween: 40,
       centeredSlides: true,
-	  speed: 2000,
+      speed: 2000,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -89,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 4.38,
       spaceBetween: 40,
       centeredSlides: true,
-	  speed: 2000,
+      speed: 2000,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,

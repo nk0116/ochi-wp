@@ -1,0 +1,294 @@
+// 渋谷ブログアーカイブページ用スタイル
+
+$serif: "Noto Serif JP", serif;
+$co: "Cormorant SC", serif;
+
+$main-color: #072334;
+$sub-color: #000;
+
+//マップ型変数breakpointsを定義
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "pc": "(min-width: 768px)",
+);
+
+//メディアクエリ用のmixinを定義
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.fv-low {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+// 渋谷ブログのFV背景画像設定
+.fv-low__inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 38.9rem; // 画面幅1440pxの時に389pxになる高さ
+
+  // 背景画像を::beforeに設定してopacityを適用
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/blog/shibuya-fv.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  // タイトルを前面に表示
+  .fv-low__titles {
+    position: relative;
+    z-index: 2;
+    @include mq(sp) {
+        // CYNTHIAとBLOGのテキストが被らないようにマージンを追加
+      margin-top: 5rem;
+    }
+  }
+}
+
+// ブログリストのスタイル
+.blog-list__inner {
+  max-width: calc(120rem + 2rem * 2);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include mq(sp) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: block;
+  }
+}
+
+.blog-list__body {
+  width: calc(100% - 31.2rem);
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.blog-list__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 4.8rem;
+  @include mq(sp) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+}
+
+.blog-list__item {
+  display: block;
+}
+
+.blog-list__card {
+  display: block;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  @include mq(pc) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.blog-list__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog-list__meta {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-list__category {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.8;
+  font-family: "Noto Sans JP", sans-serif;
+  border: 1px solid #fff;
+  background: #009fe6;
+  padding: 0.1rem 1.1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.blog-list__date {
+  font-family: "Aboreto", system-ui;
+  font-size: 1.2rem;
+  letter-spacing: 0.064em;
+  line-height: 1.8;
+  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  display: inline-flex;
+  align-items: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-list__title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 180%;
+  margin-top: 1.2rem;
+}
+
+.blog-list__text {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0.4rem;
+  @include mq(sp) {
+    line-height: 200%;
+  }
+}
+
+.blog-list__side {
+  width: 22.4rem;
+  @include mq(sp) {
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: bold;
+    padding-bottom: 1.2rem;
+    border-bottom: 0.1rem solid #009fe6;
+    margin-bottom: 2.4rem;
+    color: #333;
+  }
+}
+
+.blog-list__popular {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .blog-list__item {
+    width: 100%;
+  }
+
+  .blog-list__image {
+    aspect-ratio: 28 / 17;
+  }
+
+  .blog-list__tag {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.064em;
+    font-weight: 500;
+    line-height: 100%;
+    background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+  }
+
+  .blog-list__title {
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 0.8rem;
+  }
+
+  .blog-list__text {
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+// ページネーションのスタイル（既存のスタイルと同じ）
+.wp-pagenavi {
+  width: calc(100% + 31.2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.6rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  @include mq(sp) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+  .pages,
+  .last,
+  .first {
+    display: none;
+  }
+  a.page,
+  span.current,
+  span.extend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  }
+  a.page,
+  span.extend {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .previouspostslink,
+  .nextpostslink {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    font-size: 0;
+  }
+  .previouspostslink {
+    background-image: url(../img/notice/icon_arrow.svg);
+    transform: scaleX(-1);
+    margin-left: 1.2rem;
+  }
+  .nextpostslink {
+    background-image: url(../img/notice/icon_arrow.svg);
+    margin-right: 1.2rem;
+  }
+}

@@ -420,93 +420,91 @@
                   <div class="ploblem__panels">
                     <div class="ploblem__panel is-active" id="panel-eye" role="tabpanel" aria-labelledby="tab-eye" >
                       <div class="ploblem__list">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/futae/" class="ploblem__item">
                           <span class="ploblem__label">二重</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/kuma/" class="ploblem__item">
                           <span class="ploblem__label">目の下のくま（ヘルニア）</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/tarumi-ue/" class="ploblem__item">
                           <span class="ploblem__label">瞼のたるみ</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/ganken/" class="ploblem__item">
                           <span class="ploblem__label">眼瞼下垂</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/megashira/" class="ploblem__item">
                           <span class="ploblem__label">目頭切開</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/microcat/" class="ploblem__item">
                           <span class="ploblem__label">瞼の脂肪取り</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/golgo/" class="ploblem__item">
                           <span class="ploblem__label">ゴルゴ線剥離</span>
                         </a>
                       </div>
                     </div>
                     <div class="ploblem__panel" id="panel-body" role="tabpanel" aria-labelledby="tab-body" hidden >
                       <div class="ploblem__list">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/lipo-body/" class="ploblem__item">
                           <span class="ploblem__label">脂肪吸引</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/waki-about/" class="ploblem__item">
                           <span class="ploblem__label">ワキガ</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/gynecology/" class="ploblem__item">
                           <span class="ploblem__label">婦人科形成</span>
                         </a>
                       </div>
                     </div>
                     <div class="ploblem__panel" id="panel-bust" role="tabpanel" aria-labelledby="tab-bust" hidden >
                       <div class="ploblem__list">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/crf/" class="ploblem__item">
                           <span class="ploblem__label">コンデンスリッチファット豊胸</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/nipple/" class="ploblem__item">
                           <span class="ploblem__label">陥没乳頭</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/nipple/" class="ploblem__item">
                           <span class="ploblem__label">乳頭縮小</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/implant/" class="ploblem__item">
                           <span class="ploblem__label">他院バックインプラント除去</span>
                         </a>
                       </div>
                     </div>
                     <div class="ploblem__panel" id="panel-nose" role="tabpanel" aria-labelledby="tab-nose" hidden >
                       <div class="ploblem__list">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/nose-detail/" class="ploblem__item">
                           <span class="ploblem__label">隆鼻術（プロテーゼ・ヒアルロン酸）</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/nose-detail/" class="ploblem__item">
                           <span class="ploblem__label">鼻尖形成</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/nose/" class="ploblem__item">
                           <span class="ploblem__label">小鼻縮小</span>
                         </a>
                       </div>
                     </div>
                     <div class="ploblem__panel" id="panel-mouth" role="tabpanel" aria-labelledby="tab-mouth" hidden >
                       <div class="ploblem__list">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/lip/" class="ploblem__item">
                           <span class="ploblem__label">口唇縮小術</span>
-                        </a>
-                          <span class="ploblem__label"></span>
                         </a>
                       </div>
                     </div>
 
                     <div class="ploblem__panel" id="panel-face-line" role="tabpanel" aria-labelledby="tab-face-line" hidden >
                       <div class="ploblem__list">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/facelift-signature/" class="ploblem__item">
                           <span class="ploblem__label">フェイスリフト<br class="pc_n" />（シグネチャー、トータルSMAS）</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('under-eye-bag-removal') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/facelift-mini/" class="ploblem__item">
                           <span class="ploblem__label">部分フェイスリフト<br class="pc_n" />（全額リフト・ミニリフト）</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/itolift/" class="ploblem__item">
                           <span class="ploblem__label">糸リフト</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item">
+                        <a href="https://cosmedical.jp/clinic/menu/bnls/" class="ploblem__item">
                           <span class="ploblem__label">BNLS治療</span>
                         </a>
                       </div>
@@ -545,25 +543,25 @@
                   <div class="ploblem__panels-2">
                     <div class="ploblem__panel-2 is-active" id="panel-skin" role="tabpanel" aria-labelledby="tab-skin" >
                       <div class="ploblem__list-2">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/bihaku-bihada/" class="ploblem__item-2">
                           <span class="ploblem__label-2">しみ・くすみ・そばかす</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/kanpan-bihaku/" class="ploblem__item-2">
                           <span class="ploblem__label-2">肝斑</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/acne/" class="ploblem__item-2">
                           <span class="ploblem__label-2">にきび・にきび痕</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/genesis/" class="ploblem__item-2">
                           <span class="ploblem__label-2">毛穴</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/akaragao/" class="ploblem__item-2">
                           <span class="ploblem__label-2">赤ら顔 (酒さ) ・毛細血管拡張</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/ibo-hokuro/" class="ploblem__item-2">
                           <span class="ploblem__label-2">いぼ・ホクロ除去</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/lichen-pilaris/" class="ploblem__item-2">
                           <span class="ploblem__label-2">毛孔性苔癬 (ダーマローラー)</span>
                         </a>
                       </div>
@@ -571,16 +569,16 @@
                     
                     <div class="ploblem__panel-2" id="panel-laxity" role="tabpanel" aria-labelledby="tab-laxity" hidden >
                       <div class="ploblem__list-2">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/thermacool-flx/" class="ploblem__item-2">
                           <span class="ploblem__label-2">サーマクール</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/ulthera/" class="ploblem__item-2">
                           <span class="ploblem__label-2">ウルセラ</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/ultracel-zi-q/" class="ploblem__item-2">
                           <span class="ploblem__label-2">医療HIFU</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/density/" class="ploblem__item-2">
                           <span class="ploblem__label-2">高周波</span>
                         </a>
                       </div>
@@ -588,38 +586,39 @@
                     
                     <div class="ploblem__panel-2" id="panel-injection" role="tabpanel" aria-labelledby="tab-injection" hidden >
                       <div class="ploblem__list-2">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/botox/" class="ploblem__item-2">
                           <span class="ploblem__label-2">ボトックス</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/hyaluronic-top/" class="ploblem__item-2">
                           <span class="ploblem__label-2">ヒアルロン酸</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/pluryal-densifier/" class="ploblem__item-2">
                           <span class="ploblem__label-2">肌育治療</span>
                         </a>
                       </div>
                     </div>
+
                     <div class="ploblem__panel-2" id="panel-others" role="tabpanel" aria-labelledby="tab-others" hidden >
                       <div class="ploblem__list-2">
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/medical-artmake/" class="ploblem__item-2">
                           <span class="ploblem__label-2">アートメイク</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/removal-tattoo-laser/" class="ploblem__item-2">
                           <span class="ploblem__label-2">タトゥー除去</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/ed/" class="ploblem__item-2">
                           <span class="ploblem__label-2">ED治療</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/glossfactor/" class="ploblem__item-2">
                           <span class="ploblem__label-2">毛髪再生治療</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/cosme/" class="ploblem__item-2">
                           <span class="ploblem__label-2">化粧品</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/supplement/" class="ploblem__item-2">
                           <span class="ploblem__label-2">内服</span>
                         </a>
-                        <a href="<?php echo esc_url( home_url('') ); ?>" class="ploblem__item-2">
+                        <a href="https://cosmedical.jp/clinic/menu/beauty-injection/" class="ploblem__item-2">
                           <span class="ploblem__label-2">点滴</span>
                         </a>
                       </div>
@@ -1054,19 +1053,19 @@
                 </div>
                 
                 <div class="clinicsns__sns-links">
-                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
+                  <a href="https://www.instagram.com/cosmedical_gnz/" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
                     <span class="clinicsns__sns-text">Instagram</span>
                     <span class="clinicsns__sns-icon">
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="Instagram" width="26" height="26">
                     </span>
                   </a>
-                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
+                  <a href="https://x.com/MatayoshiHideki" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
                     <span class="clinicsns__sns-text">X</span>
                     <span class="clinicsns__sns-icon">
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="X" width="18" height="18">
                     </span>
                   </a>
-                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
+                  <a href="https://www.facebook.com/profile.php?id=100063754321775" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
                     <span class="clinicsns__sns-text">Facebook</span>
                     <span class="clinicsns__sns-icon">
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-facebook.svg" alt="Facebook" width="26" height="26">
@@ -1075,7 +1074,7 @@
                 </div>
 
                 <div class="clinicsns__blog">
-                  <a href="#" class="clinicsns__blog-title">
+                  <a href="<?php echo home_url('/ginza-blog/'); ?>" class="clinicsns__blog-title">
                     <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
                     銀座院 スタッフブログ
                   </a>
@@ -1118,19 +1117,19 @@
                 </div>
                 
                 <div class="clinicsns__sns-links">
-                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
+                  <a href="https://www.instagram.com/cynthia_sby/" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
                     <span class="clinicsns__sns-text">Instagram</span>
                     <span class="clinicsns__sns-icon">
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="Instagram" width="26" height="26">
                     </span>
                   </a>
-                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
+                  <a href="https://x.com/cynthia_sby" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
                     <span class="clinicsns__sns-text">X</span>
                     <span class="clinicsns__sns-icon">
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="X" width="18" height="18">
                     </span>
                   </a>
-                  <a href="#" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
+                  <a href="https://www.facebook.com/CYNTHIA.SBY/" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
                     <span class="clinicsns__sns-text">Facebook</span>
                     <span class="clinicsns__sns-icon">
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-facebook.svg" alt="Facebook" width="26" height="26">
@@ -1139,7 +1138,7 @@
                 </div>
 
                 <div class="clinicsns__blog">
-                  <a href="#" class="clinicsns__blog-title">
+                  <a href="<?php echo home_url('/shibuya-blog/'); ?>" class="clinicsns__blog-title">
                     <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
                     渋谷院 スタッフブログ
                   </a>
