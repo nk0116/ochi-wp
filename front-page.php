@@ -1059,18 +1059,6 @@
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-instagram.png" alt="Instagram" width="26" height="26">
                     </span>
                   </a>
-                  <a href="https://x.com/MatayoshiHideki" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--x">
-                    <span class="clinicsns__sns-text">X</span>
-                    <span class="clinicsns__sns-icon">
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="X" width="18" height="18">
-                    </span>
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=100063754321775" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
-                    <span class="clinicsns__sns-text">Facebook</span>
-                    <span class="clinicsns__sns-icon">
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-facebook.svg" alt="Facebook" width="26" height="26">
-                    </span>
-                  </a>
                 </div>
 
                 <div class="clinicsns__blog">
@@ -1137,15 +1125,9 @@
                       <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/staff/icon-x.png" alt="X" width="18" height="18">
                     </span>
                   </a>
-                  <a href="https://www.facebook.com/CYNTHIA.SBY/" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--facebook">
-                    <span class="clinicsns__sns-text">Facebook</span>
-                    <span class="clinicsns__sns-icon">
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-facebook.svg" alt="Facebook" width="26" height="26">
-                    </span>
-                  </a>
                 </div>
 
-                <div class="clinicsns__blog">
+                <div class="clinicsns__blog"><!-- 非表示設定 -->
                   <a href="<?php echo home_url('/shibuya-blog/'); ?>" class="clinicsns__blog-title">
                     <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
                     渋谷院 スタッフブログ
@@ -1193,7 +1175,7 @@
           </div>
         </section>
 
-        <section class="notice">
+        <!-- <section class="notice">
           <div class="notice__inner">
             <h2 class="title">Notice</h2>
 
@@ -1255,7 +1237,7 @@
 
             <a href="<?php echo esc_url(home_url('/notice/')); ?>" class="btn notice__btn">VIEW MORE</a>
           </div>
-        </section>
+        </section> -->
 
 
 
@@ -1376,7 +1358,7 @@
                               alt="Instagram"
                           /></a>
                         </li>
-                        <li>
+                        <!-- <li>
                           <a
                             href="https://www.facebook.com/%E3%82%B3%E3%82%B9%E3%83%A1%E3%83%87%20%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF-%E3%82%B7%E3%83%B3%E3%82%B7%E3%82%A2-1762967397250263/"
                             target="_blank"
@@ -1385,23 +1367,23 @@
                               src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-facebook.png"
                               alt="Facebook"
                           /></a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                           <a
                             href="https://twitter.com/MatayoshiHideki"
                             target="_blank"
                             rel="noopener noreferrer"
                             ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-x.png" alt="X"
                           /></a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                           <a
                             href="https://ameblo.jp/cynthia0567/"
                             target="_blank"
                             rel="noopener noreferrer"
                             ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-blog.png" alt="Youtube"
                           /></a>
-                        </li>
+                        </li> -->
                       </ul>
 
                       <dl class="access__list">
@@ -1469,7 +1451,7 @@
                               alt="Instagram"
                           /></a>
                         </li>
-                        <li>
+                        <!-- <li>
                           <a
                             href="https://www.facebook.com/CYNTHIA.SBY/"
                             target="_blank"
@@ -1478,7 +1460,7 @@
                               src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-facebook.png"
                               alt="Facebook"
                           /></a>
-                        </li>
+                        </li> -->
                         <li>
                           <a
                             href="https://twitter.com/cynthia_sby"
@@ -1487,14 +1469,14 @@
                             ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-x.png" alt="X"
                           /></a>
                         </li>
-                        <li>
+                        <!-- <li>
                           <a
                             href="https://ameblo.jp/cynthia-sby/"
                             target="_blank"
                             rel="noopener noreferrer"
                             ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-blog.png" alt="Youtube"
                           /></a>
-                        </li>
+                        </li> -->
                       </ul>
                       <dl class="access__list">
                         <div class="access__row">

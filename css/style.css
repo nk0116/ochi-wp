@@ -1694,6 +1694,11 @@
   position: relative;
 }
 @media (min-width: 768px) {
+  .clinicsns__sns-link {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .clinicsns__sns-link:hover {
     opacity: 0.5;
   }
@@ -1755,6 +1760,7 @@
 }
 
 .clinicsns__blog {
+  display: none;
   margin-top: 2rem;
 }
 
