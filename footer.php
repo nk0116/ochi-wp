@@ -33,10 +33,10 @@
                     >
                       <p class="contact__reservation-title">
                         <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/Web.png" alt="" />
-                        WEB予約
+                        メール
                       </p>
                       <p class="contact__reservation-desc">
-                        銀座院のWEB予約は<br class="pc_n" />こちらから
+                        お問い合わせフォーム
                       </p>
                     </a>
                   </div>
@@ -80,10 +80,10 @@
                     >
                       <p class="contact__reservation-title">
                         <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/Web.png" alt="" />
-                        WEB予約
+                        メール
                       </p>
                       <p class="contact__reservation-desc">
-                        渋谷院のWEB予約は<br class="pc_n" />こちらから
+                        お問い合わせフォーム
                       </p>
                     </a>
                   </div>

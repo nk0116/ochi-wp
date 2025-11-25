@@ -7,7 +7,7 @@
             <!-- メイン表示部分 -->
             <div class="swiper-wrapper">
               <!-- 各スライド -->
-              <div class="swiper-slide">
+              <a href="https://cosmedical.jp/clinic/menu/" class="swiper-slide">
                 <picture>
                   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
                   <source
@@ -18,8 +18,8 @@
                   <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV01.png" alt="シンシアにお任せください" />
                 </picture>
-              </div>
-              <div class="swiper-slide">
+              </a>
+              <a href="https://cosmedical.jp/clinic/menu/kuma/" class="swiper-slide">
                 <picture>
                   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
                   <source
@@ -30,8 +30,8 @@
                   <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV02.png" alt="シンシア式経結膜脱脂術" />
                 </picture>
-              </div>
-              <div class="swiper-slide">
+              </a>
+              <a href="https://cosmedical.jp/clinic/menu/reverse-aging/" class="swiper-slide">
                 <picture>
                   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
                   <source
@@ -42,8 +42,8 @@
                   <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV03.png" alt="ナチュラルな美しさ" />
                 </picture>
-              </div>
-              <div class="swiper-slide">
+              </a>
+              <a href="#access" class="swiper-slide">
                 <picture>
                   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
                   <source
@@ -54,7 +54,7 @@
                   <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV01-1.png" alt="銀座移転OPEN" />
                 </picture>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -1310,7 +1310,7 @@
         </section> -->
        
 
-        <section class="access">
+        <section id="access" class="access">
           <div class="inner">
             <h2 class="title">Access</h2>
 
