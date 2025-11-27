@@ -31,18 +31,18 @@
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV02.png" alt="シンシア式経結膜脱脂術" />
                 </picture>
               </a>
-              <!-- <a href="https://cosmedical.jp/clinic/menu/reverse-aging/" class="swiper-slide">
-                <picture> -->
+              <a href="https://cosmedical.jp/clinic/menu/reverse-aging/" class="swiper-slide">
+                <picture>
                   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
-                  <!-- <source
+                  <source
                     srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV03-sp.png"
                     media="(max-width: 767px)"
                     type="image/png"
-                  /> -->
+                  />
                   <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
-                  <!-- <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV03.png" alt="ナチュラルな美しさ" />
+                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/MV03.png" alt="ナチュラルな美しさ" />
                 </picture>
-              </a> -->
+              </a>
               <a href="#access" class="swiper-slide">
                 <picture>
                   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
@@ -121,7 +121,7 @@
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Image" />
                           <?php endif; ?>
                         </div>
-
+                   
                       </div>
                     </div>
                   <?php
@@ -566,7 +566,7 @@
                         </a>
                       </div>
                     </div>
-
+                    
                     <div class="ploblem__panel-2" id="panel-laxity" role="tabpanel" aria-labelledby="tab-laxity" hidden >
                       <div class="ploblem__list-2">
                         <a href="https://cosmedical.jp/clinic/menu/thermacool-flx/" class="ploblem__item-2">
@@ -583,7 +583,7 @@
                         </a>
                       </div>
                     </div>
-
+                    
                     <div class="ploblem__panel-2" id="panel-injection" role="tabpanel" aria-labelledby="tab-injection" hidden >
                       <div class="ploblem__list-2">
                         <a href="https://cosmedical.jp/clinic/menu/botox/" class="ploblem__item-2">
@@ -784,7 +784,7 @@
                   カウンセリングからアフターフォローまで担当の医師が責任を持って対応しています。
                 </p>
               </div>
-
+              
               <!-- <div class="doctor__image">
                 <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/doctor.jpg" alt="" />
               </div> -->
@@ -1051,7 +1051,7 @@
                 <div class="clinicsns__header">
                   <h3 class="clinicsns__clinic-name">銀座院</h3>
                 </div>
-
+                
                 <div class="clinicsns__sns-links">
                   <a href="https://www.instagram.com/cosmedical_gnz/" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
                     <span class="clinicsns__sns-text">Instagram</span>
@@ -1111,7 +1111,7 @@
                 <div class="clinicsns__header">
                   <h3 class="clinicsns__clinic-name">渋谷院</h3>
                 </div>
-
+                
                 <div class="clinicsns__sns-links">
                   <a href="https://www.instagram.com/cynthia_sby/" target="_blank" class="clinicsns__sns-link clinicsns__sns-link--instagram">
                     <span class="clinicsns__sns-text">Instagram</span>
@@ -1295,7 +1295,7 @@
 										</p>
 									</a>
                 </div>
-
+								
               </div>
 
               <div class="column__nav">
@@ -1308,7 +1308,7 @@
             </a>
           </div>
         </section> -->
-
+       
 
         <section id="access" class="access">
           <div class="inner">
@@ -2625,4 +2625,4 @@
             <!-- Swiper END -->
           </div>
         </section>
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
