@@ -206,6 +206,13 @@
   line-height: 120%;
   font-family: "Noto Serif JP", serif;
   padding-left: 1.7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .campaigns-list__treatment--menu .btn {
+    padding-right: 5rem;
+  }
 }
 @media (max-width: 767px) {
   .campaigns-list__treatment--menu {
@@ -215,5 +222,6 @@
     max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
   }
-}/*# sourceMappingURL=campaign.css.map */
+}

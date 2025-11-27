@@ -212,7 +212,7 @@ function my_theme_enqueue_scripts() {
     }
 
     // archive-campaign（キャンペーンアーカイブページ）に campaign.css を適用
-    if (is_post_type_archive('campaign') || is_singular('pickup-menu')) {
+    if (is_post_type_archive('campaign') || is_post_type_archive('pickup-menu') || is_singular('pickup-menu')) {
         wp_enqueue_style(
             'campaign-css',
             get_template_directory_uri() . '/css/campaign.css',
@@ -399,8 +399,8 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
     function create_post_type_notice() {
         register_post_type('notice', array(
             'labels' => array(
-                'name'          => 'お知らせ',
-                'singular_name' => 'お知らせ',
+                'name'          => 'お知らせ（notice）',
+                'singular_name' => 'お知らせ（notice）',
             ),
             'public'       => true,
             'has_archive'  => true,

@@ -1175,7 +1175,7 @@
           </div>
         </section>
 
-        <!-- <section class="notice">
+        <section class="notice">
           <div class="notice__inner">
             <h2 class="title">Notice</h2>
 
@@ -1237,7 +1237,7 @@
 
             <a href="<?php echo esc_url(home_url('/notice/')); ?>" class="btn notice__btn">VIEW MORE</a>
           </div>
-        </section> -->
+        </section>
 
 
 
