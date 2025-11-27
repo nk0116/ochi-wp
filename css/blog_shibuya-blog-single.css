@@ -199,12 +199,15 @@
 .blog-body__content {
   margin-bottom: 3.2rem;
 }
-.blog-body__content p {
+.blog-body__content p,
+.blog-body__content div {
   font-size: 1.6rem;
   line-height: 150%;
   color: #333;
 }
-.blog-body__content p + p {
+.blog-body__content p + p, .blog-body__content p + div,
+.blog-body__content div + p,
+.blog-body__content div + div {
   margin-top: 1.6rem;
 }
 .blog-body__content figure {
