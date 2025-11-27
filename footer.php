@@ -127,6 +127,12 @@
               >未成年者</a
             >
           </div>
+          <div class="footer-links__item">
+            <a
+              href="#"
+              >お支払いについて</a
+            >
+          </div>
         </div>
       </main>
 
