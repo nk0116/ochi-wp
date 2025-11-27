@@ -29,17 +29,15 @@
                 <div class="payment__item">
                   <p class="payment__item__title">クレジットカードでのお支払い</p>
                   <p class="payment__item__text mt20">
-                    クレジットカードの場合はご本人様名義カードのみご利用いただけます。<br>
-                    ご家族様名義のカードは、名義人様が同伴の場合に限りご利用いただけます。<br>
-                    なお、2025年4月より、クレジットカード決済の際は原則として<br>
-                    暗証番号の入力が必要となります。
+                    クレジットカードの場合はご本人様名義カードのみお支払いとなります。<br>
+                    御家族様名義のカードは名義人様同伴であればご利用いただけます。
                   </p>
                   <div class="payment__item__img mt20">
                     <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/payment/credit-card-list.png" alt="" width="600" height="62">
                   </div>
                 </div>
                 <div class="payment__item">
-                  <p class="payment__item__title">医療ローンでのお支払い（AGギャランティ）</p>
+                  <p class="payment__item__title">医療ローンでのお支払い（アプラス・フレックス）</p>
                   <p class="payment__item__text mt20">
                     医療ローンご希望の場合、ローン会社による事前審査がございます。<br>
                     お支払い回数は3回から60回まで選べます。
@@ -195,5 +193,5 @@
           </div>
         </section>
 
-
-<?php get_footer(); ?>
+     
+<?php get_footer(); ?> 

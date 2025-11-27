@@ -46,6 +46,7 @@
   font-family: "Shippori Mincho";
   color: #333;
   background: #fff;
+  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -78,6 +79,7 @@
   gap: 1rem;
   padding: 1rem;
   color: #333;
+  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -339,6 +341,7 @@
   margin-top: 1.6rem;
 }
 .doctor-profile__left__sns a {
+  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -494,4 +497,4 @@
 }
 .related-links__content .btn {
   font-family: "Cormorant SC", serif;
-}
+}/*# sourceMappingURL=case.css.map */

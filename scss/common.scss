@@ -1406,11 +1406,10 @@ img {
   // gap: 3rem;
 
   @include mq("sp") {
-    flex-wrap: wrap;
+    flex-direction: column;
     height: auto;
     padding-top: 4.9rem;
     padding-bottom: 4rem;
-    row-gap: 4rem;
   }
 }
 
@@ -1419,16 +1418,15 @@ img {
   text-align: center;
 
   @include mq("sp") {
-    // 最初の2個は50%幅（1行目）
-    &:nth-child(-n + 2) {
-      width: 50%;
+    width: 100%;
+    padding-top: 5.9rem;
+    padding-bottom: 4.9rem;
+
+    &:first-of-type {
       padding-top: 0;
-      padding-bottom: 2rem;
     }
-    // 3個目以降は33.33%幅（2行目）
-    &:nth-child(n + 3) {
-      width: 33.33%;
-      padding-top: 0;
+
+    &:last-of-type {
       padding-bottom: 0;
     }
   }
@@ -1464,10 +1462,8 @@ img {
     transition: all 0.4s ease-in-out;
 
     @include mq("sp") {
-      width: 9.1rem;
-      height: 9.1rem;
-      font-size: 0.8rem;
-      padding-top: 3rem;
+      width: 17.1rem;
+      height: 17.1rem;
     }
 
     position: relative;
@@ -1479,9 +1475,6 @@ img {
       height: 0.71rem;
       bottom: 6.1rem;
       transition: all 0.3s ease-in-out;
-      @include mq("sp") {
-        bottom: 3rem;
-      }
     }
   }
 }

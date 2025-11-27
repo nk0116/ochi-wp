@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -47,6 +47,7 @@
   letter-spacing: 0.064rem;
   line-height: 1;
   height: 4rem;
+  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -66,11 +67,11 @@
   width: 100%;
   height: 0.1rem;
   content: "";
-  background: linear-gradient(88.17deg, #dc96a3 0.02%, #ba9cce 94.87%);
+  background: linear-gradient(88.17deg, #DC96A3 0.02%, #BA9CCE 94.87%);
 }
 @media (max-width: 767px) {
   .notice-list__category__list::before {
-    background: #009fe6;
+    background: #009FE6;
   }
 }
 .notice-list__category__list h2 {
@@ -79,7 +80,7 @@
   line-height: 1.5;
   font-family: "Noto Sans JP", sans-serif;
   margin-bottom: 1.2rem;
-  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -90,10 +91,11 @@
 .notice-list__category__list ul li a {
   display: block;
   width: 100%;
-  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
   border-radius: 0.4rem;
   padding: 0.1rem;
   overflow: hidden;
+  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 .notice-list__category__list ul li a span {
@@ -133,7 +135,7 @@
   gap: 4rem;
   align-items: center;
   padding-bottom: 3.2rem;
-  border-bottom: 1px solid #009fe6;
+  border-bottom: 1px solid #009FE6;
 }
 @media (max-width: 767px) {
   .notice-list__item {
@@ -142,31 +144,21 @@
     padding-bottom: 2.4rem;
   }
 }
-.notice-list__item:nth-of-type(n + 2) {
+.notice-list__item:nth-of-type(n+2) {
   padding-top: 3.2rem;
 }
 @media (max-width: 767px) {
-  .notice-list__item:nth-of-type(n + 2) {
+  .notice-list__item:nth-of-type(n+2) {
     padding-top: 2.4rem;
   }
 }
 
 .notice-list__image {
   width: 21rem;
-  height: 13.6rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.notice-list__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 @media (max-width: 767px) {
   .notice-list__image {
     width: 100%;
-    height: 20rem;
   }
 }
 
@@ -204,8 +196,8 @@
   padding: 0.4rem 1.2rem;
   align-items: center;
   gap: 1rem;
-  border: 1px solid #009fe6;
-  color: #009fe6;
+  border: 1px solid #009FE6;
+  color: #009FE6;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 100%; /* 1.5rem */
@@ -221,7 +213,7 @@
   color: #333;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 180%;
+  line-height: 180%; /* 32.4rem */
   letter-spacing: 0.08rem;
   margin-top: 0.3rem;
 }
@@ -253,14 +245,10 @@
     margin-top: 2.4rem;
   }
 }
-.wp-pagenavi .pages,
-.wp-pagenavi .last,
-.wp-pagenavi .first {
+.wp-pagenavi .pages, .wp-pagenavi .last, .wp-pagenavi .first {
   display: none;
 }
-.wp-pagenavi a.page,
-.wp-pagenavi span.current,
-.wp-pagenavi span.extend {
+.wp-pagenavi a.page, .wp-pagenavi span.current, .wp-pagenavi span.extend {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,15 +259,13 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
-  background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  background: linear-gradient(180deg, #0AA4E8 0%, #70D3FF 50%, #14AEF3 100%);
 }
-.wp-pagenavi a.page,
-.wp-pagenavi span.extend {
+.wp-pagenavi a.page, .wp-pagenavi span.extend {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.wp-pagenavi .previouspostslink,
-.wp-pagenavi .nextpostslink {
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
   display: block;
   width: 4.4rem;
   height: 4.4rem;
@@ -297,4 +283,4 @@
 .wp-pagenavi .nextpostslink {
   background-image: url(../img/notice/icon_arrow.svg);
   margin-right: 1.2rem;
-}
+}/*# sourceMappingURL=notice.css.map */
