@@ -22,22 +22,6 @@
           <div class="notice-list__inner">
             <div class="notice-list__body">
               <div class="notice-list__content">
-                <!-- 静的な投稿アイテム -->
-                <!-- <div class="notice-list__item">
-                  <div class="notice-list__image">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/notice/notice01.jpg" alt="" />
-                  </div>
-
-                  <div class="notice-list__info">
-                    <div class="notice-list__meta">
-                      <p class="notice-list__date">YYYY/MM/DD</p>
-                      <p class="notice-list__category">カテゴリ名</p>
-                    </div>
-                    <p class="notice-list__title">Titleコラムタイトルが入りますコラムタイトルが入ります</p>
-                    <p class="notice-list__text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                  </div>
-                </div> -->
-                <!-- 静的な投稿アイテム -->
 
                 <?php
                 // カテゴリフィルタリングの設定
