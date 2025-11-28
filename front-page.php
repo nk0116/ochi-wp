@@ -68,6 +68,37 @@
           <div class="campaign__inner">
             <h2 class="title">Monthly Campaign</h2>
 
+            <?php
+            // 「pickup-menu」カスタム投稿タイプから「両院共通」カテゴリーのみ取得、かつスラッグが32, 33, 34の投稿を除外
+            $exclude_slugs = ['32','33','34'];
+            // スラッグから投稿IDを取得
+            $exclude_ids = [];
+            foreach ( $exclude_slugs as $slug ) {
+                $post = get_page_by_path( $slug, OBJECT, 'pickup-menu' );
+                if ( $post ) {
+                  $exclude_ids[] = $post->ID;
+                }
+            }
+
+            $campaign_args = [
+              'post_type'      => 'pickup-menu',
+              'posts_per_page' => -1, // 全件取得
+              'post_status'    => 'publish',
+              'orderby'        => 'date',
+              'order'          => 'DESC',
+              'post__not_in'   => $exclude_ids, // 除外
+              'tax_query'      => [
+                [
+                  'taxonomy' => 'pickup-menu__category', // タクソノミースラッグ
+                  'field'    => 'name',                 // 「カテゴリ名」で絞り込み
+                  'terms'    => ['両院共通'],
+                  'operator' => 'IN',
+                ],
+              ],
+            ];
+            $campaign_query = new WP_Query($campaign_args);
+            if ($campaign_query->have_posts()) :
+            ?>
             <div class="campaign__content">
               <h3 class="campaign__subtitle">両院共通</h3>
 
@@ -77,35 +108,6 @@
                 <div class="swiper-wrapper">
                   <!-- 各スライド -->
                   <?php
-                  // 「pickup-menu」カスタム投稿タイプから「両院共通」カテゴリーのみ取得、かつスラッグが32, 33, 34の投稿を除外
-                  $exclude_slugs = ['32','33','34'];
-                  // スラッグから投稿IDを取得
-                  $exclude_ids = [];
-                  foreach ( $exclude_slugs as $slug ) {
-                      $post = get_page_by_path( $slug, OBJECT, 'pickup-menu' );
-                      if ( $post ) {
-                        $exclude_ids[] = $post->ID;
-                      }
-                  }
-
-                  $campaign_args = [
-                    'post_type'      => 'pickup-menu',
-                    'posts_per_page' => -1, // 全件取得
-                    'post_status'    => 'publish',
-                    'orderby'        => 'date',
-                    'order'          => 'DESC',
-                    'post__not_in'   => $exclude_ids, // 除外
-                    'tax_query'      => [
-                      [
-                        'taxonomy' => 'pickup-menu__category', // タクソノミースラッグ
-                        'field'    => 'name',                 // 「カテゴリ名」で絞り込み
-                        'terms'    => ['両院共通'],
-                        'operator' => 'IN',
-                      ],
-                    ],
-                  ];
-                  $campaign_query = new WP_Query($campaign_args);
-                  if ($campaign_query->have_posts()) :
                     while ($campaign_query->have_posts()) : $campaign_query->the_post();
                       // アイキャッチ画像
                       $image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
@@ -147,17 +149,7 @@
                   <?php
                     endwhile;
                     wp_reset_postdata();
-                  else:
                   ?>
-                    <div class="swiper-slide">
-                      <div class="campaign__item">
-                        <div class="campaign__image">
-                          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Campaign" />
-                        </div>
-                        <p class="campaign__text">現在キャンペーンはありません。</p>
-                      </div>
-                    </div>
-                  <?php endif; ?>
 
 
                 </div>
@@ -174,7 +166,25 @@
               </div>
               <!-- Swiper END -->
             </div>
+            <?php endif; ?>
 
+            <?php
+            // 「pickup-menu」カスタム投稿タイプから「銀座院」と「渋谷院」両方の「カテゴリ名」で絞り込み
+            $args = array(
+              'post_type' => 'pickup-menu',
+              'posts_per_page' => 10,
+              'tax_query' => array(
+                array(
+                  'taxonomy' => 'pickup-menu__category', // タクソノミースラッグ（必要であれば修正）
+                  'field'    => 'name',                  // 「カテゴリ名」で絞り込み
+                  'terms'    => array('銀座院', '渋谷院'),
+                  'operator' => 'IN',
+                ),
+              ),
+            );
+            $campaigns_query = new WP_Query($args);
+            if ($campaigns_query->have_posts()):
+            ?>
             <div class="campaign__content02">
               <h3 class="campaign__subtitle">各院限定</h3>
 
@@ -184,21 +194,6 @@
                 <div class="swiper-wrapper">
                   <!-- 各スライド -->
                   <?php
-                  // 「pickup-menu」カスタム投稿タイプから「銀座院」と「渋谷院」両方の「カテゴリ名」で絞り込み
-                  $args = array(
-                    'post_type' => 'pickup-menu',
-                    'posts_per_page' => 10,
-                    'tax_query' => array(
-                      array(
-                        'taxonomy' => 'pickup-menu__category', // タクソノミースラッグ（必要であれば修正）
-                        'field'    => 'name',                  // 「カテゴリ名」で絞り込み
-                        'terms'    => array('銀座院', '渋谷院'),
-                        'operator' => 'IN',
-                      ),
-                    ),
-                  );
-                  $campaigns_query = new WP_Query($args);
-                  if ($campaigns_query->have_posts()):
                     while ($campaigns_query->have_posts()): $campaigns_query->the_post();
                       // カテゴリ名（日本語）を取得
                       $cats = get_the_terms(get_the_ID(), 'pickup-menu__category');
@@ -227,17 +222,7 @@
                   <?php
                     endwhile;
                     wp_reset_postdata();
-                  else:
                   ?>
-                  <div class="swiper-slide">
-                    <div class="campaign__item">
-                      <div class="campaign__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/common/noimg.png" alt="No Campaign" />
-                      </div>
-                      <p class="campaign__text">現在キャンペーンはありません。</p>
-                    </div>
-                  </div>
-                  <?php endif; ?>
 
                 </div>
 
@@ -253,6 +238,7 @@
               </div>
               <!-- Swiper END -->
             </div>
+            <?php endif; ?>
 
             <a href="<?php echo esc_url( home_url('campaign') ); ?>" class="btn access__btn"> VIEW MORE </a>
 
