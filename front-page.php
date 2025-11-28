@@ -211,11 +211,31 @@
                       } else {
                         $img_url = get_template_directory_uri() . '/img/common/noimg.png';
                       }
+                      // リンクを取得
+                      $links = array(
+                        get_field('リンク01'),
+                        get_field('リンク02'),
+                        get_field('リンク03'),
+                      );
+                      // 有効なリンク（リンクフィールドが空でないもの）を抽出
+                      $valid_link = null;
+                      foreach($links as $link) {
+                        if (!empty($link) && !empty($link['リンク'])) {
+                          $valid_link = $link['リンク'];
+                          break;
+                        }
+                      }
                   ?>
                   <div class="swiper-slide">
                     <div class="campaign__item">
                       <div class="campaign__image">
-                        <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($cat_label . 'キャンペーン'); ?>" />
+                        <?php if ($valid_link): ?>
+                          <a href="<?php echo esc_url($valid_link); ?>">
+                            <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($cat_label . 'キャンペーン'); ?>" />
+                          </a>
+                        <?php else: ?>
+                          <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($cat_label . 'キャンペーン'); ?>" />
+                        <?php endif; ?>
                       </div>
                     </div>
                   </div>
