@@ -42,7 +42,7 @@
                         alt="Instagram"
                     /></a>
                   </li>
-                  <li>
+<!--                   <li>
                     <a
                       href="https://www.facebook.com/%E3%82%B3%E3%82%B9%E3%83%A1%E3%83%87%20%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF-%E3%82%B7%E3%83%B3%E3%82%B7%E3%82%A2-1762967397250263/"
                       target="_blank"
@@ -67,7 +67,7 @@
                       rel="noopener noreferrer"
                       ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-blog.png" alt="Youtube"
                     /></a>
-                  </li>
+                  </li> -->
                 </ul>
 
                 <dl class="access__list access-low__list">
@@ -89,11 +89,11 @@
                   </div>
                   <div class="access-low__row">
                     <dt>診療時間</dt>
-                    <dd>午前10時〜午後8時</dd>
+                    <dd>10:00〜20:00</dd>
                   </div>
                   <div class="access-low__row">
                     <dt>受付時間</dt>
-                    <dd>午前10時〜午後8時</dd>
+                    <dd>10:00〜20:00</dd>
                   </div>
                   <div class="access-low__row access-low__row--border-bottom">
                     <dt>休診日</dt>
@@ -208,7 +208,7 @@
                 </div>
               </div>
               <div class="gallery-low-pagination"></div>
-            
+
               <div class="gallery-low-swiper__btn">
                 <button class="gallery-low-prev">
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/access/btn-prev.svg" alt="">
@@ -224,4 +224,4 @@
         <section class="contact" id="contact">
 
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>

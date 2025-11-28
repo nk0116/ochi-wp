@@ -780,7 +780,7 @@ img {
 @media (max-width: 767px) {
   .footer {
     padding-top: 3.85rem;
-    padding-bottom: 3.85rem;
+    padding-bottom: 10.85rem;
   }
 }
 
@@ -1008,6 +1008,14 @@ img {
   letter-spacing: 0.048rem;
   margin-top: 4rem;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .footer__copyright {
+    white-space: nowrap;
+    color: #009FE6;
+    position: relative;
+    left: -1.1rem;
+  }
 }
 
 .case {
@@ -1530,4 +1538,4 @@ img {
 }
 .header__clinic-name span {
   display: none;
-}
+}/*# sourceMappingURL=common.css.map */

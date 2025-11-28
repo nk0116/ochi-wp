@@ -238,7 +238,7 @@
                 <p class="drawer__clinic-name">
                   コスメディカルクリニック　シンシア
                 </p>
-                <p class="drawer__hours">受付時間　9:00〜20:00</p>
+                <p class="drawer__hours">受付時間　10:00〜20:00</p>
               </div>
               <div class="drawer__header">
                 <div class="drawer__logo">
@@ -298,7 +298,7 @@
                     <a href="<?php echo esc_url( home_url('/about/') ); ?>">当院について</a>
                   </li>
                   <li class="drawer__item"><a href="<?php echo esc_url( home_url('/access') ); ?>">アクセス</a></li>
-                  <li class="drawer__item"><a href="<?php echo esc_url( home_url('/qa') ); ?>">よくある質問</a></li>
+<!--                   <li class="drawer__item"><a href="<?php echo esc_url( home_url('/qa') ); ?>">よくある質問</a></li> -->
                 </ul>
               </nav>
 

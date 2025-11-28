@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @media (max-width: 767px) {
   .fv {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 }
 
@@ -55,7 +55,7 @@
 
 @media (max-width: 767px) {
   .fv__swiper {
-    margin-top: 1.9rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
   }
 }
@@ -437,7 +437,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.4rem 1rem;
-    margin-top: 9.4rem;
+    margin-top: 4rem;
   }
 }
 
@@ -1637,7 +1637,7 @@
   .clinicsns__content {
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 }
 
@@ -1849,4 +1849,4 @@
 
 .clinicsns__blog-arrow {
   margin: auto;
-}
+}/*# sourceMappingURL=style.css.map */

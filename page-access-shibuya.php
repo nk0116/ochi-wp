@@ -42,7 +42,7 @@
                         alt="Instagram"
                     /></a>
                   </li>
-                  <li>
+<!--                   <li>
                     <a
                       href="https://www.facebook.com/CYNTHIA.SBY/"
                       target="_blank"
@@ -51,7 +51,7 @@
                         src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-facebook.png"
                         alt="Facebook"
                     /></a>
-                  </li>
+                  </li> -->
                   <li>
                     <a
                       href="https://twitter.com/cynthia_sby"
@@ -60,14 +60,14 @@
                       ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-x.png" alt="X"
                     /></a>
                   </li>
-                  <li>
+<!--                   <li>
                     <a
                       href="https://ameblo.jp/cynthia-sby/"
                       target="_blank"
                       rel="noopener noreferrer"
                       ><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/access-blog.png" alt="Youtube"
                     /></a>
-                  </li>
+                  </li> -->
                 </ul>
 
                 <dl class="access__list access-low__list access-low__list--shibuya">
@@ -92,11 +92,11 @@
                   </div>
                   <div class="access-low__row">
                     <dt>診療時間</dt>
-                    <dd>午前10時〜午後8時</dd>
+                    <dd>10:00〜20:00</dd>
                   </div>
                   <div class="access-low__row">
                     <dt>受付時間</dt>
-                    <dd>午前10時〜午後8時</dd>
+                    <dd>10:00〜20:00</dd>
                   </div>
                   <div class="access-low__row access-low__row--border-bottom">
                     <dt>休診日</dt>
@@ -211,7 +211,7 @@
                 </div>
               </div>
               <div class="gallery-low-pagination"></div>
-            
+
               <div class="gallery-low-swiper__btn">
                 <button class="gallery-low-prev">
                   <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/access/btn-prev.svg" alt="">
@@ -224,4 +224,4 @@
           </div>
         </section> -->
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>

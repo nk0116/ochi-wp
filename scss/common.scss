@@ -847,7 +847,7 @@ img {
 
   @include mq("sp") {
     padding-top: 3.85rem;
-    padding-bottom: 3.85rem;
+    padding-bottom: 10.85rem;
   }
 }
 
@@ -1077,6 +1077,13 @@ img {
   letter-spacing: 0.048rem;
   margin-top: 4rem;
   text-align: center;
+
+  @include mq('sp') {
+    white-space:nowrap; 
+    color:#009FE6;
+    position: relative;
+    left: -1.1rem;
+  }
 }
 
 .case {

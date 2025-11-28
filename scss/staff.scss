@@ -57,6 +57,7 @@ $breakpoints: (
   @include mq(sp) {
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
   }
 }
 .doctor-list__card {

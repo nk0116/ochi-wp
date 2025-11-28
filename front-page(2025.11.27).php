@@ -111,32 +111,12 @@
                       $image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                       // タイトル
                       $title = get_the_title();
-                      // リンクを取得
-                      $links = array(
-                        get_field('リンク01'),
-                        get_field('リンク02'),
-                        get_field('リンク03'),
-                      );
-                      // 有効なリンク（リンクフィールドが空でないもの）を抽出
-                      $valid_link = null;
-                      foreach($links as $link) {
-                        if (!empty($link) && !empty($link['リンク'])) {
-                          $valid_link = $link['リンク'];
-                          break;
-                        }
-                      }
                   ?>
                     <div class="swiper-slide">
                       <div class="campaign__item">
                         <div class="campaign__image">
                           <?php if ($image_url): ?>
-                            <?php if ($valid_link): ?>
-                              <a href="<?php echo esc_url($valid_link); ?>">
-                                <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>" />
-                              </a>
-                            <?php else: ?>
-                              <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>" />
-                            <?php endif; ?>
+                            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>" />
                           <?php else: ?>
                             <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Image" />
                           <?php endif; ?>
@@ -398,11 +378,12 @@
 
         <section class="ploblem">
           <div class="inner">
-            <h2 class="title">Menu</h2>
+            <h2 class="title">Problem <br class="pc_n" />Menu</h2>
 
             <div class="ploblem__contents">
               <div class="ploblem__content">
                 <div class="ploblem__content-title">美容外科</div>
+
                 <div class="ploblem__tabs" role="tablist" aria-label="お悩みカテゴリ" >
                   <button class="ploblem__tab is-active" role="tab" aria-selected="true" aria-controls="panel-eye" id="tab-eye" data-target="panel-eye" >
                     <span class="ploblem__icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/icon-eye.svg" alt="目のアイコン"/></span>
@@ -1080,7 +1061,7 @@
                   </a>
                 </div>
 
-                <!-- <div class="clinicsns__blog">
+                <div class="clinicsns__blog">
                   <a href="<?php echo home_url('/ginza-blog/'); ?>" class="clinicsns__blog-title">
                     <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
                     銀座院 スタッフブログ
@@ -1122,7 +1103,7 @@
                     </li>
                     <?php endif; ?>
                   </ul>
-                </div> -->
+                </div>
               </div>
 
               <!-- 渋谷院 -->
@@ -1146,7 +1127,7 @@
                   </a>
                 </div>
 
-                <!-- <div class="clinicsns__blog">
+                <div class="clinicsns__blog"><!-- 非表示設定 -->
                   <a href="<?php echo home_url('/shibuya-blog/'); ?>" class="clinicsns__blog-title">
                     <span class="clinicsns__blog-icon"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/clinicsns-blog.png" alt="ブログ" width="26" height="26"></span>
                     渋谷院 スタッフブログ
@@ -1188,7 +1169,7 @@
                     </li>
                     <?php endif; ?>
                   </ul>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -2616,53 +2597,32 @@
 
         <section class="gallery">
           <h2 class="title">Gallery</h2>
-          <div class="ploblem__content-2">
-          <!-- <div class="gallery-title">銀座院</div> -->
-          <!-- ▼ 上段：銀座院ギャラリー -->
-          <div class="gallery__inner gallery__inner--ginza">
-            <div class="swiper gallery__swiper gallery__swiper--ginza">
+          <div class="gallery__inner">
+            <!-- Swiper START -->
+            <div class="swiper gallery__swiper">
+              <!-- メイン表示部分 -->
               <div class="swiper-wrapper">
+                <!-- 各スライド -->
                 <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider01.jpg" alt="銀座院01" />
+                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider01.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider02.jpg" alt="銀座院02" />
+                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider02.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider03.jpg" alt="銀座院03" />
+                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider03.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider04.jpg" alt="銀座院04" />
+                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider04.jpg" alt="" />
                 </div>
               </div>
             </div>
+
             <div class="gallery__pagination">
-              <div class="swiper-pagination ginza-pagination"></div>
+              <div class="swiper-pagination"></div>
             </div>
+
+            <!-- Swiper END -->
           </div>
-
-          <!-- ▼ 下段：渋谷院ギャラリー -->
-          <!-- <div class="gallery__inner gallery__inner--shibuya">
-            <div class="swiper gallery__swiper gallery__swiper--shibuya">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider01.jpg" alt="渋谷院01" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider02.jpg" alt="渋谷院02" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider03.jpg" alt="渋谷院03" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/top/slider04.jpg" alt="渋谷院04" />
-                </div>
-              </div>
-            </div>
-            <div class="gallery__pagination">
-              <div class="swiper-pagination shibuya-pagination"></div>
-            </div>
-          </div> -->
-
         </section>
 <?php get_footer(); ?>
