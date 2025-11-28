@@ -22,47 +22,49 @@
         <section class="notice-detail">
           <div class="inner">
             <div class="notice-detail__inner">
+              <?php
+              // 見出しを取得して目次を生成
+              $content = get_the_content();
+              $pattern = '/<h([2-4])[^>]*>(.*?)<\/h[2-4]>/i';
+              preg_match_all($pattern, $content, $matches, PREG_SET_ORDER);
+              
+              if (!empty($matches)) :
+              ?>
               <div class="notice-body__toc">
                 <div class="table-of-contents">
                   <ol class="wp-block-list">
                     <?php
-                    // 見出しを取得して目次を生成
-                    $content = get_the_content();
-                    $pattern = '/<h([2-4])[^>]*>(.*?)<\/h[2-4]>/i';
-                    preg_match_all($pattern, $content, $matches, PREG_SET_ORDER);
+                    $current_h2_index = 0;
+                    $current_h3_index = 0;
+                    $heading_count = 0;
                     
-                    if (!empty($matches)) {
-                      $current_h2_index = 0;
-                      $current_h3_index = 0;
-                      $heading_count = 0;
+                    foreach ($matches as $match) {
+                      $level = (int)$match[1];
+                      $title = strip_tags($match[2]);
+                      $heading_count++;
+                      $id = 'heading-' . $heading_count;
                       
-                      foreach ($matches as $match) {
-                        $level = (int)$match[1];
-                        $title = strip_tags($match[2]);
-                        $heading_count++;
-                        $id = 'heading-' . $heading_count;
-                        
-                        if ($level == 2) {
-                          $current_h2_index++;
-                          $current_h3_index = 0;
-                          if ($current_h2_index > 1) {
-                            echo '</li>';
-                          }
-                          echo '<li>';
-                          echo '<a href="#' . esc_attr($id) . '"><b>' . esc_html($current_h2_index . '. ' . $title) . '</b></a>';
-                        } elseif ($level == 3) {
-                          $current_h3_index++;
-                          echo '<a href="#' . esc_attr($id) . '">' . esc_html($title) . '</a>';
+                      if ($level == 2) {
+                        $current_h2_index++;
+                        $current_h3_index = 0;
+                        if ($current_h2_index > 1) {
+                          echo '</li>';
                         }
+                        echo '<li>';
+                        echo '<a href="#' . esc_attr($id) . '"><b>' . esc_html($current_h2_index . '. ' . $title) . '</b></a>';
+                      } elseif ($level == 3) {
+                        $current_h3_index++;
+                        echo '<a href="#' . esc_attr($id) . '">' . esc_html($title) . '</a>';
                       }
-                      if ($current_h2_index > 0) {
-                        echo '</li>';
-                      }
+                    }
+                    if ($current_h2_index > 0) {
+                      echo '</li>';
                     }
                     ?>
                   </ol>
                 </div>
               </div>
+              <?php endif; ?>
               <div class="notice-detail__box">
                 <div class="notice-head">
                   <div class="notice-head__meta">
