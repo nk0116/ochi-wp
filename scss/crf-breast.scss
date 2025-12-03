@@ -28,7 +28,7 @@ $breakpoints: (
   margin-top: 3.5rem;
 
   @include mq("sp") {
-    margin-top: 9.1rem;
+    margin-top: 0;
 
     .inner {
       padding-left: 2rem;
