@@ -17,7 +17,7 @@ function my_theme_enqueue_scripts()
     // Google Fonts
     wp_enqueue_style(
         'google-fonts',
-        'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@200..900&family=Oswald:wght@400;500;600;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@200..900&display=swap',
         array(),
         null
     );
@@ -419,16 +419,6 @@ function my_theme_enqueue_scripts()
         );
     }
 
-    // page-crf-breast（CRF豊胸ページ）に crf-breast.css を適用
-    if (is_page('crf-breast')) {
-        wp_enqueue_style(
-            'crf-breast-css',
-            get_template_directory_uri() . '/css/crf-breast.css',
-            array('theme-style', 'common-css'),
-            filemtime(get_template_directory() . '/css/crf-breast.css')
-        );
-    }
-
     // ゴルゴ線ページだけで golgo-line.css を読み込み
     if (is_page('golgo-line')) {
         wp_enqueue_style(
@@ -449,8 +439,9 @@ function my_theme_enqueue_scripts()
             filemtime(get_template_directory() . '/css/hair-removal.css')
         );
     }
-
-    if (is_page('under-eye-bag-removal')) {
+	
+	
+ if (is_page('under-eye-bag-removal') || is_page('golgo-line') || is_page('facelift') || is_page('bezier')) {
         wp_enqueue_style(
             'hair-removal-css',
             get_template_directory_uri() . '/css/page02.css',
@@ -459,6 +450,7 @@ function my_theme_enqueue_scripts()
         );
         
     }
+
 
 
     if (is_page('under-eye-bag-removal')) {
