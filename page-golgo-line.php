@@ -1,29 +1,25 @@
 <?php get_header(); ?>
 
 <main class="removal">
-  <section class="page-head">
-    <div class="inner">
-      <div class="page-head__content">
-        <div class="page-head__text">
+<section class="page-head">
+				<div class="inner">
+					<div class="page-head__content">
+						<div class="page-head__text">
 
+							<h1 class="page-head__title">
+              ゴルゴ線治療
+							</h1>
 
-          <h1 class="page-head__title">
-            ゴルゴ線治療
-          </h1>
+							<p class="page-head__description">
+              自然で若々しい目元の印象を
+							</p>
 
-          <p class="page-head__description">
-            自然で若々しい目元の印象を
-          </p>
+						</div>
+						
 
-
-        </div>
-        <div class="page-head__image">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/MV.png" alt="">
-        </div>
-
-      </div>
-    </div>
-  </section>
+					</div>
+				</div>
+			</section>
 
 
   <section class="page-nav">
@@ -186,10 +182,7 @@
 
       <div class="feature__content">
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="自然な若返り効果のイメージ画像">
-          </div>
-
+       
           <div class="feature__text-content">
 
             <h3 class="feature__title">
@@ -203,9 +196,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="根本原因に合わせた治療のイメージ画像">
-          </div>
 
           <div class="feature__text-content">
             <h3 class="feature__title">
@@ -218,9 +208,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="持続性の高いイメージ画像">
-          </div>
 
           <div class="feature__text-content">
             <h3 class="feature__title">
@@ -233,9 +220,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="ダウンタイムが少ないイメージ画像">
-          </div>
 
           <div class="feature__text-content">
             <h3 class="feature__title">
@@ -248,10 +232,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="安全性と専門性のイメージ画像">
-          </div>
-
           <div class="feature__text-content">
             <h3 class="feature__title">
               安全性と専門性
@@ -327,7 +307,7 @@
         <div class="reason__row">
           <div class="reason__item">
             <div class="reason__item-image">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
+              <iframe src="https://www.youtube.com/embed/-uXSlt-Z7L8" title="ゴルゴ線とゴルゴ線の剥離をわかりやすく" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="reason__item-content">
               <p class="reason__item-text">
@@ -350,8 +330,8 @@
                 ヒアルロン酸のような注入剤で容易に治療が可能です。
               </p>
             </div>
-            <div class="reason__item-image">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
+            <div class="reason__item-image reason__item-image02">
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/image.png" alt="">
             </div>
           </div>
         </div>
@@ -378,6 +358,9 @@
           Cause<span>01</span>
         </p>
 
+        <div class="">
+
+        </div>
         <p class="cause-golgo__detail-title">
           ゴルゴ線の治療だけを行う場合
         </p>
@@ -426,15 +409,16 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="case01__swiper-img-box">
-                <img src="" alt="">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/person.png" alt="">
               </div>
 
               <div class="case01__swiper-text-box">
                 <h3 class="case01__swiper-title">目袋の治療は経結膜脱脂術</h3>
                 <p class="case01__swiper-desc">
-                  ご自身の顔でも鏡で是非確認してほしいのですが、大切なことは「眼窩を構成する骨の縁は、涙袋の下縁の高さとほとんど変わらない」ということです。<br>
-                  治療は、経結膜脱脂術などで眼窩脂肪を減らし、眼窩から脱出しないようにすることです。<br>
-                  一般的に“クマ治療”と呼ばれるものの中心は、この経結膜脱脂術となります。
+                ご自身の顔でも鏡で是非確認してほしいのですが、大切なことは「眼窩を構成する骨の縁は、涙袋の下縁の高さとほとんど変わらない」ということです。<br>
+                眼窩の骨の縁は基本的に体表から分かりません。（よってよく言われる”骨の段差が見えるとコケて見える”というのはウソ）<br>
+                治療は、経結膜脱脂術などで眼窩脂肪を減らし、眼窩から脱出しないようにすることです。<br>
+                一般的に“クマ治療”と呼ばれるものの中心は、この経結膜脱脂術となります。
                 </p>
               </div>
             </div>
@@ -478,6 +462,106 @@
         <div class="case01__pagination"></div>
 
       </div><!-- /.cause-eye__detail -->
+
+
+      <div class="cause-golgo__detail">
+        <p class="cause-golgo__detail-number">
+          Cause<span>02</span>
+        </p>
+
+        <div class="">
+
+        </div>
+        <p class="cause-golgo__detail-title">
+        経結膜脱脂術（クマ治療）と同時にゴルゴ線を治療する場合
+        </p>
+
+        <div class="cause-golgo__anatomy">
+
+          <div class="cause-golgo__anatomy-box">
+            <h3 class="cause-golgo__anatomy-title">
+            経結膜脱脂術＋ゴルゴ線剥離＋マイクロCRF脂肪注入
+            </h3>
+
+            <p class="cause-golgo__anatomy-desc">
+            ゴルゴ線の凹みの原因である皮膚・深部構造の癒着を解除するとともに、経結膜脱脂術で突出した眼窩脂肪を適切に除去することで、下まぶた〜中顔面の滑らかな移行を実現します。
+            </p>
+
+            <div class="cause-golgo__anatomy-content">
+              <div class="cause-golgo__anatomy-image">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/treatment02.jpg" alt="">
+              </div>
+              <div class="cause-golgo__anatomy-content-text">
+                <p>
+                  <span class="color-red">赤</span>：マイクロコンデンスリッチファット<br>
+                  <span class="color-blue">青</span>：経結膜脱脂術の処置範囲<br>
+                  （マイクロCRF）注入<br>
+                  <span class="color-green">緑</span>：ゴルゴ線剥離
+                </p>
+              </div>
+            </div>
+
+
+            <p class="cause-golgo__anatomy-desc">
+            ゴルゴ線の上部は眼輪筋下部〜眼窩脂肪の突出影響を受けやすく、経結膜脱脂術と併用することで根本的なボリュームバランスを整えることが可能です。
+            </p>
+
+          </div>
+        </div>
+
+      </div><!-- /.cause-eye__detail -->
+
+
+      <div class="cause-golgo__detail">
+        <p class="cause-golgo__detail-number">
+          Cause<span>03</span>
+        </p>
+
+        <div class="">
+
+        </div>
+        <p class="cause-golgo__detail-title">
+        頬アゴ下のベイザー脂肪吸引と同時にゴルゴ線を治療する場合
+        </p>
+
+        <div class="cause-golgo__anatomy">
+
+          <div class="cause-golgo__anatomy-box">
+            <h3 class="cause-golgo__anatomy-title">
+            ゴルゴ線剥離＋マイクロCRF＋ベイザー脂肪吸引
+            </h3>
+
+            <p class="cause-golgo__anatomy-desc">
+            ゴルゴ線は、中顔面の皮膚と深部組織（靭帯や筋膜）の癒着が原因で生じます。<br>
+            また、頬下部〜アゴ下にかけて皮下脂肪が蓄積している場合、中顔面のたるみや下方向へのボリュームシフトを助長し、ゴルゴ線をより深く見せてしまう要因となります。
+            </p>
+
+            <div class="cause-golgo__anatomy-content">
+              <div class="cause-golgo__anatomy-image">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/treatment03.jpg" alt="">
+              </div>
+              <div class="cause-golgo__anatomy-content-text">
+                <p>
+                  <span class="color-red">赤</span>：皮下脂肪の衰えを脂肪注入で改善<br>
+                  <span class="color-blue">青</span>：経結膜脱脂術でボリュームを減らす<br>
+                  <span class="color-green">緑</span>：ゴルゴ線の癒着を剥離<br>
+                  <span class="color-purple">紫</span>：脂肪吸引
+                </p>
+              </div>
+            </div>
+
+
+            <p class="cause-golgo__anatomy-desc">
+            そのため、ベイザー脂肪吸引で余分な皮下脂肪を除去し、フェイスラインから頬中央までのボリュームバランスを整えながら、マイクロCRF注入で中顔面の凹みをふっくらと補正することで、より立体的で若々しい印象に仕上げることが可能です。
+            </p>
+
+          </div>
+        </div>
+
+      </div><!-- /.cause-eye__detail -->
+
+
+      
     </div><!-- /.inner -->
   </section>
 
@@ -502,10 +586,6 @@
 
           </p>
 
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
-          </div>
-
           <h3 class="effect__title">
             ハリ感アップ
 
@@ -520,9 +600,6 @@
             02
           </p>
 
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
-          </div>
 
           <h3 class="effect__title">
             自然なリフトアップ
@@ -537,10 +614,6 @@
             03
           </p>
 
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
-          </div>
-
           <h3 class="effect__title">
             影クマ・疲労感解消
           </h3>
@@ -553,10 +626,6 @@
           <p class="effect__number">
             04
           </p>
-
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
-          </div>
 
           <h3 class="effect__title">
             持続性のある改善
@@ -571,9 +640,6 @@
             05
           </p>
 
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="">
-          </div>
 
           <h3 class="effect__title">
             オーダーメイド治療
@@ -893,7 +959,7 @@
           </div>
           <div class="flow__item">
             <div class="flow__image">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/noimage.jpg" alt="施術のイメージ画像" width="300" height="200">
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/golgo/flow04.png" alt="施術のイメージ画像" width="300" height="200">
             </div>
 
             <div class="flow__text">
@@ -1187,114 +1253,5 @@
     </div><!-- /.price__inner -->
   </section>
 
-
-
-
-
-  <section class="contact" id="contact">
-    <div class="inner">
-      <h2 class="title">
-        Contact
-      </h2>
-
-      <p class="contact__text">
-        カウンセリングのご相談はこちらから承ります。
-      </p>
-
-      <div class="contact__content">
-        <div class="contact__clinic">
-          <p class="contact__clinic-name">
-            銀座院
-          </p>
-          <div class="contact__clinic-info">
-            <div class="contact__reservations">
-              <a class="contact__reservation" href="https://page.line.me/wdy1996b" target="_blank" rel="noopener noreferrer">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/ico_line.svg.png" alt="">
-                  LINE予約
-                </p>
-                <p class="contact__reservation-desc">
-                  銀座院のLINE予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-              <a class="contact__reservation" href="https://cosmedical.jp/contact/" target="_blank" rel="noopener noreferrer">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Web.png" alt="">
-                  WEB予約
-                </p>
-                <p class="contact__reservation-desc">
-                  銀座院のWEB予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-            </div>
-            <a class="contact__phone" href="tel:03-6281-4100">
-              <p class="contact__phone-number">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Phone.png" alt="">
-                03-6281-4100
-              </p>
-              <p class="contact__phone-hours">
-                営業時間：10:00〜20:00<br>
-                (年中無休)
-              </p>
-            </a>
-          </div>
-        </div>
-        <div class="contact__clinic">
-          <p class="contact__clinic-name is-ginza">
-            渋谷院
-          </p>
-          <div class="contact__clinic-info">
-            <div class="contact__reservations">
-              <a class="contact__reservation" href="https://line.me/R/ti/p/%40400hhfgq">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/ico_line.svg.png" alt="https://page.line.me/oiu9031z">
-                  LINE予約
-                </p>
-                <p class="contact__reservation-desc">
-                  渋谷院のLINE予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-              <a class="contact__reservation" href="https://www.cancer-chika.jp/reservation/shibuya" target="_blank" rel="noopener noreferrer">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Web.png" alt="">
-                  WEB予約
-                </p>
-                <p class="contact__reservation-desc">
-                  渋谷院のWEB予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-            </div>
-            <a class="contact__phone" href="tel:03-6281-4100">
-              <p class="contact__phone-number">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Phone.png" alt="">
-                03-6809-0029
-              </p>
-              <p class="contact__phone-hours">
-                営業時間：10:00〜20:00<br>
-                (年中無休)
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="footer-links">
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/monitor/" target="_blank" rel="noopener noreferrer">モニター募集</a>
-    </div>
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/point-card/" target="_blank" rel="noopener noreferrer">ポイントカード</a>
-    </div>
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/recruit/" target="_blank" rel="noopener noreferrer">採用情報</a>
-    </div>
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/under-age/" target="_blank" rel="noopener noreferrer">未成年者</a>
-    </div>
-  </div>
-
-</main>
 
 <?php get_footer(); ?>

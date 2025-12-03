@@ -3,26 +3,24 @@
 <main class="removal">
 
   <section class="page-head">
-    <div class="inner">
-      <div class="page-head__content">
-        <div class="page-head__text">
+				<div class="inner">
+					<div class="page-head__content">
+						<div class="page-head__text">
 
-          <h1 class="page-head__title">
-            フェイスリフト
-          </h1>
+							<h1 class="page-head__title">
+              フェイスリフト
+							</h1>
 
-          <p class="page-head__description">
-            たるみを根本から引き上げ、若々しい輪郭へ
-          </p>
+							<p class="page-head__description">
+              たるみを根本から引き上げ、若々しい輪郭へ
+							</p>
 
-        </div>
-        <div class="page-head__image">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="">
-        </div>
+						</div>
+						
 
-      </div>
-    </div>
-  </section>
+					</div>
+				</div>
+			</section>
 
 
   <section class="page-nav">
@@ -70,7 +68,7 @@
     <div class="about__inner">
       <div class="about__content">
         <div class="about__image">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="イメージ画像">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/about-img.png" alt="イメージ画像">
         </div>
       </div>
 
@@ -138,7 +136,7 @@
         </div>
 
         <div class="merit__image">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="イメージ画像">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/merit.jpg" alt="イメージ画像">
         </div>
       </div>
     </div>
@@ -160,28 +158,20 @@
 
       <div class="feature__content">
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt=" 自然な若返り効果のイメージ画像">
-          </div>
 
           <div class="feature__text-content">
 
             <h3 class="feature__title">
-              自然な若返り効果
+            根本的なたるみ改善
             </h3>
 
             <p class="feature__text">
-              注入系治療や脂肪移動術のように過剰に膨らませることなく、ナチュラルにリフトアップ。<br>
-              「やった感」が出にくく、周囲に気づかれにくいのが特徴です。
+            皮膚だけでなく、顔の土台となるSMAS（筋膜）も処理して引き上げることで、たるみを根本から解消し、ほうれい線やフェイスラインのたるみ、顔全体のしわを改善します。
             </p>
 
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="長期的な持続力のイメージ画像">
-          </div>
-
           <div class="feature__text-content">
             <h3 class="feature__title">
               長期的な持続力
@@ -194,9 +184,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="フェイスライン全体を改善のイメージ画像">
-          </div>
 
           <div class="feature__text-content">
             <h3 class="feature__title">
@@ -209,9 +196,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="オーダーメイドイメージ画像">
-          </div>
 
           <div class="feature__text-content">
             <h3 class="feature__title">
@@ -225,9 +209,6 @@
           </div>
         </div>
         <div class="feature__item">
-          <div class="feature__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="確実な効果と安心感のイメージ画像">
-          </div>
 
           <div class="feature__text-content">
             <h3 class="feature__title">
@@ -303,10 +284,12 @@
             TREATMENT
           </h2>
           <p class="page-title__subtitle">
-            フェイスリフトの治療
+          シンシアの脂肪溶解注射の治療
           </p>
         </div>
       </div>
+
+
       <div class="treatment__detail">
         <p class="treatment__detail-number">
           Cause<span>01</span>
@@ -317,35 +300,177 @@
 
 
         <div class="treatment-result__content">
-          <h3 class="treatment__anatomy-title">
-            シンシアシグネチャーフェイスリフト
-          </h3>
-          <p class="treatment-result__lead">
-            効果・クオリティ共に当院No.1！<br>
-            咬筋層帯、下顎縁部まで処理するシンシアオリジナルの本格フェイスリフト治療
+
+        <p class="treatment-result__lead">
+        たるみの根本原因であるSMAS（筋膜）層をしっかりと引き上げるシンシア独自のリフトアップ術。余分な皮膚だけでなく、深部からリフトアップすることで、自然な若返り効果と長期持続を両立します。
           </p>
-
-          <div class="treatment-result__images">
-            <figure class="treatment-result__image">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/treatment01.jpg" alt="術前">
-              <figcaption>術前</figcaption>
-            </figure>
-            <figure class="treatment-result__image">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/treatment02.jpg" alt="術後">
-              <figcaption>術後</figcaption>
-            </figure>
-          </div>
-
+          <h3 class="treatment__anatomy-title">
+          おすすめな方
+          </h3>
+        
           <div class="treatment-result__recommend">
-            <p class="treatment-result__recommend-title">■おすすめな方</p>
-            <ul class="treatment-result__recommend-list">
-              <li>・しっかりとしたリフトアップ効果を実感したい</li>
-              <li>・自然な仕上がりで、健康的に若々しくなりたい</li>
-              <li>・数年後も若々しさを保ちたい</li>
-            </ul>
+            <div class="treatment-result__recommend-list-wrap">
+              <ul class="treatment-result__recommend-list">
+                <li class="treatment-result__recommend-item">
+                フェイスラインや口元のたるみが気になる
+                </li>
+                <li class="treatment-result__recommend-item">
+                ナチュラルに若返りたい
+                </li>
+                <li class="treatment-result__recommend-item">
+                長期的に効果を維持したい
+                </li>
+                <li class="treatment-result__recommend-item">
+                傷跡の少ない仕上がりを希望する
+                </li>
+              </ul>
+            </div>
+
+            <div class="treatment-result__recommend-image">
+              <img src="" alt="">
+            </div>
           </div>
+
+        
         </div>
       </div>
+
+      <div class="treatment__detail">
+        <p class="treatment__detail-number">
+          Cause<span>02</span>
+        </p>
+        <p class="treatment__detail-title">
+        トータルフェイスリフト（SMAS法）
+        </p>
+
+
+        <div class="treatment-result__content">
+
+        <p class="treatment-result__lead">
+        加齢により下がった皮膚とSMAS層を同時に引き上げる本格的なリフトアップ術。顔全体をしっかり若返らせたい方に適しています。
+          </p>
+          <h3 class="treatment__anatomy-title">
+          おすすめな方
+          </h3>
+        
+          <div class="treatment-result__recommend">
+            <div class="treatment-result__recommend-list-wrap">
+              <ul class="treatment-result__recommend-list">
+                <li class="treatment-result__recommend-item">
+                顔全体のたるみを改善したい
+                </li>
+                <li class="treatment-result__recommend-item">
+                ほうれい線やマリオネットラインが深くなってきた
+                </li>
+                <li class="treatment-result__recommend-item">
+                首のたるみも一緒に引き上げたい
+                </li>
+                <li class="treatment-result__recommend-item">
+                しっかりとした変化を求める
+                </li>
+              </ul>
+            </div>
+
+            <div class="treatment-result__recommend-image">
+              <img src="" alt="">
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+
+      <div class="treatment__detail">
+        <p class="treatment__detail-number">
+          Cause<span>03</span>
+        </p>
+        <p class="treatment__detail-title">
+        部分フェイスリフト（前額リフト・ミニリフト）
+        </p>
+
+
+        <div class="treatment-result__content">
+
+        <p class="treatment-result__lead">
+        たるみが気になる部位を部分的に引き上げる施術。前額リフトは額～眉上のたるみを、ミニリフトは頬・フェイスラインなどの軽いたるみに適しています。
+          </p>
+          <h3 class="treatment__anatomy-title">
+          おすすめな方
+          </h3>
+        
+          <div class="treatment-result__recommend">
+            <div class="treatment-result__recommend-list-wrap">
+              <ul class="treatment-result__recommend-list">
+                <li class="treatment-result__recommend-item">
+                顔全体ではなく、部分的に引き上げたい
+                </li>
+                <li class="treatment-result__recommend-item">
+                軽いたるみを早めにケアしたい
+                </li>
+                <li class="treatment-result__recommend-item">
+                ダウンタイムを抑えたい
+                </li>
+                <li class="treatment-result__recommend-item">
+                自然な変化で若返りたい
+                </li>
+              </ul>
+            </div>
+
+            <div class="treatment-result__recommend-image">
+              <img src="" alt="">
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+
+
+      <div class="treatment__detail">
+        <p class="treatment__detail-number">
+          Cause<span>04</span>
+        </p>
+        <p class="treatment__detail-title">
+        頬＋アゴ下 ベイザー®×アキーセル脂肪吸引＋脂肪注入によるフェイスリフト
+        </p>
+
+        <div class="treatment-result__content">
+
+          <p class="treatment-result__lead">
+          ベイザー・アキーセルによる脂肪吸引でフェイスラインをすっきり整え、自身の脂肪を注入して立体感とハリを取り戻す治療。リフトアップとボリューム再生を同時に叶えます。
+          </p>
+          <h3 class="treatment__anatomy-title">
+          おすすめな方
+          </h3>
+        
+          <div class="treatment-result__recommend">
+            <div class="treatment-result__recommend-list-wrap">
+              <ul class="treatment-result__recommend-list">
+                <li class="treatment-result__recommend-item">
+                フェイスラインをすっきり見せたい
+                </li>
+                <li class="treatment-result__recommend-item">
+                たるみとハリの両方を改善したい
+                </li>
+                <li class="treatment-result__recommend-item">
+                シャープな輪郭と若々しい立体感を取り戻したい
+                </li>
+                <li class="treatment-result__recommend-item">
+                自分の脂肪で自然にボリュームアップしたい
+                </li>
+              </ul>
+            </div>
+
+            <div class="treatment-result__recommend-image">
+              <img src="" alt="">
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+
+
     </div>
   </section>
 
@@ -367,12 +492,7 @@
         <div class="effect__item">
           <p class="effect__number">
             01
-
           </p>
-
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="効果にコミットのイメージ画像">
-          </div>
 
           <h3 class="effect__title">
             効果にコミット
@@ -388,9 +508,6 @@
             02
           </p>
 
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="適正価格のイメージ画像">
-          </div>
 
           <h3 class="effect__title">
             適正な価格
@@ -404,10 +521,6 @@
           <p class="effect__number">
             03
           </p>
-
-          <div class="effect__image">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="安全性のイメージ画像">
-          </div>
 
           <h3 class="effect__title">
             安全性
@@ -731,7 +844,7 @@
           </div>
           <div class="flow__item">
             <div class="flow__image">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/noimage.jpg" alt="施術のイメージ画像" width="300" height="200">
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/facelift/flow04.png" alt="施術のイメージ画像" width="300" height="200">
             </div>
 
             <div class="flow__text">
@@ -1056,110 +1169,5 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="inner">
-      <h2 class="title">
-        Contact
-      </h2>
-
-      <p class="contact__text">
-        カウンセリングのご相談はこちらから承ります。
-      </p>
-
-      <div class="contact__content">
-        <div class="contact__clinic">
-          <p class="contact__clinic-name">
-            銀座院
-          </p>
-          <div class="contact__clinic-info">
-            <div class="contact__reservations">
-              <a class="contact__reservation" href="https://page.line.me/wdy1996b" target="_blank" rel="noopener noreferrer">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/ico_line.svg.png" alt="">
-                  LINE予約
-                </p>
-                <p class="contact__reservation-desc">
-                  銀座院のLINE予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-              <a class="contact__reservation" href="https://cosmedical.jp/contact/" target="_blank" rel="noopener noreferrer">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Web.png" alt="">
-                  WEB予約
-                </p>
-                <p class="contact__reservation-desc">
-                  銀座院のWEB予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-            </div>
-            <a class="contact__phone" href="tel:03-6281-4100">
-              <p class="contact__phone-number">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Phone.png" alt="">
-                03-6281-4100
-              </p>
-              <p class="contact__phone-hours">
-                営業時間：10:00〜20:00<br>
-                (年中無休)
-              </p>
-            </a>
-          </div>
-        </div>
-        <div class="contact__clinic">
-          <p class="contact__clinic-name is-ginza">
-            渋谷院
-          </p>
-          <div class="contact__clinic-info">
-            <div class="contact__reservations">
-              <a class="contact__reservation" href="https://line.me/R/ti/p/%40400hhfgq">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/ico_line.svg.png" alt="https://page.line.me/oiu9031z">
-                  LINE予約
-                </p>
-                <p class="contact__reservation-desc">
-                  渋谷院のLINE予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-              <a class="contact__reservation" href="https://www.cancer-chika.jp/reservation/shibuya" target="_blank" rel="noopener noreferrer">
-                <p class="contact__reservation-title">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Web.png" alt="">
-                  WEB予約
-                </p>
-                <p class="contact__reservation-desc">
-                  渋谷院のWEB予約は<br class="pc_n">こちらから
-                </p>
-              </a>
-            </div>
-            <a class="contact__phone" href="tel:03-6281-4100">
-              <p class="contact__phone-number">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top/Phone.png" alt="">
-                03-6809-0029
-              </p>
-              <p class="contact__phone-hours">
-                営業時間：10:00〜20:00<br>
-                (年中無休)
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="footer-links">
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/monitor/" target="_blank" rel="noopener noreferrer">モニター募集</a>
-    </div>
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/point-card/" target="_blank" rel="noopener noreferrer">ポイントカード</a>
-    </div>
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/recruit/" target="_blank" rel="noopener noreferrer">採用情報</a>
-    </div>
-    <div class="footer-links__item">
-      <a href="https://cosmedical.jp/under-age/" target="_blank" rel="noopener noreferrer">未成年者</a>
-    </div>
-  </div>
-
-</main>
 
 <?php get_footer(); ?>

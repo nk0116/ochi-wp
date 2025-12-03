@@ -135,10 +135,6 @@ $breakpoints: (
     }
 }
 
-.price__price-item02 {
-
-}
-
 
 .price__item {
     &:nth-of-type(n+2) {
@@ -174,5 +170,102 @@ $breakpoints: (
 
     .price__item02 {
         border-bottom:1px solid #ccc;
+    }
+}
+
+
+.feature {
+    background-color: #E9F1F7;
+}
+
+.feature__item {
+    background-color: #fff;
+    border-radius: 1.6rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    height: 36.3rem;
+    padding-top: 9.8rem;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 8.4rem;
+        height: 8.2rem;
+        top: -1.6rem;
+        left: 2.4rem;
+    }
+
+    &:nth-of-type(1) {
+        &::after {
+            background: url(../img/golgo/point01.png) no-repeat center center/cover;
+        }
+    }
+    &:nth-of-type(2) {
+        &::after {
+            background: url(../img/golgo/point02.png) no-repeat center center/cover;
+        }
+    }
+    &:nth-of-type(3) {
+        &::after {
+            background: url(../img/golgo/point03.png) no-repeat center center/cover;
+        }
+    }
+    &:nth-of-type(4) {
+        &::after {
+            background: url(../img/golgo/point04.png) no-repeat center center/cover;
+        }
+    }
+    &:nth-of-type(5) {
+        &::after {
+            background: url(../img/golgo/point05.png) no-repeat center center/cover;
+        }
+    }
+}
+
+.feature__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem 1.6rem;
+    margin-top: 4rem;
+  
+    @include mq("sp") {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
+    }
+  }
+  
+
+  .feature__text-content {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 0;
+  }
+
+  .feature__item {
+    height: 27rem;
+    padding-top: 9.8rem;
+  }
+
+  .cause-face {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .inner {
+        width: 76rem;
+
+        @include mq('sp') {
+            width: auto;
+        }
+    }
+  }
+
+.cause__item {
+    margin-top: 4rem;
+}
+
+.reason__item-video {
+
+    iframe {
+        width: 100%;
+        height: 35.9rem;
     }
 }

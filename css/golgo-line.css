@@ -6,7 +6,7 @@
 }
 @media (max-width: 767px) {
   .page-head {
-    margin-top: 7.5rem;
+    margin-top: 0rem;
   }
 }
 @media (max-width: 767px) {
@@ -626,19 +626,6 @@
   }
 }
 
-.feature__content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12rem 3rem;
-  margin-top: 4rem;
-}
-@media (max-width: 767px) {
-  .feature__content {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 4rem;
-  }
-}
-
 .feature__title {
   color: #333;
   font-size: 2rem;
@@ -653,11 +640,6 @@
   font-weight: 500;
   line-height: 160%; /* 2.56rem */
   margin-top: 0.8rem;
-}
-
-.feature__text-content {
-  padding-left: 2rem;
-  border-left: 1px solid #009fe6;
 }
 
 .comparison {
@@ -916,8 +898,10 @@
   background: #fff;
   padding-left: 0.84rem;
   padding-right: 0.86rem;
-  padding-bottom: 1.98rem;
+  height: 25rem;
+  padding-top: 8rem;
 }
+
 .effect__number {
   background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
   stroke-width: 1px;
@@ -936,21 +920,22 @@
   margin-left: auto;
   margin-top: -5.16rem;
   margin-right: auto;
-  font-family: Aboreto;
   margin-bottom: 3.35rem;
   padding-top: 1.1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
 .effect__title {
   color: var(--333, #333);
   text-align: center;
-  font-family: "Zen Old Mincho";
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 3rem */
   letter-spacing: 0.08rem;
-  margin-top: 1rem;
 }
 
 .effect__text {
@@ -1562,8 +1547,12 @@
 }
 
 .reason__item-image {
-  width: 35.2rem;
+  width: 50rem;
   flex-shrink: 0;
+}
+.reason__item-image iframe {
+  width: 28rem;
+  height: 28rem;
 }
 @media (max-width: 767px) {
   .reason__item-image {
@@ -2053,6 +2042,7 @@
 
 .effect__item {
   padding-bottom: 4.98rem;
+  position: relative;
 }
 
 .flow__image {
@@ -2118,9 +2108,6 @@
 }
 
 @media (max-width: 767px) {
-  .page-head {
-    margin-top: 9.1rem;
-  }
   .page-head .inner {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2519,6 +2506,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.5;
   /* 擬似要素でグラデーションボーダー */
 }
 .golgo-cause .cause__reason-item-title::before {
@@ -2533,6 +2521,10 @@
 .golgo-cause .reason__item-image {
   width: 28rem;
   flex-shrink: 0;
+}
+
+.golgo-cause .reason__item-image02 {
+  width: 39.8rem;
 }
 
 .cause-golgo__types {
@@ -2612,6 +2604,7 @@
   font-weight: 500;
   text-align: center;
   line-height: 100%; /* 2.4rem */
+  padding-bottom: 0.8rem;
   background: linear-gradient(90deg, #009fe6 0%, #74d4ff 41.35%, #11adf3 98.08%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -2727,6 +2720,12 @@
 }
 .cause-golgo__anatomy-content-text .color-green {
   color: #00b900; /* 緑 */
+}
+.cause-golgo__anatomy-content-text .color-red {
+  color: #A52A2A;
+}
+.cause-golgo__anatomy-content-text .color-purple {
+  color: #6D1DF4;
 }
 
 .cause-golgo__anatomy-image {
@@ -3045,4 +3044,7 @@
   .golgo-price__option-title + .golgo-price__table {
     background: none;
   }
+}
+.feature .feature__item {
+  height: 37.9rem;
 }/*# sourceMappingURL=golgo-line.css.map */

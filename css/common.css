@@ -49,8 +49,7 @@ body {
 
 img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .title {
@@ -418,8 +417,7 @@ img {
 .header__phone .phone-icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header__phone .phone-number {
   color: #333;
@@ -467,8 +465,7 @@ img {
 .header__instagram a img {
   width: 2.6rem;
   height: 2.6rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   filter: brightness(0) saturate(100%) invert(27%) sepia(96%) saturate(7499%) hue-rotate(188deg) brightness(99%) contrast(101%);
   transition: all 0.4s ease-in-out;
 }
@@ -955,7 +952,6 @@ img {
     white-space: nowrap;
     color: #009fe6;
     position: relative;
-    left: -1.1rem;
   }
 }
 
