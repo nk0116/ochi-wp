@@ -1,0 +1,43 @@
+
+$serif:"Noto Serif JP", serif;
+$co:"Cormorant SC", serif;
+
+$main-color:#072334;
+$sub-color:#000;
+
+
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー値
+  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
+//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
+
+);
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+//map-get(マップ型変数, キー)で値about__descriptionを取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+
+.page-head__title {
+    padding-bottom: 0px;
+
+}
+
+
+.removal .page-head__title::after {
+    display: none;
+}
+
+
+.comparison__item--old {
+    .comparison__spec-value-text {
+        color: #444;
+    }
+}

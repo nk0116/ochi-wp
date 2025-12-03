@@ -148,7 +148,8 @@
 }
 
 .price-list__icon img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .price-list-bottom {
@@ -283,7 +284,8 @@
   flex-shrink: 0;
 }
 .price-list-bottom__link span img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (min-width: 768px) {
   .price-list-bottom__link:hover {
@@ -951,8 +953,10 @@
   letter-spacing: 0.16rem;
 }
 .price-list-dropdown__toggle img {
+  max-width: -moz-max-content;
   max-width: max-content;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .price-list-dropdown__menu {

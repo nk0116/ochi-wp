@@ -10,8 +10,9 @@
 							<h1 class="page-head__title">
                                 医療レーザー脱毛
 							</h1>
-
-
+							<p class="page-head__description">
+							シンプルな料金体系と都度払い
+							</p>
 						</div>
 						<div class="page-head__image">
 							<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/removal/MV03.jpg" alt="">
@@ -1309,14 +1310,7 @@
 							</p>
 
 							<div class="price__option-list">
-								<div class="price__option-item pc_n">
-									<p class="price__option-name">
-										剃毛（１箇所につき）
-									</p>
-									<p class="price__option-price">
-										2,200<span>円</span>
-									</p>
-								</div>
+
 								<div class="price__option-item">
 									<p class="price__option-name">
 										自宅用クリーム麻酔（30g）

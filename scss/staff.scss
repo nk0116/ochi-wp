@@ -1,29 +1,26 @@
+$serif: "Noto Serif JP", serif;
+$co: "Cormorant SC", serif;
 
-$serif:"Noto Serif JP", serif;
-$co:"Cormorant SC", serif;
-
-$main-color:#072334;
-$sub-color:#000;
-
+$main-color: #072334;
+$sub-color: #000;
 
 //マップ型変数breakpointsを定義
 $breakpoints: (
-//キー値
-  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
-//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
-  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
-
+  //キー値
+  "sp": "(max-width: 767px)",
+  //767px以下（スマホ）用の表示
+  //   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  "pc": "(min-width: 768px)" //768px以上（タブレット・PC）用の表示
 );
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
 @mixin mq($breakpoint: sp) {
-//map-get(マップ型変数, キー)で値を取得
+  //map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
     @content;
   }
 }
-
 
 .doctor-list__inner {
   max-width: calc(108rem + 2rem * 2);
@@ -48,7 +45,7 @@ $breakpoints: (
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem;
   padding-top: 9rem;
-  @media screen and (min-width:768px) and (max-width:1019px) {
+  @media screen and (min-width: 768px) and (max-width: 1019px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,6 +58,7 @@ $breakpoints: (
   }
 }
 .doctor-list__card {
+  position: relative;
   max-width: 32.8rem;
   @include mq(sp) {
     max-width: 100%;
@@ -89,15 +87,15 @@ $breakpoints: (
   align-items: center;
   gap: 1.2rem;
   p {
-    color: #009FE6;
+    color: #009fe6;
     font-size: 1rem;
     font-weight: 700;
     line-height: 180%;
-  
+
     max-width: 5.4rem;
     padding: 0.2rem 1rem;
-    border: 1px solid #009FE6;
-    background: #FFF;
+    border: 1px solid #009fe6;
+    background: #fff;
   }
 }
 .doctor-list__card__info--post {
@@ -117,7 +115,7 @@ $breakpoints: (
   margin-top: 0.8rem;
 }
 .doctor-list__card__info--roman {
-  color:  #CCC;
+  color: #ccc;
   text-align: right;
   font-family: "Cormorant SC";
   font-size: 1.6rem;
@@ -136,7 +134,7 @@ $breakpoints: (
     content: "";
     width: 40%;
     height: 0.1rem;
-    background: #AFAFAF;
+    background: #afafaf;
     left: 0;
     top: 50%;
   }
@@ -171,7 +169,12 @@ $breakpoints: (
       left: 0;
       z-index: -2;
       border-radius: 0.5rem;
-      background: linear-gradient(90deg, #F6C543 0%, #EB4C4E 47%, #6D1DF4 89.5%);
+      background: linear-gradient(
+        90deg,
+        #f6c543 0%,
+        #eb4c4e 47%,
+        #6d1df4 89.5%
+      );
     }
     &::after {
       content: "";
@@ -196,7 +199,7 @@ $breakpoints: (
     }
   }
   .doctor-youtube {
-    border: 2px solid #DA1725;
+    border: 2px solid #da1725;
     img {
       width: 2.8rem;
       height: 2rem;
@@ -208,14 +211,16 @@ $breakpoints: (
   }
 }
 .doctor-list__card__info--link {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   p {
     color: #444;
-    font-feature-settings: 'liga' off, 'clig' off;
+    font-feature-settings: "liga" off, "clig" off;
     font-family: "Noto Serif JP";
     font-size: 1.4rem;
     font-weight: 400;
@@ -228,11 +233,15 @@ $breakpoints: (
   }
   @include mq(pc) {
     &:hover {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 }
 
+.doctor-list__card__overlay-link {
+  position: absolute;
+  inset: 0;
+}
 
 // ------------------- Doctor Details Page -------------------
 .doctor-details {
@@ -286,7 +295,7 @@ $breakpoints: (
   ul li {
     a {
       color: #333;
-      font-family:  "Shippori Mincho", serif;
+      font-family: "Shippori Mincho", serif;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 200%;
@@ -296,10 +305,10 @@ $breakpoints: (
       text-decoration-thickness: auto;
       text-underline-offset: auto;
       text-underline-position: from-font;
-      transition: all .4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       @include mq(pc) {
         &:hover {
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }
@@ -307,8 +316,8 @@ $breakpoints: (
 }
 
 .doctor-details__left__strong--title {
-  color: #9FA2B7;
-  font-family:  "Shippori Mincho", serif;
+  color: #9fa2b7;
+  font-family: "Shippori Mincho", serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 200%;
@@ -344,7 +353,7 @@ $breakpoints: (
 }
 
 .doctor-details__right__roman {
-  color: #CCC;
+  color: #ccc;
   font-family: "Cormorant SC";
   font-size: 1.6rem;
   font-style: normal;
@@ -361,7 +370,7 @@ $breakpoints: (
     height: 0.1rem;
     top: 50%;
     left: 0;
-    background: #AFAFAF;
+    background: #afafaf;
   }
 }
 
@@ -372,10 +381,10 @@ $breakpoints: (
   gap: 2.4rem;
   margin-top: 1.6rem;
   a {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     @include mq(pc) {
       &:hover {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }
@@ -428,8 +437,8 @@ $breakpoints: (
 }
 
 .doctor-details__right__career--title,
-.doctor-details__right__info--title  {
-  color: #9FA2B7;
+.doctor-details__right__info--title {
+  color: #9fa2b7;
   font-family: "Shippori Mincho";
   font-size: 1.6rem;
   font-weight: 400;
@@ -442,8 +451,6 @@ $breakpoints: (
     margin-top: 1.6rem;
   }
 }
-
-
 
 .doctor-details-message {
   .title {
@@ -462,8 +469,6 @@ $breakpoints: (
     padding-bottom: 4rem;
   }
 }
-
-
 
 .doctor-details-message__content {
   display: flex;
@@ -501,7 +506,7 @@ $breakpoints: (
   position: relative;
   margin-top: -5rem;
   max-width: 48rem;
-  @media screen and (min-width:768px) and (max-width:1140px) {
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
     margin-right: 2rem;
   }
   @include mq(sp) {
@@ -517,7 +522,7 @@ $breakpoints: (
     width: 28rem;
     height: 21rem;
     border-radius: 10px;
-    background: #009FE6;
+    background: #009fe6;
     z-index: -1;
     @include mq(sp) {
       width: 19.44rem;
@@ -531,8 +536,6 @@ $breakpoints: (
     height: auto;
   }
 }
-
-
 
 .doctor-details-snss {
 }
@@ -561,13 +564,13 @@ $breakpoints: (
 
 .doctor-details-blog__card {
   max-width: 32.8rem;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   @include mq(sp) {
     max-width: 100%;
   }
   @include mq(pc) {
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 }
@@ -600,7 +603,7 @@ $breakpoints: (
   font-family: "Noto Serif JP";
   font-size: 2rem;
   font-weight: 500;
-  line-height: 180%; 
+  line-height: 180%;
   margin-top: 1.1rem;
 }
 
@@ -633,7 +636,12 @@ $breakpoints: (
   font-size: 6.4rem;
   font-weight: 500;
   line-height: 100%;
-  background: linear-gradient(90deg, #009FE6 0%, #74D4FF 41.35%, #11ADF3 98.08%);
+  background: linear-gradient(
+    90deg,
+    #009fe6 0%,
+    #74d4ff 41.35%,
+    #11adf3 98.08%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -645,12 +653,17 @@ $breakpoints: (
     position: absolute;
     width: 0.2rem;
     height: 4rem;
-    background: linear-gradient(90deg, #009FE6 0%, #74D4FF 41.35%, #11ADF3 98.08%);
+    background: linear-gradient(
+      90deg,
+      #009fe6 0%,
+      #74d4ff 41.35%,
+      #11adf3 98.08%
+    );
     left: 50%;
     transform: translateX(-50%);
     bottom: 0rem;
 
-    @include mq('sp') {
+    @include mq("sp") {
       bottom: 0rem;
     }
   }
@@ -661,7 +674,7 @@ $breakpoints: (
   flex-direction: row;
   align-items: center;
   gap: 2rem;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   p {
     color: #333;
     font-family: Aboreto;
@@ -676,7 +689,7 @@ $breakpoints: (
   }
   @include mq(pc) {
     &:hover {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 }
@@ -693,13 +706,13 @@ $breakpoints: (
 
 .doctor-details-youtube__card {
   max-width: 34rem;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   @include mq(sp) {
     max-width: 100%;
   }
   @include mq(pc) {
     &:hover {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
   img {
@@ -707,7 +720,6 @@ $breakpoints: (
     object-fit: contain;
   }
 }
-
 
 .doctor-details-instagram {
   margin-top: 4rem;
@@ -719,13 +731,13 @@ $breakpoints: (
 .doctor-details-instagram-swiper {
   .swiper-slide {
     .doctor-details-instagram__card {
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
       img {
         height: auto;
       }
       @include mq(pc) {
         &:hover {
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }

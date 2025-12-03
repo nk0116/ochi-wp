@@ -33,7 +33,9 @@ $breakpoints: (
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
+  width: 100%;
+
   @include mq(sp) {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -110,7 +112,12 @@ $breakpoints: (
     li a {
       display: block;
       width: 100%;
-      background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+      background: linear-gradient(
+        180deg,
+        #0aa4e8 0%,
+        #70d3ff 50%,
+        #14aef3 100%
+      );
       border-radius: 0.4rem;
       padding: 0.1rem;
       overflow: hidden;
@@ -182,6 +189,12 @@ $breakpoints: (
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  &.is-default-img {
+    img {
+      object-fit: contain;
+    }
   }
 
   @include mq("sp") {
@@ -556,12 +569,14 @@ $breakpoints: (
       bottom: 1.6rem;
       width: 3.2rem;
       height: 6rem;
-      background: url(../img/column/icon_quote_bottom.svg) right bottom no-repeat;
+      background: url(../img/column/icon_quote_bottom.svg) right bottom
+        no-repeat;
       background-size: 100% 100%;
       content: "";
       @include mq(sp) {
         width: 1.721rem;
-        background: url(../img/column/icon_quote_bottom_sp.svg) right bottom no-repeat;
+        background: url(../img/column/icon_quote_bottom_sp.svg) right bottom
+          no-repeat;
         background-size: 100% 100%;
         bottom: 1.3rem;
       }
@@ -608,7 +623,12 @@ $breakpoints: (
       color: #fff;
       content: "目次";
       @include mq(sp) {
-        background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+        background: linear-gradient(
+          180deg,
+          #0aa4e8 0%,
+          #70d3ff 50%,
+          #14aef3 100%
+        );
         line-height: 133%;
       }
     }

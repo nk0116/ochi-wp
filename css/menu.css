@@ -35,7 +35,9 @@
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background 0.2s ease, color 0.2s ease;
   font-family: "Noto Serif JP", serif;
   width: 100%;
@@ -116,7 +118,6 @@
   line-height: 170%;
   color: #333333;
   letter-spacing: 0.16em;
-  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {

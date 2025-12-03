@@ -41,6 +41,7 @@
 }
 
 .doctor-list__card {
+  position: relative;
   max-width: 32.8rem;
 }
 @media (max-width: 767px) {
@@ -75,14 +76,14 @@
   gap: 1.2rem;
 }
 .doctor-list__card__info--place p {
-  color: #009FE6;
+  color: #009fe6;
   font-size: 1rem;
   font-weight: 700;
   line-height: 180%;
   max-width: 5.4rem;
   padding: 0.2rem 1rem;
-  border: 1px solid #009FE6;
-  background: #FFF;
+  border: 1px solid #009fe6;
+  background: #fff;
 }
 
 .doctor-list__card__info--post {
@@ -104,7 +105,7 @@
 }
 
 .doctor-list__card__info--roman {
-  color: #CCC;
+  color: #ccc;
   text-align: right;
   font-family: "Cormorant SC";
   font-size: 1.6rem;
@@ -124,7 +125,7 @@
   content: "";
   width: 40%;
   height: 0.1rem;
-  background: #AFAFAF;
+  background: #afafaf;
   left: 0;
   top: 50%;
 }
@@ -161,7 +162,7 @@
   left: 0;
   z-index: -2;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, #F6C543 0%, #EB4C4E 47%, #6D1DF4 89.5%);
+  background: linear-gradient(90deg, #f6c543 0%, #eb4c4e 47%, #6d1df4 89.5%);
 }
 .doctor-list__card__info--sns .doctor-instagram::after {
   content: "";
@@ -185,7 +186,7 @@
   height: 1.8rem;
 }
 .doctor-list__card__info--sns .doctor-youtube {
-  border: 2px solid #DA1725;
+  border: 2px solid #da1725;
 }
 .doctor-list__card__info--sns .doctor-youtube img {
   width: 2.8rem;
@@ -197,6 +198,8 @@
 }
 
 .doctor-list__card__info--link {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -214,12 +217,18 @@
 }
 .doctor-list__card__info--link img {
   width: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (min-width: 768px) {
   .doctor-list__card__info--link:hover {
     opacity: 0.5;
   }
+}
+
+.doctor-list__card__overlay-link {
+  position: absolute;
+  inset: 0;
 }
 
 .doctor-details--sp-n {
@@ -280,7 +289,8 @@
   line-height: 200%;
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
@@ -293,7 +303,7 @@
 }
 
 .doctor-details__left__strong--title {
-  color: #9FA2B7;
+  color: #9fa2b7;
   font-family: "Shippori Mincho", serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -327,7 +337,7 @@
 }
 
 .doctor-details__right__roman {
-  color: #CCC;
+  color: #ccc;
   font-family: "Cormorant SC";
   font-size: 1.6rem;
   font-style: normal;
@@ -344,7 +354,7 @@
   height: 0.1rem;
   top: 50%;
   left: 0;
-  background: #AFAFAF;
+  background: #afafaf;
 }
 
 .doctor-details__right__sns {
@@ -368,7 +378,8 @@
   height: 2rem;
 }
 .doctor-details__right__sns--instagram img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: auto;
 }
 
@@ -377,7 +388,8 @@
   height: 1.8rem;
 }
 .doctor-details__right__sns--x img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: auto;
 }
 
@@ -386,7 +398,8 @@
   height: 2rem;
 }
 .doctor-details__right__sns--youtube img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: auto;
 }
 
@@ -409,7 +422,7 @@
 
 .doctor-details__right__career--title,
 .doctor-details__right__info--title {
-  color: #9FA2B7;
+  color: #9fa2b7;
   font-family: "Shippori Mincho";
   font-size: 1.6rem;
   font-weight: 400;
@@ -502,7 +515,7 @@
   width: 28rem;
   height: 21rem;
   border-radius: 10px;
-  background: #009FE6;
+  background: #009fe6;
   z-index: -1;
 }
 @media (max-width: 767px) {
@@ -560,7 +573,8 @@
 }
 
 .doctor-details-blog__card__img img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: auto;
 }
 
@@ -619,7 +633,7 @@
   font-size: 6.4rem;
   font-weight: 500;
   line-height: 100%;
-  background: linear-gradient(90deg, #009FE6 0%, #74D4FF 41.35%, #11ADF3 98.08%);
+  background: linear-gradient(90deg, #009fe6 0%, #74d4ff 41.35%, #11adf3 98.08%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -632,7 +646,7 @@
   position: absolute;
   width: 0.2rem;
   height: 4rem;
-  background: linear-gradient(90deg, #009FE6 0%, #74D4FF 41.35%, #11ADF3 98.08%);
+  background: linear-gradient(90deg, #009fe6 0%, #74d4ff 41.35%, #11adf3 98.08%);
   left: 50%;
   transform: translateX(-50%);
   bottom: 0rem;
@@ -660,7 +674,8 @@
 .doctor-details-youtube__title--link img {
   width: 4rem;
   height: 4rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (min-width: 768px) {
   .doctor-details-youtube__title--link:hover {
@@ -696,7 +711,8 @@
 }
 .doctor-details-youtube__card img {
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .doctor-details-instagram {

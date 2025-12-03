@@ -100,7 +100,8 @@
 .campaign__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .campaign {
@@ -451,7 +452,9 @@
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background 0.2s ease, color 0.2s ease;
   font-family: "Noto Serif JP", serif;
   width: 100%;
@@ -484,7 +487,8 @@
 .ploblem__icon img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .ploblem__tab-title {
@@ -605,7 +609,9 @@
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background 0.2s ease, color 0.2s ease;
   font-family: "Noto Serif JP", serif;
   width: 100%;
@@ -638,7 +644,8 @@
 .ploblem__icon-2 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .ploblem__tab-title-2 {
@@ -978,8 +985,10 @@
 .notice__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media (max-width: 767px) {
   .notice__image {
@@ -1176,7 +1185,9 @@
   font-size: 1.6rem;
   letter-spacing: 0.08rem;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-weight: bold;
 }
 
@@ -1736,7 +1747,8 @@
 .clinicsns__sns-icon img {
   width: 2.6rem;
   height: 2.6rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 767px) {
   .clinicsns__sns-icon img {
@@ -1849,4 +1861,8 @@
 
 .clinicsns__blog-arrow {
   margin: auto;
+}
+
+.clinicsns__btn01 {
+  margin-top: 3rem;
 }/*# sourceMappingURL=style.css.map */

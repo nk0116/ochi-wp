@@ -205,6 +205,10 @@ $breakpoints: (
 
 .blog-body__content {
   margin-bottom: 3.2rem;
+
+  img {
+    object-fit: contain;
+  }
   p,
   div {
     font-size: 1.6rem;

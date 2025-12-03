@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
           var headerHeight = header.offsetHeight;
           offset = headerHeight;
         }
-        var rect = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        var rect =
+          target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({
           top: rect,
           behavior: "smooth",
@@ -581,24 +582,72 @@ document.addEventListener("DOMContentLoaded", function () {
 (function () {
   var root = document.querySelector(".campaigns");
   if (!root) return;
+
   var tabs = root.querySelectorAll(".campaigns__tab");
   var panels = root.querySelectorAll(".campaigns__panel");
+  var body = root.querySelector(".campaigns__body");
+  var items = root.querySelectorAll(".campaigns-list__item");
+  var treatmentTitles = root.querySelectorAll(
+    ".campaigns-list__treatment--title"
+  );
+  // 「詳細メニュー」ボタン
+  var treatmentButtons = root.querySelectorAll(
+    ".campaigns-list__treatment--menu .btn"
+  );
+
+  var defaultBorderColor = "#009fe6"; // 初期色（ALL）
+  var borderColors = {
+    "panel-monitor": "#d3aa61",
+    "panel-ginza": "#03c3d6",
+    "panel-shibuya": "#ff5757",
+    "panel-both": "#e6c200",
+  };
 
   function activate(targetId) {
+    // タブ切り替え
     tabs.forEach(function (tab) {
       var isActive = tab.getAttribute("data-target") === targetId;
       tab.classList.toggle("is-active", isActive);
       tab.setAttribute("aria-selected", isActive ? "true" : "false");
     });
+
+    // パネル表示切り替え
     panels.forEach(function (panel) {
       var show = panel.id === targetId;
       panel.classList.toggle("is-active", show);
-      if (show) {
-        panel.removeAttribute("hidden");
-      } else {
-        panel.setAttribute("hidden", "hidden");
-      }
+      if (show) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "hidden");
     });
+
+    // 色を決定
+    var color = borderColors[targetId] || defaultBorderColor;
+
+    // campaigns__body の枠
+    if (body) body.style.borderColor = color;
+
+    // 各 item の枠
+    items.forEach(function (item) {
+      item.style.borderColor = color;
+    });
+
+    // 施術タイトルの枠
+    treatmentTitles.forEach(function (title) {
+      title.style.borderColor = color;
+    });
+
+    // ここから btn の色統一適用 ===============================
+    treatmentButtons.forEach(function (btn) {
+      btn.style.borderColor = color; // 枠線
+      btn.style.color = color; // 文字色
+      btn.style.setProperty("--btn-text", color);
+
+      // 背景色（必要であれば true/false 変えて）
+      btn.style.backgroundColor = "#fff"; // 白背景が前提の場合
+
+      // ::after の背景用
+      btn.style.setProperty("--btn-after-bg", color);
+    });
+    // ========================================================
   }
 
   tabs.forEach(function (tab) {
@@ -714,9 +763,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function activate(targetId, labelText) {
     var panelId = null;
     if (targetId.startsWith("common")) panelId = "bottom-panel-common";
-    else if (targetId.startsWith("cosmetic-surgery")) panelId = "bottom-panel-surgery";
-    else if (targetId.startsWith("cosmetic-dermatology")) panelId = "bottom-panel-dermatology";
-    else if (targetId.startsWith("injection-treatment")) panelId = "bottom-panel-pouring";
+    else if (targetId.startsWith("cosmetic-surgery"))
+      panelId = "bottom-panel-surgery";
+    else if (targetId.startsWith("cosmetic-dermatology"))
+      panelId = "bottom-panel-dermatology";
+    else if (targetId.startsWith("injection-treatment"))
+      panelId = "bottom-panel-pouring";
     else if (targetId.startsWith("other")) panelId = "bottom-panel-others";
 
     bottoms.forEach(function (bottom) {
@@ -739,7 +791,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var targetEl = document.getElementById(targetId);
     if (targetEl) {
       const offset = 70;
-      const top = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+      const top =
+        targetEl.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({
         top,
         behavior: "smooth",
@@ -749,7 +802,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdownToggle.addEventListener("click", function () {
     dropdownMenu.hidden = !dropdownMenu.hidden;
-    dropdownToggle.classList.toggle("is-open", !dropdownMenu.hidden ? true : false);
+    dropdownToggle.classList.toggle(
+      "is-open",
+      !dropdownMenu.hidden ? true : false
+    );
   });
 
   groupBtns.forEach(function (btn) {
@@ -821,7 +877,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   var map = {
-    // "common": "panel-common",
+    common: "panel-common",
     "cosmetic-surgery": "panel-surgery",
     "cosmetic-dermatology": "panel-dermatology",
     "injection-treatment": "panel-pouring",
@@ -857,14 +913,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Header dropdowns (LINE / Access)
 (function () {
-  var dropdownRoots = Array.prototype.slice.call(document.querySelectorAll(".header__action--has-branches, .header__nav-item--has-branches"));
+  var dropdownRoots = Array.prototype.slice.call(
+    document.querySelectorAll(
+      ".header__action--has-branches, .header__nav-item--has-branches"
+    )
+  );
   if (!dropdownRoots.length) return;
 
   function closeAll(except) {
     dropdownRoots.forEach(function (root) {
       if (root === except) return;
       root.classList.remove("is-open");
-      var trig = root.querySelector(".header__line-btn, .header__instagram-btn, > a");
+      var trig = root.querySelector(
+        ".header__line-btn, .header__instagram-btn, a"
+      );
       if (trig) {
         trig.setAttribute("aria-expanded", "false");
       }
@@ -872,7 +934,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   dropdownRoots.forEach(function (root) {
-    var trigger = root.querySelector(".header__line-btn") || root.querySelector(".header__instagram-btn") || root.querySelector(":scope > a");
+    var trigger =
+      root.querySelector(".header__line-btn") ||
+      root.querySelector(".header__instagram-btn") ||
+      root.querySelector(":scope > a");
     var menu = root.querySelector(".header__submenu");
     if (!trigger || !menu) return;
 
@@ -898,7 +963,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("click", function (e) {
-    var within = e.target.closest(".header__action--has-branches, .header__nav-item--has-branches");
+    var within = e.target.closest(
+      ".header__action--has-branches, .header__nav-item--has-branches"
+    );
     if (!within) closeAll();
   });
 })();
+
+window.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".js-grid");
+  elements.forEach((el) => {
+    new Packery(el, {
+      itemSelector: ".js-grid-item",
+    });
+  });
+});

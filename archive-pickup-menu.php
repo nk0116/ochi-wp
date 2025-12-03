@@ -67,13 +67,17 @@
                       </p>
                       <div class="campaigns-list__info">
                         <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
-                        <?php if (!empty($category_names)): ?>
-                        <ul class="campaigns-list__category">
-                            <?php foreach ($category_names as $c_name): ?>
-                                <li><?php echo $c_name; ?></li>
+                        <?php if ($categories && !is_wp_error($categories)): ?>
+                          <ul class="campaigns-list__category">
+                            <?php foreach ($categories as $cat): ?>
+                              <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                                  data-category="<?php echo esc_attr($cat->name); ?>">
+                                <?php echo esc_html($cat->name); ?>
+                              </li>
                             <?php endforeach; ?>
-                        </ul>
+                          </ul>
                         <?php endif; ?>
+
                         <!-- <p class="campaigns-list__title"><?php echo esc_html($title); ?></p> -->
                         <div class="campaigns-list__text">
 
@@ -151,8 +155,21 @@
                       <div class="campaigns-list__info">
                         <!-- <p class="campaigns-list__date"><?php echo get_the_date('Y.m.d'); ?></p> -->
                         <ul class="campaigns-list__category">
-                          <li>モニター</li>
+                          <?php
+                            $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                            if ($terms && !is_wp_error($terms)):
+                              foreach ($terms as $cat):
+                          ?>
+                            <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                                data-category="<?php echo esc_attr($cat->name); ?>">
+                              <?php echo esc_html($cat->name); ?>
+                            </li>
+                          <?php
+                              endforeach;
+                            endif;
+                          ?>
                         </ul>
+
                         <div class="campaigns-list__text">
         
                         </div>
@@ -169,7 +186,22 @@
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Campaign">
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category"><li>モニター</li></ul>
+                      <ul class="campaigns-list__category">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          if ($terms && !is_wp_error($terms)):
+                            foreach ($terms as $cat):
+                        ?>
+                          <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                              data-category="<?php echo esc_attr($cat->name); ?>">
+                            <?php echo esc_html($cat->name); ?>
+                          </li>
+                        <?php
+                            endforeach;
+                          endif;
+                        ?>
+                      </ul>
+
                         <p class="campaigns-list__title">現在モニターキャンペーンはありません。</p>
                         <p class="campaigns-list__text"></p>
                         <div class="campaigns-list__treatment"></div>
@@ -225,11 +257,22 @@
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category">
-                          <?php if ($ginza_cat): ?>
-                            <li><?php echo esc_html($ginza_cat); ?></li>
-                          <?php endif; ?>
-                        </ul>
+                      <ul class="campaigns-list__category">
+                      <?php
+                        $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                        if ($terms && !is_wp_error($terms)):
+                          foreach ($terms as $cat):
+                      ?>
+                        <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                            data-category="<?php echo esc_attr($cat->name); ?>">
+                          <?php echo esc_html($cat->name); ?>
+                        </li>
+                      <?php
+                          endforeach;
+                        endif;
+                      ?>
+                    </ul>
+
                         <div class="campaigns-list__text">
                   
                         </div>
@@ -245,7 +288,22 @@
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Campaign">
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category"><li>銀座院</li></ul>
+                      <ul class="campaigns-list__category">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          if ($terms && !is_wp_error($terms)):
+                            foreach ($terms as $cat):
+                        ?>
+                          <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                              data-category="<?php echo esc_attr($cat->name); ?>">
+                            <?php echo esc_html($cat->name); ?>
+                          </li>
+                        <?php
+                            endforeach;
+                          endif;
+                        ?>
+                      </ul>
+
                         <p class="campaigns-list__text"></p>
                       </div>
                     </div>
@@ -303,11 +361,23 @@
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category">
-                          <?php if ($shibuya_cat): ?>
-                            <li><?php echo esc_html($shibuya_cat); ?></li>
-                          <?php endif; ?>
-                        </ul>
+                      <ul class="campaigns-list__category">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          if ($terms && !is_wp_error($terms)):
+                            foreach ($terms as $cat):
+                        ?>
+                          <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                              data-category="<?php echo esc_attr($cat->name); ?>">
+                            <?php echo esc_html($cat->name); ?>
+                          </li>
+                        <?php
+                            endforeach;
+                          endif;
+                        ?>
+                      </ul>
+
+
 
                         <div class="campaigns-list__text">
                  
@@ -324,8 +394,24 @@
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Campaign">
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category"><li>渋谷院</li></ul>
-                        <p class="campaigns-list__title">現在渋谷院のキャンペーンはありません。</p
+                      <ul class="campaigns-list__category">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          if ($terms && !is_wp_error($terms)):
+                            foreach ($terms as $cat):
+                        ?>
+                          <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                              data-category="<?php echo esc_attr($cat->name); ?>">
+                            <?php echo esc_html($cat->name); ?>
+                          </li>
+                        <?php
+                            endforeach;
+                          endif;
+                        ?>
+                      </ul>
+
+
+                        <p class="campaigns-list__title">現在渋谷院のキャンペーンはありません。</p>
                         <p class="campaigns-list__text"></p>
                       </div>
                     </div>
@@ -388,11 +474,22 @@
                         <?php endif; ?>
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category">
-                          <?php if ($show_category): ?>
-                            <li><?php echo esc_html($show_category); ?></li>
-                          <?php endif; ?>
-                        </ul>
+                      <ul class="campaigns-list__category">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          if ($terms && !is_wp_error($terms)):
+                            foreach ($terms as $cat):
+                        ?>
+                          <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                              data-category="<?php echo esc_attr($cat->name); ?>">
+                            <?php echo esc_html($cat->name); ?>
+                          </li>
+                        <?php
+                            endforeach;
+                          endif;
+                        ?>
+                      </ul>
+
                         <div class="campaigns-list__text">
                
                         </div>
@@ -408,7 +505,22 @@
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/common/noimg.png" alt="No Campaign">
                       </p>
                       <div class="campaigns-list__info">
-                        <ul class="campaigns-list__category"><li>両院共通</li></ul>
+                      <ul class="campaigns-list__category">
+                        <?php
+                          $terms = get_the_terms(get_the_ID(), 'pickup-menu__category');
+                          if ($terms && !is_wp_error($terms)):
+                            foreach ($terms as $cat):
+                        ?>
+                          <li class="campaigns-list__category-item cat-<?php echo esc_attr($cat->slug); ?>"
+                              data-category="<?php echo esc_attr($cat->name); ?>">
+                            <?php echo esc_html($cat->name); ?>
+                          </li>
+                        <?php
+                            endforeach;
+                          endif;
+                        ?>
+                      </ul>
+
                         <p class="campaigns-list__title">現在両院共通のキャンペーンはありません。</p>
                         <p class="campaigns-list__text"></p>
                       </div>

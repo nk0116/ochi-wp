@@ -55,116 +55,88 @@
                 </div>
               </form>
             </div>
-            <div class="case-list__content">
-              <!-- <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-              <div class="case-list__item">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="case-list__card">
-                  <div class="case-list__before"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="Before"></div>
-                  <div class="case-list__after"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/case/before.jpg" alt="After"></div>
-                  <p class="case-list__card--item" data-title="施術名">テキストテキスト</p>
-                  <p class="case-list__card--item" data-title="費用目安">￥00,000(税込)</p>
-                  <p class="case-list__card--item" data-title="リスク・副作用">リスク・副作用が入ります。リスク・副作用が入ります。</p>
-                  <p class="case-list__card--item" data-title="更新日">2025年5月20日</p>
-                </a>
-              </div>
-            </div>
-            <div class="wp-pagenavi">
-              <span class="current">1</span>
-              <a class="page larger" href="#">2</a>
-              <a class="page larger" href="#">3</a>
-              <span class="extend">…</span>
-              <a class="page larger" href="#">10</a>
-              <a class="nextpostslink" rel="next" href="#">»</a>
-            </div> -->
+			  
+			<div class="case-list__content">
+			  <?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+				  <?php
+					$name         = get_field('name');
+					$price        = get_field('price');
+					$risk         = get_field('risk');
+					$memo         = get_field('memo');
+					$updated_date = get_the_modified_time('Y年n月j日');
+					$before_image = get_field('before_image');
+					$after_image  = get_field('after_image');
+
+					$before_id = '';
+					if ( $before_image ) {
+					  $before_id = is_array( $before_image ) ? $before_image['ID'] : $before_image;
+					}
+
+					$after_id = '';
+					if ( $after_image ) {
+					  $after_id = is_array( $after_image ) ? $after_image['ID'] : $after_image;
+					}
+				  ?>
+				  <div class="case-list__item">
+					<a href="<?php the_permalink(); ?>" class="case-list__card">
+					  <div class="case-list__before">
+						<?php if ( $before_id ) : ?>
+						  <?php echo wp_get_attachment_image( $before_id, 'medium' ); ?>
+						<?php endif; ?>
+					  </div>
+					  <div class="case-list__after">
+						<?php if ( $after_id ) : ?>
+						  <?php echo wp_get_attachment_image( $after_id, 'medium' ); ?>
+						<?php endif; ?>
+					  </div>
+
+					  <?php if ( $name ) : ?>
+						<p class="case-list__card--item" data-title="施術名">
+						  <?php echo esc_html( $name ); ?>
+						</p>
+					  <?php endif; ?>
+
+					  <?php if ( $price ) : ?>
+						<p class="case-list__card--item" data-title="費用目安">
+						  <?php echo esc_html( $price ); ?>
+						</p>
+					  <?php endif; ?>
+
+					  <?php if ( $risk ) : ?>
+						<p class="case-list__card--item" data-title="リスク・副作用">
+						  <?php echo nl2br( esc_html( $risk ) ); ?>
+						</p>
+					  <?php endif; ?>
+
+					  <?php if ( $updated_date ) : ?>
+						<p class="case-list__card--item" data-title="更新日">
+						  <?php echo esc_html( $updated_date ); ?>
+						</p>
+					  <?php endif; ?>
+					</a>
+				  </div>
+				<?php endwhile; ?>
+			  <?php else : ?>
+				<p class="case-list__empty">現在、症例は準備中です。</p>
+			  <?php endif; ?>
+			</div>
+			  
+            <div class="case-list__pagination">
+			  <?php
+			  if ( function_exists( 'wp_pagenavi' ) ) {
+				echo '<div class="wp-pagenavi">';
+				wp_pagenavi();
+				echo '</div>';
+			  } else {
+				the_posts_pagination( array(
+				  'mid_size'  => 2,
+				  'prev_text' => '«',
+				  'next_text' => '»',
+				) );
+			  }
+			  ?>
+			</div>
           </div>
         </section>
 

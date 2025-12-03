@@ -5,11 +5,10 @@
     <div class="fv-low__inner">
       <picture>
         <source
-          srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/img/access/access-fv-sp.png"
+          srcset="<?php bloginfo('stylesheet_directory'); ?>/img/access/access-fv-sp.png"
           media="(max-width: 767px)"
-          type="image/png"
-        />
-        <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/access/access-fv-pc.png" alt="" />
+          type="image/png" />
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/access/access-fv-pc.png" alt="" />
       </picture>
       <div class="fv-low__titles">
         <h1 class="title">Price</h1>
@@ -22,8 +21,8 @@
   <nav class="breadcrumb" aria-label="パンくずリスト">
     <ol class="breadcrumb__list">
       <li class="breadcrumb__item">
-        <a href="<?php echo esc_url( home_url('') ); ?>" class="breadcrumb__link">
-          <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/about-cynthia/home.svg" alt="" width="16" height="14">
+        <a href="<?php echo esc_url(home_url('')); ?>" class="breadcrumb__link">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/img/about-cynthia/home.svg" alt="" width="16" height="14">
         </a>
       </li>
       <li><span>/</span></li>
@@ -52,8 +51,7 @@
             aria-selected="true"
             aria-controls="panel-common"
             id="tab-common"
-            data-target="panel-common"
-          >
+            data-target="panel-common">
             共通
           </button>
           <button
@@ -62,8 +60,7 @@
             aria-selected="false"
             aria-controls="panel-surgery"
             id="tab-surgery"
-            data-target="panel-surgery"
-          >
+            data-target="panel-surgery">
             美容外科
           </button>
           <button
@@ -72,8 +69,7 @@
             aria-selected="false"
             aria-controls="panel-dermatology"
             id="tab-dermatology"
-            data-target="panel-dermatology"
-          >
+            data-target="panel-dermatology">
             美容皮膚科
           </button>
           <button
@@ -82,8 +78,7 @@
             aria-selected="false"
             aria-controls="panel-pouring"
             id="tab-pouring"
-            data-target="panel-pouring"
-          >
+            data-target="panel-pouring">
             注入治療
           </button>
           <button
@@ -92,8 +87,7 @@
             aria-selected="false"
             aria-controls="panel-others"
             id="tab-others"
-            data-target="panel-others"
-          >
+            data-target="panel-others">
             その他
           </button>
         </div><!-- price-list-tabs -->
@@ -102,7 +96,7 @@
         <div class="price-list-dropdown">
           <button class="price-list-dropdown__toggle">
             <span> 施術メニューを選択</span>
-            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow-sp.svg" alt="" width='10' height='14'/>
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow-sp.svg" alt="" width='10' height='14' />
           </button>
           <ul class="price-list-dropdown__menu" hidden>
             <li class="price-list-dropdown__group">
@@ -167,18 +161,18 @@
         <div class="price-list__body">
           <div class="price-list__panels">
             <!-- 共通 -->
-            <div class="price-list__panel is-active" id="panel-common" role="tabpanel" aria-labelledby="tab-common" >
+            <div class="price-list__panel is-active" id="panel-common" role="tabpanel" aria-labelledby="tab-common">
               <div class="price-list__list">
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="price-list__item">
+                <a href="#common-1" class="price-list__item">
                   <span class="price-list__label">初診料・再診料</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
-                <a href="<?php echo esc_url( home_url('') ); ?>" class="price-list__item">
+                <a href="#common-2" class="price-list__item">
                   <span class="price-list__label">麻酔・検査費用</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
               </div>
@@ -189,61 +183,61 @@
                 <a href="#cosmetic-surgery-1" class="price-list__item">
                   <span class="price-list__label">目元のエイジングケア治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-2" class="price-list__item">
                   <span class="price-list__label">脂肪吸引</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-3" class="price-list__item">
                   <span class="price-list__label">豊胸・バスト整形</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-4" class="price-list__item">
                   <span class="price-list__label">フェイスリフト</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-5" class="price-list__item">
                   <span class="price-list__label">二重まぶた・二重形成術・目元</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-6" class="price-list__item">
                   <span class="price-list__label">ワキガ・多汗症治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-7" class="price-list__item">
                   <span class="price-list__label">糸によるリフトアップ治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-8" class="price-list__item">
                   <span class="price-list__label">小顔・輪郭形成</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-9" class="price-list__item">
                   <span class="price-list__label">鼻の整形</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-surgery-10" class="price-list__item">
                   <span class="price-list__label">口の整形</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
               </div>
@@ -254,43 +248,43 @@
                 <a href="#cosmetic-dermatology-1" class="price-list__item">
                   <span class="price-list__label">シワ・たるみ治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-dermatology-2" class="price-list__item">
                   <span class="price-list__label">シミ・そばかす・くすみなどの美白・美肌治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-dermatology-3" class="price-list__item">
                   <span class="price-list__label">肝斑・美白治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-dermatology-4" class="price-list__item">
                   <span class="price-list__label">ニキビ・ニキビ痕治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-dermatology-5" class="price-list__item">
                   <span class="price-list__label">赤ら顔（酒さ）・毛細血管拡張症治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-dermatology-6" class="price-list__item">
                   <span class="price-list__label">毛孔性苔癬治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#cosmetic-dermatology-7" class="price-list__item">
                   <span class="price-list__label">いぼ・ほくろ除去</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
               </div>
@@ -301,19 +295,19 @@
                 <a href="#injection-treatment-1" class="price-list__item">
                   <span class="price-list__label">美肌・リバースエイジング 注入治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#injection-treatment-2" class="price-list__item">
                   <span class="price-list__label">ヒアルロン酸注入</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#injection-treatment-3" class="price-list__item">
                   <span class="price-list__label">ボトックス注射</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
               </div>
@@ -324,49 +318,49 @@
                 <a href="#other-1" class="price-list__item">
                   <span class="price-list__label">痩身全身</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-2" class="price-list__item">
                   <span class="price-list__label">医療レーザー脱毛</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-3" class="price-list__item">
                   <span class="price-list__label">傷痕・刺青・タトゥー除去</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-4" class="price-list__item">
                   <span class="price-list__label">医療アートメイク</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-5" class="price-list__item">
                   <span class="price-list__label">毛髪再生</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-6" class="price-list__item">
                   <span class="price-list__label">男性のお悩み治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-7" class="price-list__item">
                   <span class="price-list__label">女性のお悩みに治療</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
                 <a href="#other-8" class="price-list__item">
                   <span class="price-list__label">コスメ・美肌・美容アイテム</span>
                   <span class="price-list__icon">
-                    <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8'/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-top-arrow.svg" alt="" width='4' height='8' />
                   </span>
                 </a>
               </div>
@@ -382,8 +376,8 @@
     <div class="price-list-bottom is-active" id="bottom-panel-common">
       <div class="price-list-bottom__inner">
         <div class="price-list__title">
-          <h2 class="price-list__title--en">Cosmetic <br class='pc-hidden'>Dermatology</h2>
-          <p class="price-list__title--ja">美容皮膚科</p>
+          <h2 class="price-list__title--en">Common</h2>
+          <p class="price-list__title--ja">共通</p>
         </div><!-- price-list__title -->
 
         <div class="price-list-bottom__container">
@@ -394,17 +388,17 @@
               <p class="price-list-bottom__item--title">共通</p>
               <ul class="price-list-bottom__list">
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">初診料・再診料</span>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">麻酔・検査費用</span>
                   </a>
@@ -419,7 +413,7 @@
                 <li>
                   <a href="#cosmetic-surgery-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">目元のエイジングケア治療</span>
                   </a>
@@ -427,7 +421,7 @@
                 <li>
                   <a href="#cosmetic-surgery-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">脂肪吸引</span>
                   </a>
@@ -435,7 +429,7 @@
                 <li>
                   <a href="#cosmetic-surgery-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">豊胸・バスト整形</span>
                   </a>
@@ -443,7 +437,7 @@
                 <li>
                   <a href="#cosmetic-surgery-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">フェイスリフト</span>
                   </a>
@@ -451,7 +445,7 @@
                 <li>
                   <a href="#cosmetic-surgery-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">二重まぶた・二重形成術・目元</span>
                   </a>
@@ -459,7 +453,7 @@
                 <li>
                   <a href="#cosmetic-surgery-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ワキガ・多汗症治療</span>
                   </a>
@@ -467,7 +461,7 @@
                 <li>
                   <a href="#cosmetic-surgery-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">糸によるリフトアップ治療</span>
                   </a>
@@ -475,7 +469,7 @@
                 <li>
                   <a href="#cosmetic-surgery-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">小顔・輪郭形成</span>
                   </a>
@@ -483,7 +477,7 @@
                 <li>
                   <a href="#cosmetic-surgery-9" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">鼻の整形</span>
                   </a>
@@ -491,7 +485,7 @@
                 <li>
                   <a href="#cosmetic-surgery-10" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">口の整形</span>
                   </a>
@@ -506,7 +500,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シワ・たるみ治療</span>
                   </a>
@@ -514,7 +508,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シミ・そばかす・くすみなどの美白・美肌治療</span>
                   </a>
@@ -522,7 +516,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">肝斑・美白治療</span>
                   </a>
@@ -530,7 +524,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ニキビ・ニキビ痕治療</span>
                   </a>
@@ -538,7 +532,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">赤ら顔（酒さ）・毛細血管拡張症治療</span>
                   </a>
@@ -546,7 +540,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛孔性苔癬治療</span>
                   </a>
@@ -554,7 +548,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">いぼ・ほくろ除去</span>
                   </a>
@@ -569,7 +563,7 @@
                 <li>
                   <a href="#injection-treatment-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">美肌・リバースエイジング 注入治療</span>
                   </a>
@@ -577,7 +571,7 @@
                 <li>
                   <a href="#injection-treatment-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ヒアルロン酸注入</span>
                   </a>
@@ -585,7 +579,7 @@
                 <li>
                   <a href="#injection-treatment-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ボトックス注射</span>
                   </a>
@@ -600,7 +594,7 @@
                 <li>
                   <a href="#other-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">痩身全身</span>
                   </a>
@@ -608,7 +602,7 @@
                 <li>
                   <a href="#other-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療レーザー脱毛</span>
                   </a>
@@ -616,7 +610,7 @@
                 <li>
                   <a href="#other-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">傷痕・刺青・タトゥー除去</span>
                   </a>
@@ -624,7 +618,7 @@
                 <li>
                   <a href="#other-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療アートメイク</span>
                   </a>
@@ -632,7 +626,7 @@
                 <li>
                   <a href="#other-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛髪再生</span>
                   </a>
@@ -640,7 +634,7 @@
                 <li>
                   <a href="#other-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">男性のお悩み治療</span>
                   </a>
@@ -648,7 +642,7 @@
                 <li>
                   <a href="#other-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">女性のお悩みに治療</span>
                   </a>
@@ -656,7 +650,7 @@
                 <li>
                   <a href="#other-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">コスメ・美肌・美容アイテム</span>
                   </a>
@@ -666,45 +660,91 @@
           </aside><!-- price-list-bottom__side -->
 
           <div class="price-list-bottom__body">
-            <!-- 目元のエイジングケア治療 -->
-            <div class="price-list-bottom__content" id="">
+            <!-- 初診料・再診料 -->
+            <div class="price-list-bottom__content" id="common-1">
               <div class="price-list-bottom__content__headline">
-                <p class="price-list-bottom__content__headline--text">目元のエイジングケア治療</p>
+                <p class="price-list-bottom__content__headline--text">初診料・再診料</p>
+              </div>
+
+              <table class="price-list-table">
+                <caption class="price-list-table__caption">自由診療</caption>
+                <tbody>
+                  <tr class="price-list-table__item">
+                    <td class="price-list-table__text">初診料</td>
+                    <td class="price-list-table__cost">無料</td>
+                  </tr>
+                  <tr class="price-list-table__item">
+                    <td class="price-list-table__text">再診料</td>
+                    <td class="price-list-table__cost">無料</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- price-list-bottom__content -->
+
+            <!-- 麻酔・検査費用 -->
+            <div class="price-list-bottom__content" id="common-2">
+              <div class="price-list-bottom__content__headline">
+                <p class="price-list-bottom__content__headline--text">麻酔・検査費用</p>
                 <a href="" class="price-list-btn">施術詳細を見る</a>
               </div>
 
               <table class="price-list-table">
-                <caption class="price-list-table__caption">
-                  目の下のクマ・たるみ治療<br class="pc-hidden"><span class="sp-min12">【経結膜脱脂術・眼窩脂肪注入・マイクロCRF】</span>
-                </caption>
+                <caption class="price-list-table__caption center">麻酔</caption>
                 <tbody>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">経結膜脱脂術（単独）</td>
-                    <td class="price-list-table__cost">242,000<span>円</span></td>
+                    <td class="price-list-table__text">痛み止め筋肉注射</td>
+                    <td class="price-list-table__cost">3,300<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">下眼瞼皮膚切開たるみ取り（単独）</td>
-                    <td class="price-list-table__cost">297,000<span>円</span></td>
+                    <td class="price-list-table__text">痛み止め点滴</td>
+                    <td class="price-list-table__cost">5,500<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">経結膜脱脂術 ＋ 眼窩脂肪注入術</td>
-                    <td class="price-list-table__cost">275,000<span>円</span></td>
+                    <td class="price-list-table__text">ブロック注射麻酔</td>
+                    <td class="price-list-table__cost">3,300<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">経結膜脱脂術 ＋ 下眼瞼皮膚切開たるみ取り</td>
-                    <td class="price-list-table__cost">352,000<span>円</span></td>
+                    <td class="price-list-table__text">クリーム麻酔</td>
+                    <td class="price-list-table__cost">3,300<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">経結膜脱脂術 ＋ マイクロコンデンスリッチファット（マイクロCRF）<br>目の下 中顔面注入術</td>
-                    <td class="price-list-table__cost">495,000<span>円</span></td>
+                    <td class="price-list-table__text">笑気麻酔</td>
+                    <td class="price-list-table__cost">3,300〜22,000<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">経結膜脱脂術 ＋ マイクロコンデンスリッチファット（マイクロCRF）<br>目の下 中顔面・ほうれい線注入術</td>
-                    <td class="price-list-table__cost">528,000<span>円</span></td>
+                    <td class="price-list-table__text">静脈麻酔</td>
+                    <td class="price-list-table__cost">33,000〜121,000<span>円</span></td>
                   </tr>
+                </tbody>
+              </table>
+
+              <table class="price-list-table">
+                <caption class="price-list-table__caption">検査（自由診療）</caption>
+                <tbody>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">経結膜脱脂術 ＋ マイクロコンデンスリッチファット（マイクロCRF）<br>目の下 中顔面・ほうれい線・<br class="pc-hidden">オトガイマリオネットライン注入術</td>
-                    <td class="price-list-table__cost">561,000<span>円</span></td>
+                    <td class="price-list-table__text">採血</td>
+                    <td class="price-list-table__cost">5,500<span>円</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="price-list-table">
+                <caption class="price-list-table__caption">検査（保険診療）</caption>
+                <tbody>
+                  <tr class="price-list-table__item row3">
+                    <td class="price-list-table__text">術前検査</td>
+                    <td class="price-list-table__middle">
+                      <ul>
+                        <li class="center">3割負担</li>
+                        <li class="center">1割負担</li>
+                      </ul>
+                    </td>
+                    <td class="price-list-table__cost">
+                      <ul>
+                        <li>約3,500<span>円</span></li>
+                        <li>約1,000<span>円</span></li>
+                      </ul>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -713,7 +753,7 @@
         </div><!-- price-list-bottom__container -->
       </div><!-- price-list-bottom__inner -->
     </div><!-- price-list-bottom -->
-    
+
     <!-- 美容整形 -->
     <div class="price-list-bottom" id="bottom-panel-surgery" hidden>
       <div class="price-list-bottom__inner">
@@ -730,17 +770,17 @@
               <p class="price-list-bottom__item--title">共通</p>
               <ul class="price-list-bottom__list">
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">初診料・再診料</span>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">麻酔・検査費用</span>
                   </a>
@@ -755,7 +795,7 @@
                 <li>
                   <a href="#cosmetic-surgery-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">目元のエイジングケア治療</span>
                   </a>
@@ -763,7 +803,7 @@
                 <li>
                   <a href="#cosmetic-surgery-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">脂肪吸引</span>
                   </a>
@@ -771,7 +811,7 @@
                 <li>
                   <a href="#cosmetic-surgery-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">豊胸・バスト整形</span>
                   </a>
@@ -779,7 +819,7 @@
                 <li>
                   <a href="#cosmetic-surgery-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">フェイスリフト</span>
                   </a>
@@ -787,7 +827,7 @@
                 <li>
                   <a href="#cosmetic-surgery-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">二重まぶた・二重形成術・目元</span>
                   </a>
@@ -795,7 +835,7 @@
                 <li>
                   <a href="#cosmetic-surgery-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ワキガ・多汗症治療</span>
                   </a>
@@ -803,7 +843,7 @@
                 <li>
                   <a href="#cosmetic-surgery-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">糸によるリフトアップ治療</span>
                   </a>
@@ -811,7 +851,7 @@
                 <li>
                   <a href="#cosmetic-surgery-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">小顔・輪郭形成</span>
                   </a>
@@ -819,7 +859,7 @@
                 <li>
                   <a href="#cosmetic-surgery-9" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">鼻の整形</span>
                   </a>
@@ -827,7 +867,7 @@
                 <li>
                   <a href="#cosmetic-surgery-10" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">口の整形</span>
                   </a>
@@ -842,7 +882,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シワ・たるみ治療</span>
                   </a>
@@ -850,7 +890,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シミ・そばかす・くすみなどの美白・美肌治療</span>
                   </a>
@@ -858,7 +898,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">肝斑・美白治療</span>
                   </a>
@@ -866,7 +906,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ニキビ・ニキビ痕治療</span>
                   </a>
@@ -874,7 +914,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">赤ら顔（酒さ）・毛細血管拡張症治療</span>
                   </a>
@@ -882,7 +922,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛孔性苔癬治療</span>
                   </a>
@@ -890,7 +930,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">いぼ・ほくろ除去</span>
                   </a>
@@ -905,7 +945,7 @@
                 <li>
                   <a href="#injection-treatment-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">美肌・リバースエイジング 注入治療</span>
                   </a>
@@ -913,7 +953,7 @@
                 <li>
                   <a href="#injection-treatment-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ヒアルロン酸注入</span>
                   </a>
@@ -921,7 +961,7 @@
                 <li>
                   <a href="#injection-treatment-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ボトックス注射</span>
                   </a>
@@ -936,7 +976,7 @@
                 <li>
                   <a href="#other-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">痩身全身</span>
                   </a>
@@ -944,7 +984,7 @@
                 <li>
                   <a href="#other-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療レーザー脱毛</span>
                   </a>
@@ -952,7 +992,7 @@
                 <li>
                   <a href="#other-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">傷痕・刺青・タトゥー除去</span>
                   </a>
@@ -960,7 +1000,7 @@
                 <li>
                   <a href="#other-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療アートメイク</span>
                   </a>
@@ -968,7 +1008,7 @@
                 <li>
                   <a href="#other-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛髪再生</span>
                   </a>
@@ -976,7 +1016,7 @@
                 <li>
                   <a href="#other-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">男性のお悩み治療</span>
                   </a>
@@ -984,7 +1024,7 @@
                 <li>
                   <a href="#other-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">女性のお悩みに治療</span>
                   </a>
@@ -992,7 +1032,7 @@
                 <li>
                   <a href="#other-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">コスメ・美肌・美容アイテム</span>
                   </a>
@@ -1078,7 +1118,7 @@
                     <td class="price-list-table__text">経結膜脱脂術 ＋ マイクロコンデンスリッチファット（マイクロCRF）<br>目の下 中顔面・ほうれい線・<br class="pc-hidden">オトガイマリオネットライン注入術</td>
                     <td class="price-list-table__cost">616,000<span>円</span></td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">
                       ※又吉総院長による術後チェックを受ける場合、+11,000円<br>
                       お支払いにポイントは適用できません。
@@ -1109,7 +1149,7 @@
                     <td class="price-list-table__text">大腿部、腹部以外からの脂肪採取の場合</td>
                     <td class="price-list-table__cost">55,000<span>円</span></td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">
                       ※又吉総院長のカウンセリング後、<br class="pc-hidden">他の医師による施術を受ける場合 +22,000円
                     </td>
@@ -2072,8 +2112,8 @@
 
                   <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">
-                    【当院での埋没法手術による糸を外す場合】<br>
-                    ※詳しくはクリニックにお問い合わせください。
+                      【当院での埋没法手術による糸を外す場合】<br>
+                      ※詳しくはクリニックにお問い合わせください。
                     </td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -2840,9 +2880,9 @@
                 <tbody>
                   <tr class="price-list-table__item  row3">
                     <td class="price-list-table__text pi-min">
-                    頬＋アゴ下　300shot<br>
-                    <span class="min">【リピーター割引対象施術】<br>
-                    6ヶ月以内に再施術の場合はトライアル価格でお受けいただけます。</span>
+                      頬＋アゴ下　300shot<br>
+                      <span class="min">【リピーター割引対象施術】<br>
+                        6ヶ月以内に再施術の場合はトライアル価格でお受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -3395,17 +3435,17 @@
               <p class="price-list-bottom__item--title">共通</p>
               <ul class="price-list-bottom__list">
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">初診料・再診料</span>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">麻酔・検査費用</span>
                   </a>
@@ -3420,7 +3460,7 @@
                 <li>
                   <a href="#cosmetic-surgery-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">目元のエイジングケア治療</span>
                   </a>
@@ -3428,7 +3468,7 @@
                 <li>
                   <a href="#cosmetic-surgery-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">脂肪吸引</span>
                   </a>
@@ -3436,7 +3476,7 @@
                 <li>
                   <a href="#cosmetic-surgery-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">豊胸・バスト整形</span>
                   </a>
@@ -3444,7 +3484,7 @@
                 <li>
                   <a href="#cosmetic-surgery-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">フェイスリフト</span>
                   </a>
@@ -3452,7 +3492,7 @@
                 <li>
                   <a href="#cosmetic-surgery-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">二重まぶた・二重形成術・目元</span>
                   </a>
@@ -3460,7 +3500,7 @@
                 <li>
                   <a href="#cosmetic-surgery-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ワキガ・多汗症治療</span>
                   </a>
@@ -3468,7 +3508,7 @@
                 <li>
                   <a href="#cosmetic-surgery-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">糸によるリフトアップ治療</span>
                   </a>
@@ -3476,7 +3516,7 @@
                 <li>
                   <a href="#cosmetic-surgery-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">小顔・輪郭形成</span>
                   </a>
@@ -3484,7 +3524,7 @@
                 <li>
                   <a href="#cosmetic-surgery-9" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">鼻の整形</span>
                   </a>
@@ -3492,7 +3532,7 @@
                 <li>
                   <a href="#cosmetic-surgery-10" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">口の整形</span>
                   </a>
@@ -3507,7 +3547,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シワ・たるみ治療</span>
                   </a>
@@ -3515,7 +3555,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シミ・そばかす・くすみなどの美白・美肌治療</span>
                   </a>
@@ -3523,7 +3563,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">肝斑・美白治療</span>
                   </a>
@@ -3531,7 +3571,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ニキビ・ニキビ痕治療</span>
                   </a>
@@ -3539,7 +3579,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">赤ら顔（酒さ）・毛細血管拡張症治療</span>
                   </a>
@@ -3547,7 +3587,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛孔性苔癬治療</span>
                   </a>
@@ -3555,7 +3595,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">いぼ・ほくろ除去</span>
                   </a>
@@ -3570,7 +3610,7 @@
                 <li>
                   <a href="#injection-treatment-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">美肌・リバースエイジング 注入治療</span>
                   </a>
@@ -3578,7 +3618,7 @@
                 <li>
                   <a href="#injection-treatment-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ヒアルロン酸注入</span>
                   </a>
@@ -3586,7 +3626,7 @@
                 <li>
                   <a href="#injection-treatment-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ボトックス注射</span>
                   </a>
@@ -3601,7 +3641,7 @@
                 <li>
                   <a href="#other-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">痩身全身</span>
                   </a>
@@ -3609,7 +3649,7 @@
                 <li>
                   <a href="#other-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療レーザー脱毛</span>
                   </a>
@@ -3617,7 +3657,7 @@
                 <li>
                   <a href="#other-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">傷痕・刺青・タトゥー除去</span>
                   </a>
@@ -3625,7 +3665,7 @@
                 <li>
                   <a href="#other-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療アートメイク</span>
                   </a>
@@ -3633,7 +3673,7 @@
                 <li>
                   <a href="#other-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛髪再生</span>
                   </a>
@@ -3641,7 +3681,7 @@
                 <li>
                   <a href="#other-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">男性のお悩み治療</span>
                   </a>
@@ -3649,7 +3689,7 @@
                 <li>
                   <a href="#other-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">女性のお悩みに治療</span>
                   </a>
@@ -3657,7 +3697,7 @@
                 <li>
                   <a href="#other-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">コスメ・美肌・美容アイテム</span>
                   </a>
@@ -3702,7 +3742,7 @@
                     <td class="price-list-table__cost">242,000<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
-                    <td class="price-list-table__text">顔＋（5）  368shot</td>
+                    <td class="price-list-table__text">顔＋（5） 368shot</td>
                     <td class="price-list-table__cost">330,000<span>円</span></td>
                   </tr>
                   <tr class="price-list-table__item">
@@ -3806,7 +3846,7 @@
               <table class="price-list-table">
                 <caption class="price-list-table__caption center">【医療ハイフ(HIFU)】<br class="pc-hidden">ウルトラセルZi/ウルトラセルQ+</caption>
                 <tbody>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">
                       ウルトラセルZi【ドット＋リニア】<br>
                       <span class="min">※同日施術</span>
@@ -3838,7 +3878,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention-min">
                       ※医師によるプレミアム照射は、＋55,000円追加となります（又吉総院長による施術は除く） <br>
                       ※ナース照射（オーダーメイド）は、＋11,000円追加となります<br>
@@ -3846,7 +3886,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">ウルトラセルZi【ドットハイフ】</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -3918,7 +3958,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention-min">
                       ※医師によるプレミアム照射は、＋55,000円追加となります（又吉総院長による施術は除く） <br>
                       ※ナース照射（オーダーメイド）は、＋11,000円追加となります<br>
@@ -3926,7 +3966,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">ウルトラセルZi【リニアハイフ】</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -3992,7 +4032,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention-min">
                       ※医師によるプレミアム照射は、＋55,000円追加となります（又吉総院長による施術は除く） <br>
                       ※ナース照射（オーダーメイド）は、＋11,000円追加となります<br>
@@ -4000,7 +4040,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">ウルトラセルQ+（渋谷院4階）</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4043,7 +4083,7 @@
               <table class="price-list-table">
                 <caption class="price-list-table__caption center">タイタンXL</caption>
                 <tbody>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">【たるみ治療】タイタンXL</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4139,7 +4179,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">【たるみ治療】 タイタンXL　プレミアム</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4235,7 +4275,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">【若返り・たるみ治療】ウルセラ+タイタンXL</td>
                   </tr>
                   <tr class="price-list-table__item row3">
@@ -4256,8 +4296,8 @@
                     <td class="price-list-table__text">
                       頬＋アゴ下　300shot<br>
                       <span class="min">【リピーター割引対象施術】<br>
-                      6ヶ月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        6ヶ月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -4297,7 +4337,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※医師による施術は上記価格＋55,000円となります。（又吉総院長による施術は除く）</td>
                   </tr>
                 </tbody>
@@ -4353,7 +4393,7 @@
               <table class="price-list-table">
                 <caption class="price-list-table__caption center">お顔の表情ジワ改善</caption>
                 <tbody>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">ボツリヌストキシン注射</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4495,7 +4535,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">エラボトックス</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4592,7 +4632,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">アゴ梅干し治療</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4619,7 +4659,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">笑顔のボトックス治療</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4646,7 +4686,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">笑顔のボトックス治療</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4673,7 +4713,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">人中ボトックス</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4700,7 +4740,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">ガミースマイル</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4727,7 +4767,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">小鼻のボトックス</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4754,7 +4794,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">美脚のボトックス治療</td>
                   </tr>
                   <tr class="price-list-table__item  row3">
@@ -4781,7 +4821,7 @@
                     </td>
                   </tr>
 
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※クリーム麻酔・笑気麻酔は料金に含まれます。</td>
                   </tr>
                 </tbody>
@@ -4891,8 +4931,8 @@
                     <td class="price-list-table__text">
                       全顔<br>
                       <span class="min">【リピーター割引】<br>
-                      2か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        2か月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -4919,8 +4959,8 @@
                     <td class="price-list-table__text">
                       全顔＋頬 重ね打ち（1.5倍照射）<br>
                       <span class="min">【リピーター割引】<br>
-                      2か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        2か月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -5069,8 +5109,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -5091,8 +5131,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -5194,8 +5234,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -5308,8 +5348,8 @@
                     <td class="price-list-table__text">
                       全顔<br>
                       <span class="min">【リピーター割引】<br>
-                      1か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        1か月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -5686,8 +5726,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -5708,8 +5748,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -7131,8 +7171,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -7153,8 +7193,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -7256,8 +7296,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -7591,8 +7631,8 @@
                     <td class="price-list-table__text">
                       全顔<br>
                       <span c;ass="min">【リピーター割引】<br>
-                      1か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        1か月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -7658,7 +7698,7 @@
                       </ul>
                     </td>
                   </tr>
-                  
+
                   <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">内服薬</td>
                   </tr>
@@ -8322,8 +8362,8 @@
                     <td class="price-list-table__text">
                       全顔<br>
                       <span class="min">【リピーター割引】<br>
-                      2か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        2か月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -8350,8 +8390,8 @@
                     <td class="price-list-table__text">
                       全顔＋頬 重ね打ち（1.5倍照射）<br>
                       <span class="min">【リピーター割引】<br>
-                      2か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        2か月以内に再施術の場合はトライアル価格で
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -8500,8 +8540,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -8522,8 +8562,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -8625,8 +8665,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -8979,8 +9019,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -9001,8 +9041,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -9615,7 +9655,7 @@
                     <td class="price-list-table__text">
                       全顔<br>
                       <span class="min">【リピーター割引】<br>
-                      2か月以内に再施術の場合はトライアル価格でお受けいただけます。</span>
+                        2か月以内に再施術の場合はトライアル価格でお受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -9642,7 +9682,7 @@
                     <td class="price-list-table__text">
                       全顔＋頬 重ね打ち（1.5倍照射）<br>
                       <span class="min">【リピーター割引】<br>
-                      2か月以内に再施術の場合はトライアル価格でお受けいただけます。</span>
+                        2か月以内に再施術の場合はトライアル価格でお受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -9791,8 +9831,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -9813,8 +9853,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -9942,8 +9982,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術の場合<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -10367,8 +10407,8 @@
                     <td class="price-list-table__text">
                       下記メニューと同時施術<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -10389,8 +10429,8 @@
                     <td class="price-list-table__text">
                       下記メニュー２つと同時施術<br>
                       <span class="min">カスタマイザーIPL/ICON MaxG/ライムライト/
-                      ジェネシス/タイタン/レーザートーニング/
-                      ポテンツァ ダイヤモンドチップ</span>
+                        ジェネシス/タイタン/レーザートーニング/
+                        ポテンツァ ダイヤモンドチップ</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -11153,17 +11193,17 @@
               <p class="price-list-bottom__item--title">共通</p>
               <ul class="price-list-bottom__list">
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">初診料・再診料</span>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">麻酔・検査費用</span>
                   </a>
@@ -11178,7 +11218,7 @@
                 <li>
                   <a href="#cosmetic-surgery-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">目元のエイジングケア治療</span>
                   </a>
@@ -11186,7 +11226,7 @@
                 <li>
                   <a href="#cosmetic-surgery-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">脂肪吸引</span>
                   </a>
@@ -11194,7 +11234,7 @@
                 <li>
                   <a href="#cosmetic-surgery-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">豊胸・バスト整形</span>
                   </a>
@@ -11202,7 +11242,7 @@
                 <li>
                   <a href="#cosmetic-surgery-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">フェイスリフト</span>
                   </a>
@@ -11210,7 +11250,7 @@
                 <li>
                   <a href="#cosmetic-surgery-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">二重まぶた・二重形成術・目元</span>
                   </a>
@@ -11218,7 +11258,7 @@
                 <li>
                   <a href="#cosmetic-surgery-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ワキガ・多汗症治療</span>
                   </a>
@@ -11226,7 +11266,7 @@
                 <li>
                   <a href="#cosmetic-surgery-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">糸によるリフトアップ治療</span>
                   </a>
@@ -11234,7 +11274,7 @@
                 <li>
                   <a href="#cosmetic-surgery-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">小顔・輪郭形成</span>
                   </a>
@@ -11242,7 +11282,7 @@
                 <li>
                   <a href="#cosmetic-surgery-9" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">鼻の整形</span>
                   </a>
@@ -11250,7 +11290,7 @@
                 <li>
                   <a href="#cosmetic-surgery-10" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">口の整形</span>
                   </a>
@@ -11265,7 +11305,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シワ・たるみ治療</span>
                   </a>
@@ -11273,7 +11313,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シミ・そばかす・くすみなどの美白・美肌治療</span>
                   </a>
@@ -11281,7 +11321,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">肝斑・美白治療</span>
                   </a>
@@ -11289,7 +11329,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ニキビ・ニキビ痕治療</span>
                   </a>
@@ -11297,7 +11337,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">赤ら顔（酒さ）・毛細血管拡張症治療</span>
                   </a>
@@ -11305,7 +11345,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛孔性苔癬治療</span>
                   </a>
@@ -11313,7 +11353,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">いぼ・ほくろ除去</span>
                   </a>
@@ -11328,7 +11368,7 @@
                 <li>
                   <a href="#injection-treatment-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">美肌・リバースエイジング 注入治療</span>
                   </a>
@@ -11336,7 +11376,7 @@
                 <li>
                   <a href="#injection-treatment-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ヒアルロン酸注入</span>
                   </a>
@@ -11344,7 +11384,7 @@
                 <li>
                   <a href="#injection-treatment-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ボトックス注射</span>
                   </a>
@@ -11359,7 +11399,7 @@
                 <li>
                   <a href="#other-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">痩身全身</span>
                   </a>
@@ -11367,7 +11407,7 @@
                 <li>
                   <a href="#other-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療レーザー脱毛</span>
                   </a>
@@ -11375,7 +11415,7 @@
                 <li>
                   <a href="#other-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">傷痕・刺青・タトゥー除去</span>
                   </a>
@@ -11383,7 +11423,7 @@
                 <li>
                   <a href="#other-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療アートメイク</span>
                   </a>
@@ -11391,7 +11431,7 @@
                 <li>
                   <a href="#other-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛髪再生</span>
                   </a>
@@ -11399,7 +11439,7 @@
                 <li>
                   <a href="#other-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">男性のお悩み治療</span>
                   </a>
@@ -11407,7 +11447,7 @@
                 <li>
                   <a href="#other-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">女性のお悩みに治療</span>
                   </a>
@@ -11415,7 +11455,7 @@
                 <li>
                   <a href="#other-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">コスメ・美肌・美容アイテム</span>
                   </a>
@@ -12130,7 +12170,7 @@
                       リジュランi(アイ)＋ボトックスビスタ
                       【モデル注射】<br>
                       <span class="min">2か月以内に再施術の場合はトライアル価格で
-                      お受けいただけます。</span>
+                        お受けいただけます。</span>
                     </td>
                     <td class="price-list-table__middle">
                       <ul>
@@ -13656,17 +13696,17 @@
               <p class="price-list-bottom__item--title">共通</p>
               <ul class="price-list-bottom__list">
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">初診料・再診料</span>
                   </a>
                 </li>
                 <li>
-                  <a href="" class="price-list-bottom__link">
+                  <a href="#common-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">麻酔・検査費用</span>
                   </a>
@@ -13681,7 +13721,7 @@
                 <li>
                   <a href="#cosmetic-surgery-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">目元のエイジングケア治療</span>
                   </a>
@@ -13689,7 +13729,7 @@
                 <li>
                   <a href="#cosmetic-surgery-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">脂肪吸引</span>
                   </a>
@@ -13697,7 +13737,7 @@
                 <li>
                   <a href="#cosmetic-surgery-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">豊胸・バスト整形</span>
                   </a>
@@ -13705,7 +13745,7 @@
                 <li>
                   <a href="#cosmetic-surgery-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">フェイスリフト</span>
                   </a>
@@ -13713,7 +13753,7 @@
                 <li>
                   <a href="#cosmetic-surgery-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">二重まぶた・二重形成術・目元</span>
                   </a>
@@ -13721,7 +13761,7 @@
                 <li>
                   <a href="#cosmetic-surgery-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ワキガ・多汗症治療</span>
                   </a>
@@ -13729,7 +13769,7 @@
                 <li>
                   <a href="#cosmetic-surgery-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">糸によるリフトアップ治療</span>
                   </a>
@@ -13737,7 +13777,7 @@
                 <li>
                   <a href="#cosmetic-surgery-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">小顔・輪郭形成</span>
                   </a>
@@ -13745,7 +13785,7 @@
                 <li>
                   <a href="#cosmetic-surgery-9" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">鼻の整形</span>
                   </a>
@@ -13753,7 +13793,7 @@
                 <li>
                   <a href="#cosmetic-surgery-10" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">口の整形</span>
                   </a>
@@ -13768,7 +13808,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シワ・たるみ治療</span>
                   </a>
@@ -13776,7 +13816,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">シミ・そばかす・くすみなどの美白・美肌治療</span>
                   </a>
@@ -13784,7 +13824,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">肝斑・美白治療</span>
                   </a>
@@ -13792,7 +13832,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ニキビ・ニキビ痕治療</span>
                   </a>
@@ -13800,7 +13840,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">赤ら顔（酒さ）・毛細血管拡張症治療</span>
                   </a>
@@ -13808,7 +13848,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛孔性苔癬治療</span>
                   </a>
@@ -13816,7 +13856,7 @@
                 <li>
                   <a href="#cosmetic-dermatology-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">いぼ・ほくろ除去</span>
                   </a>
@@ -13831,7 +13871,7 @@
                 <li>
                   <a href="#injection-treatment-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">美肌・リバースエイジング 注入治療</span>
                   </a>
@@ -13839,7 +13879,7 @@
                 <li>
                   <a href="#injection-treatment-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ヒアルロン酸注入</span>
                   </a>
@@ -13847,7 +13887,7 @@
                 <li>
                   <a href="#injection-treatment-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">ボトックス注射</span>
                   </a>
@@ -13862,7 +13902,7 @@
                 <li>
                   <a href="#other-1" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">痩身全身</span>
                   </a>
@@ -13870,7 +13910,7 @@
                 <li>
                   <a href="#other-2" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療レーザー脱毛</span>
                   </a>
@@ -13878,7 +13918,7 @@
                 <li>
                   <a href="#other-3" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">傷痕・刺青・タトゥー除去</span>
                   </a>
@@ -13886,7 +13926,7 @@
                 <li>
                   <a href="#other-4" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">医療アートメイク</span>
                   </a>
@@ -13894,7 +13934,7 @@
                 <li>
                   <a href="#other-5" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">毛髪再生</span>
                   </a>
@@ -13902,7 +13942,7 @@
                 <li>
                   <a href="#other-6" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">男性のお悩み治療</span>
                   </a>
@@ -13910,7 +13950,7 @@
                 <li>
                   <a href="#other-7" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">女性のお悩みに治療</span>
                   </a>
@@ -13918,7 +13958,7 @@
                 <li>
                   <a href="#other-8" class="price-list-bottom__link">
                     <span>
-                      <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
+                      <img src="<?php bloginfo('stylesheet_directory'); ?>/img/price-list/icon-bottom-arrow.svg" alt="" width="6" height="6">
                     </span>
                     <span class="price-list-bottom__link--text">コスメ・美肌・美容アイテム</span>
                   </a>
@@ -15322,7 +15362,7 @@
                     <td class="price-list-table__text">イソジン（うがい用）：舌、口</td>
                     <td class="price-list-table__cost">1,100<span>円</span></td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※アートメイク・ピアスは渋谷院限定の治療です。</td>
                   </tr>
                 </tbody>
@@ -15604,7 +15644,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※又吉総院長による施術（ダーマペンによる毛髪再生治療）は1回につき＋22,000円</td>
                   </tr>
                 </tbody>
@@ -15704,7 +15744,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※又吉総院長による施術（ダーマペンによる毛髪再生治療）は1回につき＋22,000円</td>
                   </tr>
                 </tbody>
@@ -15713,7 +15753,7 @@
               <table class="price-list-table">
                 <caption class="price-list-table__caption center">婦人科治療</caption>
                 <tbody>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">婦人科形成</td>
                   </tr>
                   <tr class="price-list-table__item row3">
@@ -15762,10 +15802,10 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※全てのメニューに笑気・局所麻酔料金が含まれています。</td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">セット治療</td>
                   </tr>
                   <tr class="price-list-table__item">
@@ -15776,7 +15816,7 @@
                     <td class="price-list-table__text">小陰唇縮小・副皮切除・クリトリス包茎セット</td>
                     <td class="price-list-table__cost">396,000<span>円</span></td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--attention">※全てのメニューに笑気・局所麻酔料金が含まれています。</td>
                   </tr>
                 </tbody>
@@ -15847,7 +15887,7 @@
               <table class="price-list-table">
                 <caption class="price-list-table__caption center">取り扱い化粧品</caption>
                 <tbody>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">シンシアり扱い化粧品</td>
                   </tr>
                   <tr class="price-list-table__item row3">
@@ -15918,7 +15958,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">プラスリストア</td>
                   </tr>
                   <tr class="price-list-table__item row3">
@@ -15972,7 +16012,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">デルファーマ</td>
                   </tr>
                   <tr class="price-list-table__item row3">
@@ -16009,7 +16049,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr class="price-list-table__item min-height-auto"  colspan="2">
+                  <tr class="price-list-table__item min-height-auto" colspan="2">
                     <td class="price-list-table__text--blue">グラングレース</td>
                   </tr>
                   <tr class="price-list-table__item row3">
@@ -16199,4 +16239,4 @@
 
 </main>
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>

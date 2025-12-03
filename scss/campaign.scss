@@ -1,22 +1,21 @@
-$serif:"Noto Serif JP", serif;
-$co:"Cormorant SC", serif;
+$serif: "Noto Serif JP", serif;
+$co: "Cormorant SC", serif;
 
-$main-color:#072334;
-$sub-color:#000;
-
+$main-color: #072334;
+$sub-color: #000;
 
 //マップ型変数breakpointsを定義
 $breakpoints: (
-//キー値
-  'sp': "(max-width: 767px)", //767px以下（スマホ）用の表示
-//   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
-  'pc': "(min-width: 768px)"//768px以上（タブレット・PC）用の表示
-
+  //キー値
+  "sp": "(max-width: 767px)",
+  //767px以下（スマホ）用の表示
+  //   'tab':"(min-width: 768px) and (max-width: #{$layout-width-inner})",
+  "pc": "(min-width: 768px)" //768px以上（タブレット・PC）用の表示
 );
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
 @mixin mq($breakpoint: sp) {
-//map-get(マップ型変数, キー)で値を取得
+  //map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
     @content;
@@ -26,7 +25,7 @@ $breakpoints: (
 .campaigns {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  @include mq('sp') {
+  @include mq("sp") {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -38,10 +37,10 @@ $breakpoints: (
   gap: 1.6rem;
   width: 100%;
 
-  @include mq('sp') {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: .4rem 1rem;
+  @include mq("sp") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem 1rem;
   }
 }
 
@@ -50,34 +49,47 @@ $breakpoints: (
   align-items: center;
   justify-content: center;
   height: 5.9rem;
-  background: #DDDDDD;
+  background: #dddddd;
   color: #fff;
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
   user-select: none;
-  transition: background .2s ease, color .2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
   font-family: $serif;
   width: 100%;
 
-  @include mq('sp') {
-      font-size: 1.6rem;
-      height: 5.9rem;
+  @include mq("sp") {
+    font-size: 1.6rem;
+    height: 5.9rem;
   }
 }
 
 .campaigns__tab:not(.is-active):hover {
-  background: #F2F5F8;
+  background: #f2f5f8;
 }
 
 .campaigns__tab.is-active {
-  background-color: #009FE6;
-  color: #FFF;
+  background-color: #009fe6;
+  color: #fff;
+}
+#tab-monitor.campaigns__tab.is-active {
+  background-color: #d3aa61;
+}
+#tab-ginza.campaigns__tab.is-active {
+  background-color: #03c3d6;
+}
+#tab-shibuya.campaigns__tab.is-active {
+  background-color: #ff5757;
+}
+
+#tab-both.campaigns__tab.is-active {
+  background-color: #e6c200;
 }
 
 .campaigns__body {
-  border: .2rem solid #009FE6;
-  background: #F8F8F8;
+  border: 0.2rem solid #009fe6;
+  background: #f8f8f8;
   padding: 1.8rem;
 }
 
@@ -85,8 +97,12 @@ $breakpoints: (
   position: relative;
 }
 
-.campaigns__panel[hidden] { display: none; }
-.campaigns__panel.is-active { display: block; }
+.campaigns__panel[hidden] {
+  display: none;
+}
+.campaigns__panel.is-active {
+  display: block;
+}
 
 .campaigns-list {
   display: flex;
@@ -101,12 +117,12 @@ $breakpoints: (
   gap: 2rem;
   background: rgba(255, 255, 255, 0.7);
   padding: 2rem 0;
-  border-bottom: .1rem solid #009FE6;
-  @include mq('sp') {
+  border-bottom: 0.1rem solid #009fe6;
+  @include mq("sp") {
     display: block;
     padding: 2rem;
   }
-} 
+}
 
 .campaigns-list__image {
   width: 30rem;
@@ -116,14 +132,14 @@ $breakpoints: (
     height: 100%;
     object-fit: cover;
   }
-  @include mq('sp') {
+  @include mq("sp") {
     width: 100%;
   }
 }
 
 .campaigns-list__info {
   width: calc(100% - 32rem);
-  @include mq('sp') {
+  @include mq("sp") {
     width: 100%;
     margin-top: 2rem;
     padding: 0 1rem;
@@ -134,10 +150,10 @@ $breakpoints: (
   font-size: 1.4rem;
   line-height: 121.42857%;
   color: #999999;
-  letter-spacing: .064em;
+  letter-spacing: 0.064em;
   font-weight: 400;
   font-family: $co;
-  @include mq('sp') {
+  @include mq("sp") {
     text-align: center;
   }
 }
@@ -151,16 +167,36 @@ $breakpoints: (
     font-size: 1.2rem;
     line-height: 150%;
     font-weight: 500;
-    padding: .4rem .8rem;
+    padding: 0.4rem 0.8rem;
     color: #fff;
-    background: #009FE6;
+    background: #009fe6;
   }
-  @include mq('sp') {
-    margin-top: .8rem;
-    gap: .8rem;
+  @include mq("sp") {
+    margin-top: 0.8rem;
+    gap: 0.8rem;
     justify-content: center;
     align-items: center;
   }
+}
+/* 銀座院 */
+.campaigns-list__category-item[data-category="モニター募集"],
+.campaigns-list__category-item[data-category="モニター"] {
+  background: #d3aa61;
+}
+
+/* 銀座院 */
+.campaigns-list__category-item[data-category="銀座院"] {
+  background: #03c3d6;
+}
+
+/* 渋谷院 */
+.campaigns-list__category-item[data-category="渋谷院"] {
+  background: #ff5757;
+}
+
+/* 両院共通 */
+.campaigns-list__category-item[data-category="両院共通"] {
+  background: #e6c200;
 }
 
 .campaigns-list__title {
@@ -169,8 +205,8 @@ $breakpoints: (
   line-height: 150%;
   font-weight: 500;
   color: #333;
-  @include mq('sp') {
-    margin-top: .8rem;
+  @include mq("sp") {
+    margin-top: 0.8rem;
   }
 }
 
@@ -185,14 +221,14 @@ $breakpoints: (
 .campaigns-list__treatment {
   margin-top: 2rem;
   &--title {
-    background: linear-gradient(90deg, #E9F1F7 0%, #F0F5F5 100%);
-    border-bottom: .1rem solid #009FE6;
+    background: linear-gradient(90deg, #e9f1f7 0%, #f0f5f5 100%);
+    border-bottom: 0.1rem solid #009fe6;
     font-size: 1.4rem;
     line-height: 121.42857%;
     font-weight: 500;
     color: #333;
     text-align: center;
-    padding: .4rem;
+    padding: 0.4rem;
     width: 100%;
   }
   &--menu {
@@ -200,21 +236,29 @@ $breakpoints: (
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.15rem;
+    flex-wrap: wrap;
     .btn {
       width: 100%;
       padding-right: 6.4rem;
-      height: 3.6rem;
+      height: unset;
       font-size: 1.6rem;
-      line-height: 120%;
+      line-height: calc(19 / 16);
       font-family: $serif;
       padding-left: 1.7rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      @include mq('sp') {
+      padding-top: 0.7rem;
+      padding-bottom: 0.8rem;
+      color: var(--btn-text, #009fe6);
+
+      @include mq("sp") {
         padding-right: 5rem;
       }
     }
-    @include mq('sp') {
+    .btn::after {
+      /* もともとの background: #009fe6; を差し替え */
+      background: var(--btn-after-bg, #009fe6);
+    }
+
+    @include mq("sp") {
       grid-template-columns: repeat(1, 1fr);
       gap: 2rem;
       width: 100%;

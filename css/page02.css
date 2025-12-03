@@ -1,0 +1,130 @@
+.page-head__title {
+  margin-top: 0;
+  padding-bottom: 2.4rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .page-head__title {
+    font-size: 2.4rem;
+  }
+}
+.page-head__title::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #009FE6 0%, #74D4FF 41.35%, #11ADF3 98.08%);
+  width: 4rem;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+}
+
+.page-head__description {
+  padding-bottom: 0;
+  color: #666;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .page-head__description {
+    font-size: 1.8rem;
+  }
+}
+.page-head__description::after {
+  display: none;
+}
+
+.price__name {
+  width: 55rem;
+  padding-left: 4rem;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-right: 1px solid #E0E0E0;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .price__name {
+    padding-left: 0;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9F1F7;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.price__name span {
+  font-size: 1.4rem;
+}
+@media (max-width: 767px) {
+  .price__name {
+    width: 100%;
+  }
+}
+
+.price__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 45rem;
+}
+@media (max-width: 767px) {
+  .price__price {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    background-color: #fff;
+    height: auto;
+  }
+}
+
+.price__price-item {
+  color: #000;
+  text-align: center;
+  font-size: 1.1667rem;
+  font-weight: 500;
+  letter-spacing: 0.0583rem;
+  color: #333;
+}
+.price__price-item:nth-of-type(n+2) {
+  margin-top: 0.2rem;
+}
+.price__price-item span {
+  font-size: 2rem;
+}
+
+.price__item:nth-of-type(n+2) {
+  border-top: 1px solid #ccc;
+}
+
+.mt24 {
+  margin-top: 2.4rem;
+}
+
+.price__item02 .price__name {
+  width: 100%;
+}
+
+.price__option .price__description {
+  background-color: #E9F1F7;
+}
+.price__option .price__item {
+  background-color: #F8F8F8;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.price__option .price__item02 {
+  border-bottom: 1px solid #ccc;
+}/*# sourceMappingURL=page02.css.map */

@@ -46,7 +46,6 @@
   font-family: "Shippori Mincho";
   color: #333;
   background: #fff;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -79,7 +78,6 @@
   gap: 1rem;
   padding: 1rem;
   color: #333;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -117,7 +115,8 @@
 .case-list__after img {
   width: 100%;
   aspect-ratio: 11/6;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 0.1rem solid #666666;
 }
 .case-list__before::before,
@@ -341,7 +340,6 @@
   margin-top: 1.6rem;
 }
 .doctor-profile__left__sns a {
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -364,7 +362,8 @@
 .doctor-profile__left__sns img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .doctor-profile__left__img {
   width: calc(100% + 4rem);

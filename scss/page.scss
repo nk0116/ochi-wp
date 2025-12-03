@@ -228,6 +228,7 @@ $breakpoints: (
         padding: 2rem;
         flex-direction: column;
         gap: 2rem;
+
     }
 
 }
@@ -606,7 +607,6 @@ $breakpoints: (
 .merit__text {
     @include mq('sp') {
         width: 100%;
-        order: 2;
     }
 
 }
@@ -675,20 +675,13 @@ $breakpoints: (
 
 }
 
-.feature__item {
-
-}
-
-.feature__image {
-
-}
 
 .feature__title {
     color: #333;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 170%; /* 3.4rem */
-    margin-top: 2rem;
+
 }
 
 .feature__text {
@@ -702,7 +695,7 @@ $breakpoints: (
 .feature__text-content {
     padding-left: 2rem;
     border-left: 1px solid #009FE6;
-
+    margin-top: 2rem;
 }
 
 .comparison {
@@ -994,7 +987,6 @@ $breakpoints: (
     margin-left: auto;
     margin-top: -5.16rem;
     margin-right: auto;
-    font-family: Aboreto;
     margin-bottom: 3.35rem;
     padding-top: 1.1rem;
 
@@ -1004,7 +996,6 @@ $breakpoints: (
 .effect__title {
     color: var(--333, #333);
     text-align: center;
-    font-family: "Zen Old Mincho";
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -1096,6 +1087,10 @@ $breakpoints: (
     line-height: 100%; /* 2.4rem */
     margin-top: 2.4rem;
     text-align: left;
+
+    @include mq('sp') {
+        font-size: 2.2rem;
+    }
 }
 
 .flow__description {
@@ -2442,7 +2437,7 @@ $breakpoints: (
 
     .about-page__item {
         &:nth-of-type(2) {
-            height: 18.2rem;
+            // height: 18.2rem;
             @include mq('sp') {
                 height: auto;
             }
@@ -2492,7 +2487,7 @@ $breakpoints: (
 
     .page-head {
         @include mq('sp') {
-            margin-top: 9.1rem;
+            margin-top: 0rem;
 
             .inner {
                 padding-left: 2rem;
@@ -2503,7 +2498,7 @@ $breakpoints: (
 
     @include mq('sp') {
         .page-head__title {
-            font-size: 4rem;
+            font-size: 3.2rem;
         }
 
         .page-nav__menu {
@@ -2533,8 +2528,8 @@ $breakpoints: (
 
         .feature__content {
             margin-top: 2rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
             gap: 4.6rem;
         }
 
@@ -2665,6 +2660,9 @@ $breakpoints: (
     grid-template-columns: repeat(2, 1fr);
     gap: 3.4rem;
 
+    @include mq('sp') {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .cause-eye__type {
@@ -2874,6 +2872,8 @@ $breakpoints: (
     position: relative;
     z-index: 2;
     padding-left: 2.7rem;
+
+    
     &::after {
         content: "";
         position: absolute;
@@ -2883,6 +2883,10 @@ $breakpoints: (
         top: 0;
         left: -2.1rem;
         z-index: -1;
+
+        @include mq('sp') {
+            display: none;
+        }
     }
 
 }

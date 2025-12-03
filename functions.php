@@ -1,7 +1,8 @@
 <?php
 
 // テーマの基本機能を有効化
-function my_theme_setup() {
+function my_theme_setup()
+{
     // アイキャッチ画像（投稿サムネイル）を有効化
     add_theme_support('post-thumbnails');
 
@@ -11,7 +12,8 @@ function my_theme_setup() {
 
 add_action('after_setup_theme', 'my_theme_setup');
 // CSS・JSファイルを読み込む
-function my_theme_enqueue_scripts() {
+function my_theme_enqueue_scripts()
+{
     // Google Fonts
     wp_enqueue_style(
         'google-fonts',
@@ -48,6 +50,18 @@ function my_theme_enqueue_scripts() {
         filemtime(get_template_directory() . '/css/style.css')
     );
 
+    // Packery JS
+    wp_enqueue_script(
+        'packery-js',
+        'https://unpkg.com/packery@3/dist/packery.pkgd.min.js',
+        array(),
+        '0.5.7',
+        array(
+            'strategy'  => 'defer',
+            'in_footer' => false,
+        )
+    );
+
     // Swiper JS
     wp_enqueue_script(
         'swiper-js',
@@ -74,7 +88,7 @@ function my_theme_enqueue_scripts() {
         filemtime(get_template_directory() . '/js/main.js'),
         true
     );
-    
+
 
 
     // access-ginza 固定ページに access.css を適用
@@ -98,7 +112,7 @@ function my_theme_enqueue_scripts() {
             filemtime(get_template_directory() . '/css/staff.css')
         );
 
-         wp_enqueue_style(
+        wp_enqueue_style(
             'access-css',
             get_template_directory_uri() . '/css/access.css',
             array('theme-style'),
@@ -323,6 +337,8 @@ function my_theme_enqueue_scripts() {
             filemtime(get_template_directory() . '/css/page.css')
         );
     }
+	
+	
 
     // archive-ginza-blog（銀座ブログアーカイブページ）に blog_ginza-blog-archive.css を適用
     if (is_post_type_archive('ginza-blog')) {
@@ -391,152 +407,222 @@ function my_theme_enqueue_scripts() {
             filemtime(get_template_directory() . '/css/access.css')
         );
     }
+	
+	
+     // page-facelift（フェイスリフトページ）に facelift.css を適用
+     if (is_page('facelift')) {
+        wp_enqueue_style(
+            'facelift-css',
+            get_template_directory_uri() . '/css/facelift.css',
+            array('theme-style', 'common-css'),
+            filemtime(get_template_directory() . '/css/facelift.css')
+        );
+    }
+
+    // ゴルゴ線ページだけで golgo-line.css を読み込み
+    if (is_page('golgo-line')) {
+        wp_enqueue_style(
+            'golgo-line-css',
+            get_template_directory_uri() . '/css/golgo-line.css',
+            array('theme-style', 'common-css'),
+            filemtime(get_template_directory() . '/css/golgo-line.css')
+        );
+    }
+
+
+    // 医療レーザー脱毛ページだけで hair-removal.css を読み込み
+    if (is_page('hair-removal')) {
+        wp_enqueue_style(
+            'hair-removal-css',
+            get_template_directory_uri() . '/css/hair-removal.css',
+            array('theme-style', 'common-css'),
+            filemtime(get_template_directory() . '/css/hair-removal.css')
+        );
+    }
+
+    if (is_page('under-eye-bag-removal')) {
+        wp_enqueue_style(
+            'hair-removal-css',
+            get_template_directory_uri() . '/css/page02.css',
+            array('theme-style', 'common-css'),
+            filemtime(get_template_directory() . '/css/page02.css')
+        );
+        
+    }
+
+
+    if (is_page('under-eye-bag-removal')) {
+        wp_enqueue_style(
+            'under-eye-bag-removal-css',
+            get_template_directory_uri() . '/css/under-eye-bag-removal.css',
+            array('theme-style', 'hair-removal-css'),
+            filemtime(get_template_directory() . '/css/under-eye-bag-removal.css')
+        );
+    }
 
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
 
-    // カスタム投稿タイプ notice（お知らせ）
-    function create_post_type_notice() {
-        register_post_type('notice', array(
-            'labels' => array(
-                'name'          => 'お知らせ（notice）',
-                'singular_name' => 'お知らせ（notice）',
-            ),
-            'public'       => true,
-            'has_archive'  => true,
-            'rewrite'      => array('slug' => 'notice'),
-            'menu_position'=> 5,
-            'menu_icon'    => 'dashicons-megaphone',
-            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
-        ));
-    }
-    add_action('init', 'create_post_type_notice');
+// カスタム投稿タイプ notice（お知らせ）
+function create_post_type_notice()
+{
+    register_post_type('notice', array(
+        'labels' => array(
+            'name'          => 'お知らせ（notice）',
+            'singular_name' => 'お知らせ（notice）',
+        ),
+        'public'       => true,
+        'has_archive'  => true,
+        'rewrite'      => array('slug' => 'notice'),
+        'menu_position' => 5,
+        'menu_icon'    => 'dashicons-megaphone',
+        'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
+    ));
+}
+add_action('init', 'create_post_type_notice');
 
-    function add_notice_categories() {
-        register_taxonomy_for_object_type('category', 'notice');
-    }
-    add_action('init', 'add_notice_categories');
+function add_notice_categories()
+{
+    register_taxonomy_for_object_type('category', 'notice');
+}
+add_action('init', 'add_notice_categories');
 
-    // カスタム投稿タイプ ginza-blog（銀座ブログ）
-    function create_post_type_ginza_blog() {
-        register_post_type('ginza-blog', array(
-            'labels' => array(
-                'name'          => '銀座ブログ',
-                'singular_name' => '銀座ブログ',
-            ),
-            'public'       => true,
-            'has_archive'  => true,
-            'rewrite'      => array('slug' => 'ginza-blog'),
-            'menu_position'=> 6,
-            'menu_icon'    => 'dashicons-edit',
-            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
-        ));
-    }
-    add_action('init', 'create_post_type_ginza_blog');
+// カスタム投稿タイプ ginza-blog（銀座ブログ）
+function create_post_type_ginza_blog()
+{
+    register_post_type('ginza-blog', array(
+        'labels' => array(
+            'name'          => '銀座ブログ',
+            'singular_name' => '銀座ブログ',
+        ),
+        'public'       => true,
+        'has_archive'  => true,
+        'rewrite'      => array('slug' => 'ginza-blog'),
+        'menu_position' => 6,
+        'menu_icon'    => 'dashicons-edit',
+        'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
+    ));
+}
+add_action('init', 'create_post_type_ginza_blog');
 
-    function add_ginza_blog_categories() {
-        register_taxonomy_for_object_type('category', 'ginza-blog');
-    }
-    add_action('init', 'add_ginza_blog_categories');
+function add_ginza_blog_categories()
+{
+    register_taxonomy_for_object_type('category', 'ginza-blog');
+}
+add_action('init', 'add_ginza_blog_categories');
 
-    // カスタム投稿タイプ shibuya-blog（渋谷ブログ）
-    function create_post_type_shibuya_blog() {
-        register_post_type('shibuya-blog', array(
-            'labels' => array(
-                'name'          => '渋谷ブログ',
-                'singular_name' => '渋谷ブログ',
-            ),
-            'public'       => true,
-            'has_archive'  => true,
-            'rewrite'      => array('slug' => 'shibuya-blog'),
-            'menu_position'=> 7,
-            'menu_icon'    => 'dashicons-edit',
-            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
-        ));
-    }
-    add_action('init', 'create_post_type_shibuya_blog');
+// カスタム投稿タイプ shibuya-blog（渋谷ブログ）
+function create_post_type_shibuya_blog()
+{
+    register_post_type('shibuya-blog', array(
+        'labels' => array(
+            'name'          => '渋谷ブログ',
+            'singular_name' => '渋谷ブログ',
+        ),
+        'public'       => true,
+        'has_archive'  => true,
+        'rewrite'      => array('slug' => 'shibuya-blog'),
+        'menu_position' => 7,
+        'menu_icon'    => 'dashicons-edit',
+        'supports'     => array('title', 'editor', 'thumbnail', 'excerpt'),
+    ));
+}
+add_action('init', 'create_post_type_shibuya_blog');
 
-    function add_shibuya_blog_categories() {
-        register_taxonomy_for_object_type('category', 'shibuya-blog');
-    }
-    add_action('init', 'add_shibuya_blog_categories');
+function add_shibuya_blog_categories()
+{
+    register_taxonomy_for_object_type('category', 'shibuya-blog');
+}
+add_action('init', 'add_shibuya_blog_categories');
 
-    // 閲覧数をカウントする関数
-    function set_post_views($post_id) {
-        $count_key = 'post_views_count';
-        $count = get_post_meta($post_id, $count_key, true);
-        if ($count == '') {
-            $count = 0;
-            delete_post_meta($post_id, $count_key);
-            add_post_meta($post_id, $count_key, '0');
-        } else {
-            $count++;
-            update_post_meta($post_id, $count_key, $count);
-        }
+// 閲覧数をカウントする関数
+function set_post_views($post_id)
+{
+    $count_key = 'post_views_count';
+    $count = get_post_meta($post_id, $count_key, true);
+    if ($count == '') {
+        $count = 0;
+        delete_post_meta($post_id, $count_key);
+        add_post_meta($post_id, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($post_id, $count_key, $count);
     }
+}
 
-    // シングルページで閲覧数をカウント
-    function track_post_views($post_id) {
-        if (!is_singular('ginza-blog') && !is_singular('shibuya-blog')) {
-            return;
-        }
-        if (empty($post_id)) {
-            global $post;
-            $post_id = $post->ID;
-        }
-        set_post_views($post_id);
+// シングルページで閲覧数をカウント
+function track_post_views($post_id)
+{
+    if (!is_singular('ginza-blog') && !is_singular('shibuya-blog')) {
+        return;
     }
-    add_action('wp_head', 'track_post_views');
+    if (empty($post_id)) {
+        global $post;
+        $post_id = $post->ID;
+    }
+    set_post_views($post_id);
+}
+add_action('wp_head', 'track_post_views');
 
-    // ブログ記事の見出しにidとクラスを追加、リストにクラスを追加
-    function add_heading_ids($content) {
-        if (!is_singular('ginza-blog') && !is_singular('shibuya-blog')) {
-            return $content;
-        }
-        
-        $heading_count = 0;
-        $content = preg_replace_callback(
-            '/<h([2-4])[^>]*>(.*?)<\/h[2-4]>/i',
-            function($matches) use (&$heading_count) {
-                $heading_count++;
-                $level = $matches[1];
-                $text = strip_tags($matches[2]);
-                $id = 'heading-' . $heading_count;
-                $class = 'h' . $level;
-                return '<h' . $level . ' id="' . esc_attr($id) . '" class="' . esc_attr($class) . '">' . $matches[2] . '</h' . $level . '>';
-            },
-            $content
-        );
-        
-        // リストにクラスを追加（奇数番目にis-oddクラス）
-        // ulとolを一緒にカウント
-        $list_count = 0;
-        $content = preg_replace_callback(
-            '/<(ul|ol)([^>]*)>/i',
-            function($matches) use (&$list_count) {
-                $list_count++;
-                $tag = $matches[1];
-                $attrs = $matches[2];
-                
-                // 奇数番目の場合のみis-oddクラスを追加
-                if ($list_count % 2 === 1) {
-                    // 既存のclass属性がある場合
-                    if (preg_match('/class=["\']([^"\']*)["\']/', $attrs, $class_matches)) {
-                        $existing_classes = $class_matches[1];
-                        $attrs = preg_replace('/class=["\'][^"\']*["\']/', '', $attrs);
-                        $classes = trim($existing_classes . ' is-odd');
-                        return '<' . $tag . ' class="' . esc_attr($classes) . '"' . $attrs . '>';
-                    } else {
-                        return '<' . $tag . ' class="is-odd"' . $attrs . '>';
-                    }
-                }
-                return '<' . $tag . $attrs . '>';
-            },
-            $content
-        );
-        
+// ブログ記事の見出しにidとクラスを追加、リストにクラスを追加
+function add_heading_ids($content)
+{
+    if (!is_singular('ginza-blog') && !is_singular('shibuya-blog')) {
         return $content;
     }
-    add_filter('the_content', 'add_heading_ids');
 
-?>
+    $heading_count = 0;
+    $content = preg_replace_callback(
+        '/<h([2-4])[^>]*>(.*?)<\/h[2-4]>/i',
+        function ($matches) use (&$heading_count) {
+            $heading_count++;
+            $level = $matches[1];
+            $text = strip_tags($matches[2]);
+            $id = 'heading-' . $heading_count;
+            $class = 'h' . $level;
+            return '<h' . $level . ' id="' . esc_attr($id) . '" class="' . esc_attr($class) . '">' . $matches[2] . '</h' . $level . '>';
+        },
+        $content
+    );
+
+    // リストにクラスを追加（奇数番目にis-oddクラス）
+    // ulとolを一緒にカウント
+    $list_count = 0;
+    $content = preg_replace_callback(
+        '/<(ul|ol)([^>]*)>/i',
+        function ($matches) use (&$list_count) {
+            $list_count++;
+            $tag = $matches[1];
+            $attrs = $matches[2];
+
+            // 奇数番目の場合のみis-oddクラスを追加
+            if ($list_count % 2 === 1) {
+                // 既存のclass属性がある場合
+                if (preg_match('/class=["\']([^"\']*)["\']/', $attrs, $class_matches)) {
+                    $existing_classes = $class_matches[1];
+                    $attrs = preg_replace('/class=["\'][^"\']*["\']/', '', $attrs);
+                    $classes = trim($existing_classes . ' is-odd');
+                    return '<' . $tag . ' class="' . esc_attr($classes) . '"' . $attrs . '>';
+                } else {
+                    return '<' . $tag . ' class="is-odd"' . $attrs . '>';
+                }
+            }
+            return '<' . $tag . $attrs . '>';
+        },
+        $content
+    );
+
+    return $content;
+}
+add_filter('the_content', 'add_heading_ids');
+
+
+// /column にアクセスされたとき、 /clinic/column/ に302リダイレクト。本番環境でコメントアウトを外す。
+// function redirect_column_to_clinic_column()
+// {
+//     if (untrailingslashit($_SERVER['REQUEST_URI']) === '/column') {
+//         wp_redirect(home_url('/clinic/column/'), 302);
+//         exit;
+//     }
+// }
+// add_action('template_redirect', 'redirect_column_to_clinic_column');

@@ -24,11 +24,6 @@ $breakpoints: (
   }
 }
 
-.fv-low {
-  @include mq(sp) {
-    padding-top: 76px;
-  }
-}
 
 .fv-low__inner {
   position: relative;

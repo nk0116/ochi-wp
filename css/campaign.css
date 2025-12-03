@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .campaigns {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -28,12 +29,14 @@
   align-items: center;
   justify-content: center;
   height: 5.9rem;
-  background: #DDDDDD;
+  background: #dddddd;
   color: #fff;
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: background 0.2s ease, color 0.2s ease;
   font-family: "Noto Serif JP", serif;
   width: 100%;
@@ -46,17 +49,33 @@
 }
 
 .campaigns__tab:not(.is-active):hover {
-  background: #F2F5F8;
+  background: #f2f5f8;
 }
 
 .campaigns__tab.is-active {
-  background-color: #009FE6;
-  color: #FFF;
+  background-color: #009fe6;
+  color: #fff;
+}
+
+#tab-monitor.campaigns__tab.is-active {
+  background-color: #d3aa61;
+}
+
+#tab-ginza.campaigns__tab.is-active {
+  background-color: #03c3d6;
+}
+
+#tab-shibuya.campaigns__tab.is-active {
+  background-color: #ff5757;
+}
+
+#tab-both.campaigns__tab.is-active {
+  background-color: #e6c200;
 }
 
 .campaigns__body {
-  border: 0.2rem solid #009FE6;
-  background: #F8F8F8;
+  border: 0.2rem solid #009fe6;
+  background: #f8f8f8;
   padding: 1.8rem;
 }
 
@@ -85,7 +104,7 @@
   gap: 2rem;
   background: rgba(255, 255, 255, 0.7);
   padding: 2rem 0;
-  border-bottom: 0.1rem solid #009FE6;
+  border-bottom: 0.1rem solid #009fe6;
 }
 @media (max-width: 767px) {
   .campaigns-list__item {
@@ -101,7 +120,8 @@
 .campaigns-list__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .campaigns-list__image {
@@ -146,7 +166,7 @@
   font-weight: 500;
   padding: 0.4rem 0.8rem;
   color: #fff;
-  background: #009FE6;
+  background: #009fe6;
 }
 @media (max-width: 767px) {
   .campaigns-list__category {
@@ -155,6 +175,27 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+/* 銀座院 */
+.campaigns-list__category-item[data-category=モニター募集],
+.campaigns-list__category-item[data-category=モニター] {
+  background: #d3aa61;
+}
+
+/* 銀座院 */
+.campaigns-list__category-item[data-category=銀座院] {
+  background: #03c3d6;
+}
+
+/* 渋谷院 */
+.campaigns-list__category-item[data-category=渋谷院] {
+  background: #ff5757;
+}
+
+/* 両院共通 */
+.campaigns-list__category-item[data-category=両院共通] {
+  background: #e6c200;
 }
 
 .campaigns-list__title {
@@ -182,8 +223,8 @@
   margin-top: 2rem;
 }
 .campaigns-list__treatment--title {
-  background: linear-gradient(90deg, #E9F1F7 0%, #F0F5F5 100%);
-  border-bottom: 0.1rem solid #009FE6;
+  background: linear-gradient(90deg, #e9f1f7 0%, #f0f5f5 100%);
+  border-bottom: 0.1rem solid #009fe6;
   font-size: 1.4rem;
   line-height: 121.42857%;
   font-weight: 500;
@@ -197,22 +238,28 @@
   display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.15rem;
+  flex-wrap: wrap;
 }
 .campaigns-list__treatment--menu .btn {
   width: 100%;
   padding-right: 6.4rem;
-  height: 3.6rem;
+  height: unset;
   font-size: 1.6rem;
-  line-height: 120%;
+  line-height: 1.1875;
   font-family: "Noto Serif JP", serif;
   padding-left: 1.7rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  color: var(--btn-text, #009fe6);
 }
 @media (max-width: 767px) {
   .campaigns-list__treatment--menu .btn {
     padding-right: 5rem;
   }
+}
+.campaigns-list__treatment--menu .btn::after {
+  /* もともとの background: #009fe6; を差し替え */
+  background: var(--btn-after-bg, #009fe6);
 }
 @media (max-width: 767px) {
   .campaigns-list__treatment--menu {
