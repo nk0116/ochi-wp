@@ -17,7 +17,7 @@ function my_theme_enqueue_scripts()
     // Google Fonts
     wp_enqueue_style(
         'google-fonts',
-        'https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@200..900&display=swap',
+        'https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+SC:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@200..900&family=Oswald:wght@400;500;600;700&display=swap',
         array(),
         null
     );
@@ -416,6 +416,16 @@ function my_theme_enqueue_scripts()
             get_template_directory_uri() . '/css/facelift.css',
             array('theme-style', 'common-css'),
             filemtime(get_template_directory() . '/css/facelift.css')
+        );
+    }
+
+    // page-crf-breast（CRF豊胸ページ）に crf-breast.css を適用
+    if (is_page('crf-breast')) {
+        wp_enqueue_style(
+            'crf-breast-css',
+            get_template_directory_uri() . '/css/crf-breast.css',
+            array('theme-style', 'common-css'),
+            filemtime(get_template_directory() . '/css/crf-breast.css')
         );
     }
 

@@ -485,6 +485,7 @@ $breakpoints: (
 .about__text {
   padding-top: 8rem;
   width: 71rem;
+  padding-right: 2rem;
 
   @include mq("sp") {
     width: auto;
@@ -975,79 +976,106 @@ $breakpoints: (
       padding-right: 1.7rem;
     }
   }
+
+  .head-title {
+    .page-title {
+      padding: 2rem 3rem;
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+
+      @include mq("sp") {
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
 }
 
 .effect__content {
   margin-top: 7.16rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 7.5rem 1.8rem;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
 
   @include mq("sp") {
     grid-template-columns: repeat(1, 1fr);
-    gap: 7rem;
-    margin-left: 1.6rem;
-    margin-right: 1.9rem;
+    gap: 3rem;
+    padding: 2rem 1.5rem;
   }
 }
 
 .effect__item {
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 8rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   border-radius: 1.6rem;
   border: 2px solid #0aa4e8;
-  background: #fff;
-  padding-left: 0.84rem;
-  padding-right: 0.86rem;
-  padding-bottom: 1.98rem;
 
   @include mq("sp") {
+    padding: 2rem 1rem;
+    padding-top: 4rem;
   }
 }
 
 .effect__number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
-  stroke-width: 1px;
-  stroke: #0aa4e8;
   color: #fff;
-  font-size: 5.7rem;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 400;
-  font-variant: all-small-caps;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 9.648rem;
-  height: 9.648rem;
+  align-items: center;
+  width: 9.6rem;
+  height: 9.6rem;
   border-radius: 50%;
-  margin-left: auto;
-  margin-top: -5.16rem;
-  margin-right: auto;
-  font-family: Aboreto;
-  margin-bottom: 3.35rem;
-  padding-top: 1.1rem;
+  margin: 0 auto;
+  font-family: Aboreto, sans-serif;
+
+  @include mq("sp") {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
 }
 
 .effect__title {
-  color: var(--333, #333);
+  color: #333;
   text-align: center;
-  font-family: "Zen Old Mincho";
-  font-size: 2rem;
+  font-family: "Noto Serif JP";
+  font-size: 1.8rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 3rem */
-  letter-spacing: 0.08rem;
-  margin-top: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .effect__text {
   color: #333;
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 2.56rem */
-  margin-top: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
 
   @include mq("sp") {
-    margin-top: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1095,13 +1123,20 @@ $breakpoints: (
 
 .flow__image {
   width: 20rem;
+  height: 20rem;
   flex-shrink: 0;
 
   img {
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
 
   @include mq("sp") {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1110,66 +1145,90 @@ $breakpoints: (
 .flow__text {
 }
 
+.flow__text {
+  flex: 1;
+}
+
 .flow__step {
-  color: #009fe6;
-  font-family: "Cormorant SC";
-  font-size: 1.8rem;
+  color: #70d3ff;
+  font-family: "Cormorant SC", sans-serif;
+  font-size: 1.6rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 1.8rem */
-  letter-spacing: 0.144rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .flow__title {
-  color: #444;
-  font-size: 2.4rem;
+  color: #333;
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 2.4rem */
-  margin-top: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
   text-align: left;
+
+  @include mq("sp") {
+    font-size: 1.8rem;
+  }
 }
 
 .flow__description {
-  color: #444;
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 3.2rem; /* 200% */
+  line-height: 1.8;
   text-align: left;
-  margin-top: 2.4rem;
 
   @include mq("sp") {
-    line-height: 170%;
+    font-size: 1.4rem;
+    line-height: 1.7;
   }
 }
 
 .flow__item {
   display: flex;
-  align-items: center;
-  gap: 5.8rem;
+  align-items: flex-start;
+  gap: 3rem;
   position: relative;
 
   @include mq("sp") {
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
 
   &::after {
     content: "";
     position: absolute;
-    background: url(../img/pico/triangle.png) no-repeat center center/cover;
-    width: 3rem;
-    height: 2.4rem;
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1.5rem solid #af9454;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -4.6rem;
+    bottom: -3rem;
+
+    @include mq("sp") {
+      bottom: -2.5rem;
+    }
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
   }
 
   &:nth-of-type(n + 2) {
-    margin-top: 6rem;
+    margin-top: 5rem;
 
     @include mq("sp") {
-      margin-top: 7.4rem;
+      margin-top: 4rem;
     }
   }
 
@@ -1197,6 +1256,16 @@ $breakpoints: (
   .page-title {
     @include mq("sp") {
       padding-left: 0;
+    }
+
+    .page-title__subtitle {
+      color: #333;
+      font-size: 1.6rem;
+      margin-top: 0.5rem;
+
+      @include mq("sp") {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -1238,6 +1307,7 @@ $breakpoints: (
   flex-shrink: 0;
   border-right: 1px solid #6f6f6f;
   border-bottom: 1px solid #6f6f6f;
+  padding: 1rem 0;
 
   @include mq("sp") {
     width: 100%;
@@ -1248,15 +1318,13 @@ $breakpoints: (
 
 .about-page__text {
   padding: 1rem 2rem;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
   color: #333;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 170%; /* 2.72rem */
   border-bottom: 1px solid #6f6f6f;
   width: 100%;
+  align-self: flex-start;
 }
 
 .about-page__item {
@@ -1266,16 +1334,11 @@ $breakpoints: (
     flex-direction: column;
   }
 
-  &:nth-of-type(4) {
-    .about-page__text {
-      padding-top: 2rem;
-      padding-bottom: 2.5rem;
-    }
-  }
-
   &:last-of-type {
     .about-page__title {
-      border-bottom: none;
+      @include mq(pc) {
+        border-bottom: none;
+      }
     }
 
     .about-page__text {
@@ -1524,7 +1587,7 @@ $breakpoints: (
   font-family: "Cormorant Garamond";
   font-size: 2rem;
   font-weight: 400;
-  line-height: 140%; /* 2.8rem */
+  line-height: 1.4;
   background: linear-gradient(180deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1541,12 +1604,13 @@ $breakpoints: (
   padding-top: 3.4rem;
   padding-bottom: 3.2rem;
   color: #333;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 160%; /* 2.56rem */
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
   justify-content: center;
   gap: 1.6rem;
   display: none;
+  font-family: "Cormorant Garamond";
 
   @include mq("sp") {
     margin-left: 2rem;
@@ -1554,6 +1618,14 @@ $breakpoints: (
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
   }
+}
+
+.faq__answer-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .faq__a-mark {
@@ -1591,9 +1663,6 @@ $breakpoints: (
 }
 
 .head-title {
-}
-
-.page-title {
 }
 
 .page-title__subtitle {
@@ -2214,10 +2283,6 @@ $breakpoints: (
   padding-bottom: 4.98rem;
 }
 
-.flow__image {
-  width: 21rem;
-}
-
 .flow__content {
   padding: 4.4rem;
 
@@ -2231,23 +2296,6 @@ $breakpoints: (
 
   @include mq("sp") {
     gap: 1rem;
-  }
-}
-
-.about-page__item {
-  &:nth-of-type(2) {
-    height: 18.2rem;
-    @include mq("sp") {
-      height: auto;
-    }
-  }
-
-  &:nth-of-type(6) {
-    height: 6.8rem;
-
-    @include mq("sp") {
-      height: auto;
-    }
   }
 }
 
@@ -2618,13 +2666,6 @@ $breakpoints: (
   gap: 3rem;
   margin-top: 4rem;
 
-  @include mq("sp") {
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 3rem;
-    align-items: flex-start;
-  }
-
   &:first-child {
     margin-top: 0;
   }
@@ -2636,17 +2677,17 @@ $breakpoints: (
   }
 
   // ステップ3, 5: 画像が左側、テキストが右側（デフォルト）
+  &:nth-child(1),
   &:nth-child(3),
   &:nth-child(5) {
     flex-direction: row;
   }
 
   @include mq("sp") {
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(4) {
-      flex-direction: column;
-    }
+    flex-direction: column !important;
+    gap: 2rem;
+    margin-top: 3rem;
+    align-items: flex-start;
   }
 }
 
@@ -2701,7 +2742,7 @@ $breakpoints: (
 .treatment {
   padding-top: 4rem;
   padding-bottom: 8rem;
-  background: linear-gradient(180deg, #fff 0%, rgba(223, 245, 255, 0.5) 100%);
+  background: linear-gradient(180deg, #fff 0%, #dff5ff80 50%);
 }
 
 @media (max-width: 768px) {
@@ -2711,10 +2752,17 @@ $breakpoints: (
 }
 
 .treatment__detail {
-  margin-top: 6rem;
-
+  margin-top: 1rem;
+  position: relative;
+  background-color: #fff;
+  padding-left: 12rem;
+  padding-right: 12rem;
   &:first-child {
     margin-top: 4rem;
+  }
+
+  @include mq(sp) {
+    padding: 0 1rem;
   }
 }
 
@@ -2726,9 +2774,10 @@ $breakpoints: (
   font-weight: 700;
   line-height: 1.6;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, #0aa4e8 0%, #70d3ff 50%, #14aef3 100%);
+  background: linear-gradient(90deg, #009fe6 0%, #74d4ff 41.35%, #11adf3 98.08%);
   padding: 1.2rem 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   @include mq("sp") {
     font-size: 1.8rem;
@@ -2736,13 +2785,81 @@ $breakpoints: (
   }
 }
 
+.treatment__subtitle-content {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .treatment__subtitle {
-  color: #333;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.6;
+  color: #009fe6;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 170%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+
   margin-bottom: 1.6rem;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  // width: fit-content;
+  text-align: left;
+
+  // 下線を親要素（.inner）の幅いっぱいまで広げる
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100vw - 4rem);
+    max-width: calc(104rem - 4rem);
+    height: 1px;
+    background: #ccc;
+    z-index: -1;
+
+    @include mq("sp") {
+      width: calc(100vw - 4rem);
+      max-width: none;
+    }
+  }
+
+  .treatment__subtitle-content {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .treatment__subtitle-title {
+    width: fit-content;
+    text-align-last: left;
+  }
+
+  .treatment__subtitle-text {
+    color: #009fe6;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 0.8rem;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: left;
+    width: fit-content;
+  }
+
+  // 2つ目の「おすすめな方」は description の後なので margin-top を調整
+  &:nth-of-type(2) {
+    margin-top: 0;
+  }
 }
 
 .treatment__description {
@@ -2750,14 +2867,15 @@ $breakpoints: (
   font-size: 1.6rem;
   line-height: 1.8;
   margin-bottom: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 .treatment__content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 4rem;
   margin-top: 3rem;
+  flex-direction: row-reverse;
 
   @include mq("sp") {
     flex-direction: column;
@@ -2792,17 +2910,26 @@ $breakpoints: (
   li {
     color: #333;
     font-size: 1.6rem;
-    line-height: 1.8;
-    padding-left: 2.4rem;
+    font-weight: 400;
+    line-height: 150%; /* 2.4rem */
+    padding-left: 2.6rem;
     position: relative;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ccc;
 
-    &::before {
-      content: "✓";
+    &:nth-of-type(n + 2) {
+      margin-top: 1rem;
+    }
+
+    &::after {
+      content: "";
       position: absolute;
+      background: url(../img/pico/check.png) no-repeat center center/cover;
+      width: 1.6rem;
+      height: 1.6rem;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
-      color: #333;
-      font-weight: 700;
     }
 
     &:last-child {
@@ -2824,19 +2951,32 @@ $breakpoints: (
 
 .treatment__image {
   margin: 0;
+  position: relative;
 
   img {
     width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
   }
 
   figcaption {
-    text-align: center;
-    margin-top: 1rem;
+    position: absolute;
     font-size: 1.4rem;
-    color: #666;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .treatment__image-before {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .treatment__image-after {
+    top: 55%;
+    left: 1rem;
+    transform: translateY(-50%);
   }
 }
 
@@ -2920,6 +3060,11 @@ $breakpoints: (
   border-collapse: collapse;
   border: 1px solid #ccc;
   table-layout: auto;
+  background-color: #fff;
+
+  &--option {
+    background-color: #f8f8f8;
+  }
 }
 
 .face-price__table tr {
